@@ -1,0 +1,51 @@
+body {
+	text-align: center;
+	background: rgb(8,21,23);
+	color: rgb(255,255,255);
+	font-family: "Century Gothic", sans-serif;
+	font-style: normal;
+	font-size: 100%;
+	max-width: 500px;
+	margin: auto;
+
+}
+
+h1 {
+
+	font-weight: 300;
+	font-size: 3.5em;
+
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 2.5em;
+	color: rgb(251,234,82);
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 1.5em;
+
+}
+p {
+	font-size: .85em;
+}
+a {
+	font-size: .85em;
+	color: rgb(255,42,40);
+}
+ul {
+	font-size: .85em;
+	list-style-type: circle;
+	list-style-position: inside;
+	text-align: left;
+	padding-left: 100px;
+}
+.subhead {
+	font-size: 1.25em;
+	font-style: italic;
+}
+.smallprint {
+	font-size: .7em;
+}
