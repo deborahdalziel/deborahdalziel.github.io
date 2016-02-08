@@ -1,43 +1,63 @@
+/*custom fonts*/
+
+@font-face {
+    font-family: body-font;
+    src: url(../fonts/body-font.otf);
+}
+
+@font-face {
+    font-family: heading-font;
+    src: url(../fonts/heading-font.otf);
+}
+
+
 /*standard styling*/
 
 body {
 	text-align: center;
 	background: #ffffff;
 	color: rgb(255,255,255);
-	font-family: "Century Gothic", sans-serif;
+	font-family: "body-font", "Palatino", serif;
 	font-style: normal;
 	font-size: 100%;
 	margin: auto;
 }
  
 h1 {
-
-	font-weight: 300;
-	font-size: 3.5em;
+	font-family: "heading-font", "Century Gothic", sans-serif;
+	font-weight: 100;
+	font-size: 4em;
 }
 
 h2 {
-	font-weight: 500;
-	font-size: 2.5em;
+	font-family: "heading-font", "Century Gothic", sans-serif;
+	font-weight: 100;
+	font-size: 3em;
+	line-height: 1.2em;
 	color: #0097AA;
 }
 
 h3 {
+	font-family: "heading-font", "Century Gothic", sans-serif;
 	font-weight: 500;
+	line-height: 1.2em;
 	font-size: 1.5em;
+	color: #FF2A28;
 }
 
 p {
-	font-size: .85em;
+	font-size: 1.2em;
+	font-weight: 100;
+	line-height: 1.4em;
 }
 
 a {
-	font-size: .85em;
+	font-size: 1.2em;
 	color: rgb(255,42,40);
 }
 
 ul {
-	font-size: .85em;
+	font-size: 1.2em;
 	list-style-type: circle;
 	list-style-position: inside;
 	text-align: left;
@@ -76,25 +96,30 @@ ul {
 	margin-left: -300px; 
 }
 #lp-title{
-	font-size: 3.5em;
-	font-weight: 300;
+	font-family: "heading-font", "Century Gothic", sans-serif;
+	font-size: 4em;
+	font-weight: 100;
+	line-height: 1.2em;
 	background-color: rgba(8,21,23,.8);
-	padding: 5% 3%;
+	padding: 4% 3%;
 	margin-bottom: 3%;
 }
 #lp-subhead {
-	font-size: 1.5em;
-	font-style: italic;
+	font-family: "heading-font", "Century Gothic", sans-serif;
+	font-size: 1.75em;
+	font-weight: 500;
+	line-height: 1.4em;
 	background-color: rgba(8,21,23,.8);
-	padding: 5% 3%;
+	padding: 4% 3%;
 	margin-bottom: 5%;
 }
 #get-in-touch-button {
+	font-family: "heading-font", "Century Gothic", sans-serif;
 	font-size: 1.25em;
-	font-weight: 600;
+	font-weight: 900;
 	color: #081517;
 	background-color: rgba(255,255,255,.4);
-	padding: 2% 3%;
+	padding: 1% 2%;
 	border: 1px;
 	border-style: solid;
 	border-color: #081517;
@@ -114,25 +139,30 @@ ul {
 		margin-left: -200px; 
 	}
 	#lp-title{
-		font-size: 3em;
-		font-weight: 300;
+		font-family: "heading-font", "Century Gothic", sans-serif;
+		font-size: 3.5em;
+		font-weight: 100;
+		line-height: 1.2em;
 		background-color: rgba(8,21,23,.8);
-		padding: 5% 3%;
+		padding: 4% 3%;
 		margin-bottom: 3%;
 	}
 	#lp-subhead {
+		font-family: "heading-font", "Century Gothic", sans-serif;
 		font-size: 1.5em;
-		font-style: italic;
+		font-weight: 500;
+		line-height: 1.4em;
 		background-color: rgba(8,21,23,.8);
-		padding: 5% 3%;
+		padding: 4% 3%;
 		margin-bottom: 5%;
 	}
 	#get-in-touch-button {
+		font-family: "heading-font", "Century Gothic", sans-serif;
 		font-size: 1.25em;
-		font-weight: 600;
+		font-weight: 900;
 		color: #081517;
 		background-color: rgba(255,255,255,.4);
-		padding: 2% 3%;
+		padding: 1% 2%;
 		border: 1px;
 		border-style: solid;
 		border-color: #081517;
@@ -153,25 +183,30 @@ ul {
 		margin-left: -125px; 
 	}
 	#lp-title{
-		font-size: 2.5em;
-		font-weight: 300;
+		font-family: "heading-font", "Century Gothic", sans-serif;
+		font-size: 3em;
+		font-weight: 100;
+		line-height: 1.2em;
 		background-color: rgba(8,21,23,.8);
-		padding: 5% 3%;
+		padding: 4% 3%;
 		margin-bottom: 3%;
 	}
 	#lp-subhead {
+		font-family: "heading-font", "Century Gothic", sans-serif;
 		font-size: 1.25em;
-		font-style: italic;
+		font-weight: 500;
+		line-height: 1.4em;
 		background-color: rgba(8,21,23,.8);
-		padding: 5% 3%;
+		padding: 4% 3%;
 		margin-bottom: 5%;
 	}
 	#get-in-touch-button {
+		font-family: "heading-font", "Century Gothic", sans-serif;
 		font-size: 1em;
-		font-weight: 600;
+		font-weight: 900;
 		color: #081517;
 		background-color: rgba(255,255,255,.4);
-		padding: 2% 3%;
+		padding: 1% 2%;
 		border: 1px;
 		border-style: solid;
 		border-color: #081517;
@@ -186,7 +221,15 @@ ul {
 #about-us { 
 	background: #ffffff;
 	color: rgb(8,21,23);
-	padding: 2% 20%;
+	padding: 2% 30%;
+}
+
+@media only screen and (max-width: 600px) {
+	#about-us { 
+	background: #ffffff;
+	color: rgb(8,21,23);
+	padding: 2% 15%;
+	}
 }
 
 /*landing page what we do section*/
@@ -194,7 +237,15 @@ ul {
 #what-we-do { 
 	background: #081517;
 	color: #ffffff;
-	padding: 2% 20%;
+	padding: 2% 30%;
+}
+
+@media only screen and (max-width: 600px) {
+	#what-we-do { 
+	background: #081517;
+	color: #ffffff;
+	padding: 2% 15%;
+	}
 }
 
 /*landing page who we serve section*/
@@ -204,7 +255,17 @@ ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	padding: 2% 20%;
+	padding: 2% 30%;
+}
+
+@media only screen and (max-width: 600px) {
+	#who-we-serve { 
+	background-image: url(../images/northern-lights-test.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 2% 15%;
+	}
 }
 
 #who-we-serve-heading {
@@ -230,8 +291,16 @@ ul {
 #our-work { 
 	background: #ffffff;
 	color: rgb(8,21,23);
-	padding: 2% 20%;
+	padding: 2% 30%;
 }
+
+@media only screen and (max-width: 600px) {
+	#our-work { 
+	background: #ffffff;
+	color: rgb(8,21,23);
+	padding: 2% 15%;
+	}
+}	
 
 /*landing page get in touch section*/
 
@@ -244,7 +313,7 @@ ul {
 /*footer section*/
 
 .smallprint {
-	font-size: .7em;
+	font-size: .85em;
 	background-color: #ffffff;
 	color: #081517;
 	padding-top: 1%;
