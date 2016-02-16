@@ -16,7 +16,7 @@
 body {
 	text-align: center;
 	background: #ffffff;
-	color: rgb(255,255,255);
+	color: #081517;
 	font-family: "body-font", "Palatino", serif;
 	font-style: normal;
 	font-size: 100%;
@@ -35,6 +35,7 @@ h2 {
 	font-size: 3em;
 	line-height: 1.2em;
 	color: #0097AA;
+	padding: 2%, 0%;
 }
 
 h3 {
@@ -53,7 +54,12 @@ p {
 
 a {
 	font-size: 1.2em;
-	color: rgb(255,42,40);
+	color: #081517;
+}
+
+hr {
+	color: #081517;
+	line-height: 1em;	
 }
 
 ul {
@@ -67,11 +73,48 @@ ul {
 /*header section*/
 
 #header { 
-	background: #081517;
-	color: #ffffff;
+	background: #fff;
 	padding-top: 1%;
 	padding-bottom: 1%;
+	width: 100%;
 }
+
+.clearfix {
+	clear: both;
+}
+
+#header img {
+	display: block;
+	max-width: 150px;
+	width: 30%;
+	max-height: auto;
+	float: left;
+	padding: 2px 8px 8px 15px;
+}
+
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 70%;
+    padding-top: 5px;
+}
+
+#header li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+#header li a {
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 25px;
+    text-decoration: none;
+}
+
 
 /*landing page hero section*/
 
@@ -92,24 +135,26 @@ ul {
 	top: 20%; 
 	left: 50%; 
 	width: 100%;
-	max-width: 600px; 
-	margin-left: -300px; 
+	max-width: 800px; 
+	margin-left: -400px; 
 }
 #lp-title{
 	font-family: "heading-font", "Century Gothic", sans-serif;
 	font-size: 4em;
 	font-weight: 100;
 	line-height: 1.2em;
-	background-color: rgba(8,21,23,.8);
+	background-color: rgba(255,255,255,.5);
+	color: #081517;
 	padding: 4% 3%;
 	margin-bottom: 3%;
 }
 #lp-subhead {
 	font-family: "heading-font", "Century Gothic", sans-serif;
 	font-size: 1.75em;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1.4em;
-	background-color: rgba(8,21,23,.8);
+	background-color: rgba(255,255,255,.5);
+	color: #081517;
 	padding: 4% 3%;
 	margin-bottom: 5%;
 }
@@ -117,18 +162,18 @@ ul {
 	font-family: "heading-font", "Century Gothic", sans-serif;
 	font-size: 1.25em;
 	font-weight: 900;
-	color: #081517;
-	background-color: rgba(255,255,255,.4);
+	color: #ff2a28;
+	background-color: rgba(8,21,23,.6);
 	padding: 1% 2%;
 	border: 1px;
 	border-style: solid;
-	border-color: #081517;
+	border-color: #fff;
 	text-align: center;	
     text-decoration: none;
     display: inline-block;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
 	.contents { 
 		position: absolute; 
 		position: center;
@@ -144,6 +189,7 @@ ul {
 		font-weight: 100;
 		line-height: 1.2em;
 		background-color: rgba(8,21,23,.8);
+		color: #fff;
 		padding: 4% 3%;
 		margin-bottom: 3%;
 	}
@@ -153,6 +199,7 @@ ul {
 		font-weight: 500;
 		line-height: 1.4em;
 		background-color: rgba(8,21,23,.8);
+		color: #fff;
 		padding: 4% 3%;
 		margin-bottom: 5%;
 	}
@@ -188,6 +235,7 @@ ul {
 		font-weight: 100;
 		line-height: 1.2em;
 		background-color: rgba(8,21,23,.8);
+		color: #fff;
 		padding: 4% 3%;
 		margin-bottom: 3%;
 	}
@@ -197,6 +245,7 @@ ul {
 		font-weight: 500;
 		line-height: 1.4em;
 		background-color: rgba(8,21,23,.8);
+		color: #fff;
 		padding: 4% 3%;
 		margin-bottom: 5%;
 	}
@@ -215,90 +264,82 @@ ul {
     	display: inline-block;
     }
    }
+   */
 
 /*landing page about us section*/
 
 #about-us { 
-	background: #ffffff;
-	color: rgb(8,21,23);
-	padding: 2% 30%;
+	background: #fff;
+	padding: 2% 20% 5% 20%;
 }
 
 @media only screen and (max-width: 600px) {
 	#about-us { 
 	background: #ffffff;
 	color: rgb(8,21,23);
-	padding: 2% 15%;
+	padding: 2% 10%;
 	}
 }
 
 /*landing page what we do section*/
 
 #what-we-do { 
-	background: #081517;
-	color: #ffffff;
-	padding: 2% 30%;
+	background-color: #0097aa;
+	padding: 2% 20%;
+}
+
+#what-we-do-heading {
+	color: #fff;
+}
+
+.service-item {
+	width: 46%;
+	float: left;
+	margin: 2%;
+	height: 400px;
+}
+
+.service-heading {
+	color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
 	#what-we-do { 
-	background: #081517;
-	color: #ffffff;
-	padding: 2% 15%;
+	padding: 2% 10%;
 	}
 }
 
 /*landing page who we serve section*/
 
 #who-we-serve { 
-	background-image: url(../images/northern-lights-test.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	padding: 2% 30%;
+	background-color: #081517;
+	color: #fff;
+	padding: 2% 20%;
 }
 
 @media only screen and (max-width: 600px) {
 	#who-we-serve { 
-	background-image: url(../images/northern-lights-test.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	padding: 2% 15%;
+	padding: 2% 10%;
 	}
-}
-
-#who-we-serve-heading {
-	color: #081517;
-	background: rgba(255,255,255,.8);
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
-#who-we-serve-content {
-	color: #081517;
-	background: rgba(255,255,255,.8);
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 5%;
-	padding-right: 5%;
 }
 
 /*landing page our work section*/
 
 #our-work { 
-	background: #ffffff;
-	color: rgb(8,21,23);
-	padding: 2% 30%;
+	padding: 2% 20%;
+	min-height: 600px;
+}
+
+.work-example {
+	width: 30.33333%;
+	float: left;
+	margin: 1.5%;
+	padding: 5%, 0%;
 }
 
 @media only screen and (max-width: 600px) {
 	#our-work { 
-	background: #ffffff;
-	color: rgb(8,21,23);
-	padding: 2% 15%;
+	padding: 2% 10%;
 	}
 }	
 
