@@ -62,7 +62,7 @@
 
 		<p><b>At Unbound Marketing, we believe the key to effective marketing is a strategic mindset combined with creative approach and beautiful execution. It's business, science and art - all rolled into one.</b></p>
 
-		<p>So if you're looking for a parter to help plan, execute and manage informed marekting initiatives that deliver real results for your business, you're in the right place.</p>
+		<p>So if you're looking for a parter to help plan, execute and manage informed marketing initiatives that deliver real results for your business, you're in the right place.</p>
 
 		<div class="service-item">
 			<img src="images/strategy.png" alt="image of a lightbulb" title="Strategy Icon" class="hvr-wobble-bottom">
@@ -154,16 +154,16 @@
 
  		<p>Tel: +61 416 989 571<br>Email: deborah@unboundmarketing.com.au</p>
 
- 		<form action="MAILTO:deborah@unboundmarketing.com.au" method="post" enctype="text/plain"> 
-  			<div class="get-in-touch-form">
-  				<input id="first-name" type="text" placeholder="First name"><br>
-  				<input id="last-name" type="text" placeholder="Last name"><br>  
-  				<input id="phone" type="text" placeholder="Phone number"><br>
-  				<input id="email" type="text" placeholder="Email address"><br>
+  		<form name="contactform" method="post" action="php/send_form_email.php"> 
+ 	 		<div class="get-in-touch-form">
+  				<input name="first_name" type="text" placeholder="First name"><br>
+  				<input name="last_name" type="text" placeholder="Last name"><br> 
+  				<input name="email" type="text" placeholder="Email address"><br> 
+  				<input name="telephone" type="text" placeholder="Phone number"><br>
   			</div>
   			<div class="get-in-touch-form">
-  				<textarea id="how-can-we-help" rows="6" placeholder="How can we help?"></textarea><br>
-  				<input type="submit" value="Submit">
+  				<textarea name="comments" rows="6" placeholder="How can we help?"></textarea><br>
+  				<input type="submit" value="Submit"> <a href="php/send_form_email.php"></a>
   			</div>
 		</form>
 

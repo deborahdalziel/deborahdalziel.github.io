@@ -11,18 +11,13 @@
 /*custom fonts*/
 
 @font-face {
-    font-family: body-font;
+    font-family: oxygen-body;
     src: url(../fonts/oxygen-body-font.otf);
 }
 
 @font-face {
-    font-family: title-font;
-    src: url(../fonts/aleo-bold.otf);
-}
-
-@font-face {
-    font-family: heading-font;
-    src: url(../fonts/aleo-regular.otf);
+    font-family: aleo-light-heading;
+    src: url(../fonts/aleo-light.otf);
 }
 
 /*standard styling*/
@@ -31,22 +26,22 @@ body {
 	text-align: center;
 	background: #ffffff;
 	color: #081517;
-	font-family: "body-font", "Century Gothic", sans-serif;
+	font-family: 'oxygen-body', 'Century Gothic', sans-serif;
 	font-style: normal;
 	font-size: 100%;
 	margin: auto;
 }
  
 h1 {
-	font-family: "title-font", "Palatino", serif;
+	font-family: 'aleo-light-heading', 'Palatino', serif;
 	font-size: 3.5em;
-	font-weight: 600;
+	font-weight: 900;
 	padding: 1em 0;
 }
 
 h2 {
-	font-family: "heading-font", "Palatino", serif;
-	font-weight: 100;
+	font-family: 'aleo-light-heading', 'Palatino', serif;
+	font-weight: 600;
 	font-size: 3em;
 	line-height: 1.2em;
 	padding: 0.6em 0;
@@ -55,9 +50,9 @@ h2 {
 }
 
 h3 {
-	font-family: "heading-font", "Palatino", serif;
+	font-family: 'aleo-light-heading', 'Palatino', serif;
 	font-size: 1.8em;
-	font-weight: 100;
+	font-weight: 300;
 	line-height: 2em;
 	padding: 0.4em 0;
 	color: #FF2A28;
@@ -86,6 +81,8 @@ b {
 
 i {
 	font-style: italic;
+	font-weight: 100;
+	line-height: 1.4em;
 	padding: 0.4em 0;
 }
 
@@ -157,7 +154,6 @@ nav li a {
 
 nav li a:hover {
 	color: #FF2A28;
-	font-weight: 700;
 }
 
 /*landing page (header) hero section*/
@@ -183,9 +179,9 @@ nav li a:hover {
 	margin-left: -400px; 
 }
 #lp-title{
-	font-family: "body-font", "Century-gothic", sans-serif;
+	font-family: 'oxygen-body', 'Century Gothic', sans-serif;
 	font-size: 3.5em;
-	font-weight: 600;
+	font-weight: 300;
 	line-height: 1.2em;
 	background-color: rgba(255,255,255,.5);
 	color: #081517;
@@ -194,8 +190,8 @@ nav li a:hover {
 	border-radius: 5px;
 }
 #lp-subhead {
-	font-family: "body-font", "Century-gothic", sans-serif;
-	font-size: 1.75em;
+	font-family: 'oxygen-body', 'Century Gothic', sans-serif;
+	font-size: 1.8em;
 	font-weight: 300;
 	line-height: 1.4em;
 	background-color: rgba(255,255,255,.5);
@@ -205,7 +201,7 @@ nav li a:hover {
 	border-radius: 5px;
 }
 #get-in-touch-button {
-	font-family: "body-font", "Century Gothic", sans-serif;
+	font-family: "oxygen-body", "Century Gothic", sans-serif;
 	font-size: 1.5em;
 	font-weight: 500;
 	color: #fff;
@@ -225,7 +221,6 @@ nav li a:hover {
 	-moz-box-shadow: 0 0 10px #fff;
 	-webkit-box-shadow: 0 0 10px #fff;
 	box-shadow: 0px 0px 10px #fff;
-	font-weight: 800;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -531,6 +526,11 @@ input:hover {
 input:focus {
 	outline: #fff solid 1px;
 	background-color: rgba(255,255,255,.1);
+	color: #fff;
+}
+
+input:enabled {
+	color: #fff;
 }
 
 textarea {
@@ -554,6 +554,11 @@ textarea:hover {
 textarea:focus {
 	outline: #fff solid 1px;
 	background-color: rgba(255,255,255,.1);
+	color: #fff;
+}
+
+textarea:enabled {
+	color: #fff;
 }
 
 input[type=submit] {
