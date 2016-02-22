@@ -26,21 +26,21 @@ body {
 	text-align: center;
 	background: #ffffff;
 	color: #081517;
-	font-family: 'oxygen-body', 'Century Gothic', sans-serif;
+	font-family: oxygen-body, "Century Gothic", sans-serif;
 	font-style: normal;
 	font-size: 100%;
 	margin: auto;
 }
  
 h1 {
-	font-family: 'aleo-light-heading', 'Palatino', serif;
+	font-family: aleo-light-heading, "Palatino Linotype", "Book Antiqua" serif; 
 	font-size: 3.5em;
 	font-weight: 900;
 	padding: 1em 0;
 }
 
 h2 {
-	font-family: 'aleo-light-heading', 'Palatino', serif;
+	font-family: aleo-light-heading, "Palatino Linotype", "Book Antiqua" serif; 
 	font-weight: 600;
 	font-size: 3em;
 	line-height: 1.2em;
@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'aleo-light-heading', 'Palatino', serif;
+	font-family: aleo-light-heading, "Palatino Linotype", "Book Antiqua" serif; 
 	font-size: 1.8em;
 	font-weight: 300;
 	line-height: 2em;
@@ -179,7 +179,7 @@ nav li a:hover {
 	margin-left: -400px; 
 }
 #lp-title{
-	font-family: 'oxygen-body', 'Century Gothic', sans-serif;
+	font-family: oxygen-body, "Century Gothic", sans-serif;
 	font-size: 3.5em;
 	font-weight: 300;
 	line-height: 1.2em;
@@ -190,7 +190,7 @@ nav li a:hover {
 	border-radius: 5px;
 }
 #lp-subhead {
-	font-family: 'oxygen-body', 'Century Gothic', sans-serif;
+	font-family: oxygen-body, "Century Gothic", sans-serif;
 	font-size: 1.8em;
 	font-weight: 300;
 	line-height: 1.4em;
@@ -201,7 +201,7 @@ nav li a:hover {
 	border-radius: 5px;
 }
 #get-in-touch-button {
-	font-family: "oxygen-body", "Century Gothic", sans-serif;
+	font-family: oxygen-body, "Century Gothic", sans-serif;
 	font-size: 1.5em;
 	font-weight: 500;
 	color: #fff;
@@ -462,6 +462,13 @@ nav li a:hover {
 .who-we-serve-item img {
 	max-width: 50px;
 	padding-bottom: 5%;
+}
+
+.who-we-serve-item:hover {
+	outline: #fff solid 1px;
+	-moz-box-shadow: 0 0 10px #fff;
+	-webkit-box-shadow: 0 0 10px #fff;
+	box-shadow: 0px 0px 10px #fff;
 }
 
 /*@media only screen and (max-width: 600px) {
