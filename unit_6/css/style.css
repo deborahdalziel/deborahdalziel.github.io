@@ -113,7 +113,7 @@ h2 {
 	font-size: 3.5em;
 	line-height: 1.2em;
 	padding: 0.6em 0;
-	color: #081517;
+	color: #0097AA;
 	padding: 0.6em, 0;
 }
 
@@ -215,7 +215,7 @@ nav li a {
 }
 
 nav li a:hover {
-	color: #0097AA;
+	color: #FFFA01;
 	font-weight: 700;
 }
 
@@ -335,12 +335,10 @@ main.loaded .loader {
 	font-family: maven_proregular, "Century Gothic", sans-serif;
 	font-size: 1.5em;
 	font-weight: 500;
-	color: #fff;
+	color: #FFFA01;
 	background-color: rgba(8,21,23,.9);
 	padding: 2% 3%;
-	border: 1px;
-	border-style: solid;
-	border-color: #fff;
+	border: #fff solid 1px;
 	text-align: center;	
     text-decoration: none;
     display: inline-block;
@@ -348,10 +346,11 @@ main.loaded .loader {
 }
 
 #get-in-touch-button:hover {
-	background-color: rgba(0,151,170,.5);
-	-moz-box-shadow: 0 0 10px #fff;
-	-webkit-box-shadow: 0 0 10px #fff;
-	box-shadow: 0px 0px 10px #fff;
+	background-color: rgba(255,250,1,.8);
+	color: #081517;
+	-moz-box-shadow: 0 0 10px #FFFA01;
+	-webkit-box-shadow: 0 0 10px #FFFA01;
+	box-shadow: 0px 0px 10px #FFFA01;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -581,23 +580,22 @@ main.loaded .loader {
 }
 
 .who-we-serve-item {
-	background: #081517;
 	float: left;
 	width: 29%;
 	margin: 2%;
 	padding: 3% 1%;
-	border: #fff solid 1px;
+	border: #FFFA01 solid 1px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 }
 
 .who-we-serve-heading {
-	color: #0097AA;
+	color: #fff;
 }
 
 .who-we-serve-sub {
-	color: #fff;
+	color: #FFFA01;
 }
 
 .who-we-serve-item img {
@@ -606,9 +604,9 @@ main.loaded .loader {
 }
 
 .who-we-serve-item:hover {
-	-moz-box-shadow: 0 0 10px #fff;
-	-webkit-box-shadow: 0 0 10px #fff;
-	box-shadow: 0px 0px 10px #fff;
+	-moz-box-shadow: 0 0 10px #FFFA01;
+	-webkit-box-shadow: 0 0 10px #FFFA01;
+	box-shadow: 0px 0px 10px #FFFA01;
 }
 
 /*@media only screen and (max-width: 600px) {
@@ -645,8 +643,8 @@ main.loaded .loader {
 }
 
 .get-in-touch-heading {
-	color: #0097AA;
-	border-bottom: #0097AA solid 1px;
+	color: #fff;
+	border-bottom: #FFFA01 solid 1px;
 	padding-bottom: 3%;
 }
 
@@ -717,20 +715,20 @@ textarea:enabled {
 input[type=submit] {
 	width: 90%;
 	padding: 5%;
-	background-color: rgba(0,151,170,.2);
-	color: #0097AA;
+	color: #FFFA01;
 	font-size: 1em;
 	font-weight: 400;
-	border: #0097AA solid 1px;
+	background-color: #081517;
+	border: #FFFA01 solid 1px;
 }
 
 input[type=submit]:hover {
-	outline: #fff solid 1px;
-	background-color: #0097AA;
-	color: #fff;
-	-moz-box-shadow: 0 0 10px #fff;
-	-webkit-box-shadow: 0 0 10px #fff;
-	box-shadow: 0px 0px 10px #fff;
+	outline: #FFFA01 solid 1px;
+	background-color: rgba(255,250,1,.8);
+	color: #081517;
+	-moz-box-shadow: 0 0 10px #FFFA01;
+	-webkit-box-shadow: 0 0 10px #FFFA01;
+	box-shadow: 0px 0px 10px #FFFA01;
 }
 
 .sm-icons ul {
