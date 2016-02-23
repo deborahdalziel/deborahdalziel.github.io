@@ -346,8 +346,8 @@ main.loaded .loader {
 }
 
 #get-in-touch-button:hover {
-	background-color: rgba(255,250,1,.8);
-	color: #081517;
+	background-color: rgba(255,250,1,.2);
+	border: #FFFA01 solid 1px;
 	-moz-box-shadow: 0 0 10px #FFFA01;
 	-webkit-box-shadow: 0 0 10px #FFFA01;
 	box-shadow: 0px 0px 10px #FFFA01;
@@ -723,9 +723,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	outline: #FFFA01 solid 1px;
-	background-color: rgba(255,250,1,.8);
-	color: #081517;
+	outline: none;
+	background-color: rgba(255,250,1,.2);
 	-moz-box-shadow: 0 0 10px #FFFA01;
 	-webkit-box-shadow: 0 0 10px #FFFA01;
 	box-shadow: 0px 0px 10px #FFFA01;
