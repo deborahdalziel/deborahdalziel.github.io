@@ -7,11 +7,21 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+ 	<div class="loader">Loading...</div>
+
+	<script>
+	$(window).load(function(){
+		$("main").addClass("loaded");
+	});
+	</script>
+
 </head>
 
 <body>
 
-<wrapper>
+<main>
 
 	<header>
 
@@ -35,7 +45,7 @@
 
 		<section id="hero">
 
-			<video autoplay loop muted poster="northern-lights.jpg" id="video-bg">
+			<video autoplay loop muted poster="images/northern-lights.jpg" id="video-bg">
 				<source src="videos/northern-lights-hero-iphone.mp4" type="video/mp4">
 				<source src="videos/northern-lights-hero-iphone.webm" type="video/webm">
 				<source src="videos/northern-lights-hero-iphone.ogg" type="video/ogg">
@@ -73,13 +83,13 @@
 		<div class="service-item">
 			<img src="images/consulting.png" alt="image of a handshake" title="Consulting Icon" class="hvr-wobble-bottom">
 			<h3><div class="service-heading">Consultancy</div></h3>
-			<p>Employing an internal marketer is not on the cards for every business, and for those that do, their marketing team may need a little extra help from time to time. That's where Unbound Marketing steps in - providing additional marketing expertise when you need it. </p>
+			<p>Employing an internal marketer is not on the cards for every business, and for those that do, their marketing team may need a little extra help from time to time. That's where Unbound Marketing steps in - providing additional marketing expertise and support when it's needed. </p>
 		</div>
 
 		<div class="service-item">
 			<img src="images/digital.png" alt="image of a computer monitor with graph" title="Digital Icon" class="hvr-wobble-bottom">
 			<h3><div class="service-heading">Digital</div></h3>
-			<p>No matter how great your product or service, your digital presence will mean the difference between thrive, survive and total fail. Unbound Marketing provides digital strategy, implementation and optimisation services to help your business thrive.</p>
+			<p>No matter how great your product or service, your digital presence can mean the difference between thrive, survive and fail. Unbound Marketing will create a digital strategy to help your business thrive, and can help implement and optimise it, too.</p>
 		</div>
 
 		<div class="service-item">
@@ -95,21 +105,21 @@
 
  	<section id="who-we-serve">
  		
- 		<h2>Who we serve</h2>
+ 		<h2><div class="who-we-serve-heading">Who we serve</div></h2>
 
  		<div class="who-we-serve-item">
 			<img src="images/name-tag.png" alt="simple white image of a name tag" title="Who we serve" class="hvr-wobble-bottom">
-			<h3><div class="who-we-serve-heading">B2B</div></h3>
+			<h3><div class="who-we-serve-sub">B2B</div></h3>
 		</div>
 
 		<div class="who-we-serve-item">
 			<img src="images/name-tag.png" alt="simple white image of a name tag" title="Who we serve" class="hvr-wobble-bottom">
-			<h3><div class="who-we-serve-heading">Technology</div></h3>
+			<h3><div class="who-we-serve-sub">Technology</div></h3>
 		</div>
 
 		<div class="who-we-serve-item">
 			<img src="images/name-tag.png" alt="simple white image of a name tag" title="Who we serve" class="hvr-wobble-bottom">
-			<h3><div class="who-we-serve-heading">SMB</div></h3>
+			<h3><div class="who-we-serve-sub">SMB</div></h3>
 		</div>
 
  	<div class="clearfix"></div>
@@ -148,9 +158,7 @@
 
  	<section id="get-in-touch">
 
- 		<h2>Get in touch</h2>
-
- 		<hr>
+ 		<h2><div class="get-in-touch-heading">Get in touch</div></h2>
 
  		<p>Tel: +61 416 989 571<br>Email: deborah@unboundmarketing.com.au</p>
 
@@ -163,7 +171,7 @@
   			</div>
   			<div class="get-in-touch-form">
   				<textarea name="comments" rows="6" placeholder="How can we help?"></textarea><br>
-  				<input type="submit" value="Submit"> <a href="php/send_form_email.php"></a>
+  				<input type="submit" value="Submit"> 
   			</div>
 		</form>
 
@@ -173,13 +181,13 @@
 
  			<ul>
 
- 				<li><a href="https://www.facebook.com/unboundmarketing/" target="_blank"><img src="images/facebook-56.png" alt="facebook icon" title="Like us on facebook."></a></li>
+ 				<li><a href="https://www.facebook.com/unboundmarketing/" target="_blank"><img src="images/social-facebook.png" alt="facebook icon" title="Like us on facebook."></a></li>
 
- 				<li><a href="http://www.linkedin.com/company/unbound-marketing" target="_blank"><img src="images/linkedin-56.png" alt="LinkedIn icon" title="Follow us on LinkedIn."></a></li>
+ 				<li><a href="http://www.linkedin.com/company/unbound-marketing" target="_blank"><img src="images/social-linkedin.png" alt="LinkedIn icon" title="Follow us on LinkedIn."></a></li>
 
- 				<li><a href="" target="_blank"><img src="images/twitter-56.png" alt="twitter icon" title="Follow us on twitter."></a></li>
+ 				<li><a href="" target="_blank"><img src="images/social-twitter.png" alt="twitter icon" title="Follow us on twitter."></a></li>
 
- 				<li><a href="" target="_blank"><img src="images/googleplus-56.png" alt="google plus icon" title="Visit us on google+."></a></li>
+ 				<li><a href="" target="_blank"><img src="images/social-google-plus.png" alt="google plus icon" title="Visit us on google+."></a></li>
 
  			</ul>
 
@@ -198,7 +206,7 @@
 
  	</footer>
 
- </wrapper>
+ </main>
 
 </body>
 </html>
