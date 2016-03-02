@@ -586,6 +586,7 @@ nav li a:active {
 /*landing page our services section*/
 
 #our-services {
+	background-color: #fff;
 	padding: 2% 15% 2% 15%;
 }
 
@@ -616,31 +617,46 @@ nav li a:active {
 #who-we-serve { 
 	background-color: #081517;
 	padding: 2% 15% 2% 15%;
-}
-
-.who-we-serve-item {
-	float: left;
-	width: 23%;
-	margin: 1%;
-	padding: 3% 1%;
-	border: rgba(255,250,1,.5) solid 1px;
+	color: #fff;
 }
 
 .who-we-serve-heading {
 	color: #fff;
 }
 
-.who-we-serve-sub {
-	font-size: 1.25em;
-	color: #fff;
+.who-we-serve-item ul {
+    list-style-type: none;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.who-we-serve-item img {
-	max-width: 50px;
-	padding-bottom: 5%;
+.who-you-serve-item ul {
+	content:"";
+	display: block;
+	clear: both;
 }
 
-.who-we-serve-item:hover {
+.who-we-serve-item li {
+    float: left;
+    width: 150px;
+	height: 150px;
+	margin: 5px;
+	padding: 2px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border-radius: 75px;
+	border: #FFFA01 solid 1px;
+}
+
+.serve-item {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.who-we-serve-item li:hover {
 	-moz-box-shadow: 0 0 10px #FFFA01;
 	-webkit-box-shadow: 0 0 10px #FFFA01;
 	box-shadow: 0px 0px 10px #FFFA01;
@@ -650,6 +666,7 @@ nav li a:active {
 /*landing page our work section*/
 
 #our-work { 
+	background-color: #fff;
 	padding: 2% 15% 5% 15%;
 }
 
@@ -677,7 +694,7 @@ nav li a:active {
 /*landing page get in touch section*/
 
 #get-in-touch { 
-	background: #081517;
+	background-color: #081517;
 	color: #ffffff;
 	padding: 2% 15% 2% 15%;
 }
@@ -716,6 +733,7 @@ input[type=text]:hover {
 }
 
 input[type=text]:focus {
+	outline: none;
 	border: #FFFA01 solid 1px;
 	-moz-box-shadow: 0 0 5px #FFFA01;
 	-webkit-box-shadow: 0 0 5px #FFFA01;
@@ -742,6 +760,7 @@ textarea:hover {
 }
 
 textarea:focus {
+	outline: none;
 	border: #FFFA01 solid 1px;
 	-moz-box-shadow: 0 0 5px #FFFA01;
 	-webkit-box-shadow: 0 0 5px #FFFA01;
@@ -772,7 +791,7 @@ input[type=submit]:hover {
 }
 
 .sm-icons img {
-	max-width: 50px;
+	max-width: 50px;	
 }
 
 .sm-icons li {
@@ -825,7 +844,7 @@ input[type=submit]:hover {
 
 footer {
 	font-size: .85em;
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #081517;
 	padding: 1% 10%;
 }

@@ -1,0 +1,10 @@
+11:18:11	 From Stephany Cardet : http://owlgraphic.com/owlcarousel/
+11:29:28	 From Stephany Cardet : <div>
+	<img src="">
+	<div>
+		text here
+	</div>
+</div>
+11:30:14	 From Stephany Cardet : .mama:hover .baby { display: block; }
+11:30:57	 From Stephany Cardet : .mama { position: relative; }
+11:31:52	 From Stephany Cardet : .baby { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; display: none; }

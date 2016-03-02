@@ -6,8 +6,11 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
 
  	<div class="loader">Loading...</div>
 
@@ -66,7 +69,7 @@
 
 		<p><b>At Unbound Marketing, we believe the key to effective marketing is a strategic mindset combined with creative approach and beautiful execution. It's business, science and art - all rolled into one.</b></p>
 
-		<p>So if you're looking for a parter to help plan, execute and manage informed marketing initiatives that deliver real results for your business, you're in the right place.</p>
+		<p>So if you're looking for a partner to help plan, execute and manage informed marketing initiatives that deliver real results for your business, you're in the right place.</p>
 
 		<a href="#our-services" class="scroll-down"><img src="images/down-arrow.png"></a>
 
@@ -80,19 +83,19 @@
 		<div class="service-item">
 			<img src="images/strategy.png" alt="image of a lightbulb" title="Strategy Icon" class="hvr-wobble-bottom">
 			<h3><div class="service-heading">Strategy</div></h3>
-			<p>Marketing is much more than your logo on a brochure. An effective straegy can help you stand out from the crowd and get more customers. Unbound Marketing works with you to develop a clear direction for your brand, business, product or service. </p>
+			<p>Marketing is much more than your logo on a brochure. An effective marketing strategy will help you stand out from the crowd and get more customers. Unbound Marketing works with you to develop a clear direction for your brand, business, product or service. </p>
 		</div>
 
 		<div class="service-item">
 			<img src="images/consulting.png" alt="image of a handshake" title="Consulting Icon" class="hvr-wobble-bottom">
 			<h3><div class="service-heading">Consultancy</div></h3>
-			<p>Employing an internal marketer is not on the cards for every business, and for those that do, their marketing team may need a little extra help from time to time. That's where Unbound Marketing steps in - providing additional marketing expertise and support when it's needed. </p>
+			<p>Employing an internal marketer is not on the cards for every business, and for those that do, their marketing team may need a little extra help from time to time. That's where Unbound Marketing steps in - providing you with the marketing expertise and advice you need. </p>
 		</div>
 
 		<div class="service-item">
 			<img src="images/digital.png" alt="image of a computer monitor with graph" title="Digital Icon" class="hvr-wobble-bottom">
 			<h3><div class="service-heading">Digital</div></h3>
-			<p>No matter how great your product or service, your digital presence can mean the difference between thrive, survive and fail. Unbound Marketing will create a digital strategy to help your business thrive, and can help implement and optimise it, too.</p>
+			<p>No matter how great your product or service, your digital presence can make the difference between survival and failure. Unbound Marketing will create a digital strategy to help your business thrive, and can help implement and optimise it, too.</p>
 		</div>
 
 		<div class="service-item">
@@ -110,27 +113,25 @@
 
  	<section id="who-we-serve">
  		
- 		<h2><div class="who-we-serve-heading">Who we serve</div></h2>
+ 		<h2 class="who-we-serve-heading">Who we serve</h2>
+
+ 		<p>Unbound Marketing works hand-in-hand with small and medium businesses as their outsourced marketing provider, or a supportive partner for their internal marketers. We specialise in marketing for business-to-business, technology, professional services and not-for-profit organisations.</p>
 
  		<div class="who-we-serve-item">
-			<img src="images/name-tag.png" alt="simple white image of a name tag" title="Who we serve" class="hvr-wobble-bottom">
-			<p><div class="who-we-serve-sub">B2B</div></p>
+
+ 			<ul>
+
+	 			<li><p class="serve-item">Business-to-business (B2B)</p></li>
+	 			<li><p class="serve-item">Technology businesses</p></li>
+	 			<li><p class="serve-item">Professional services</p></li>
+	 			<li><p class="serve-item">Small &amp medium businesses (SMB)</p></li>
+	 			<li><p class="serve-item">Not-for-profits (NFP)</p></li>
+
+			</ul>
+
 		</div>
 
-		<div class="who-we-serve-item">
-			<img src="images/name-tag.png" alt="simple white image of a name tag" title="Who we serve" class="hvr-wobble-bottom">
-			<p><div class="who-we-serve-sub">Technology</div></p>
-		</div>
-
-		<div class="who-we-serve-item">
-			<img src="images/name-tag.png" alt="simple white image of a name tag" title="Who we serve" class="hvr-wobble-bottom">
-			<p><div class="who-we-serve-sub">Professional Services</div></p>
-		</div>
-
-		<div class="who-we-serve-item">
-			<img src="images/name-tag.png" alt="simple white image of a name tag" title="Who we serve" class="hvr-wobble-bottom">
-			<p><div class="who-we-serve-sub">SMB</div></p>
-		</div>
+	 <div class="clearfix"></div>
 
 	<a href="#our-work" class="scroll-down-yellow"><img src="images/down-arrow-yellow.png"></a>
 
@@ -144,7 +145,18 @@
 
  		<h2>Our work</h2>
 
-  		<div class="work-example">
+ 		<div id="owl-example" class="owl-carousel">
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+		  <div> Your Content </div>
+
+		</div>
+
+ 				<div class="work-example">
   			<img src="images/ricoh-logo.png" alt="Ricoh company logo" title="Ricoh logo"></div>
   		</div>
 
@@ -220,6 +232,10 @@
 	$(window).load(function(){
 		$("body").addClass("loaded");
 	});
+
+	$(document).ready(function() {
+   	$("#owl-example").owlCarousel();
+ 	});
 	</script>
 
 </body>
