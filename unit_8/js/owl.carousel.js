@@ -1451,7 +1451,7 @@ if (typeof Object.create !== "function") {
 
     $.fn.owlCarousel.options = {
 
-        items : 5,
+        items : 3,
         itemsCustom : false,
         itemsDesktop : [1199, 4],
         itemsDesktopSmall : [979, 3],
@@ -1465,8 +1465,8 @@ if (typeof Object.create !== "function") {
         paginationSpeed : 800,
         rewindSpeed : 1000,
 
-        autoPlay : false,
-        stopOnHover : false,
+        autoPlay : 3000,
+        stopOnHover : true,
 
         navigation : false,
         navigationText : ["prev", "next"],
