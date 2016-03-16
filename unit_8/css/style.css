@@ -1531,13 +1531,13 @@ footer li {
 	/*Standard page styling - max width 470px*/
 
 	.white-background { 
-		padding: 2% 10% 0 10%;
+		padding: 2% 10% 5% 10%;
 	}
 	.dark-background {
-		padding: 2% 10% 2% 10%;
+		padding: 2% 10% 5% 10%;
 	}
 	.white-background-caption {
-		padding: 7% 10% 3% 10%;
+		padding: 7% 10% 5% 10%;
 	}
 }
 
