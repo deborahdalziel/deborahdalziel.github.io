@@ -589,9 +589,15 @@ nav li a:hover, nav li a:active {
 	transform: translateY(-50%);
 }
 
+.who-we-serve-item a {
+	color: #fff;
+}
+
 .who-we-serve-item li:hover {
 	background-color: #FFC900;
 	color: #081517;
+	outline: none;
+	border: none;
 	-moz-box-shadow: 0 0 10px #FFC900;
 	-webkit-box-shadow: 0 0 10px #FFC900
 	box-shadow: 0px 0px 10px #FFC900;
@@ -1149,13 +1155,10 @@ footer li {
 		line-height: 1.4em;
 		padding: 0.4em 0;
 	}
-	.close-menu:hover, .close-menu:active {
-		text-decoration: underline;
-	}
-	.close-menu:focus .drop-down-menu {
+	.close-menu:focus nav li {
 		display: none;
 	}
-	.close-menu:active .drop-down-menu {
+	.close-menu:active nav li {
 		display: none;
 	}
 
@@ -1523,6 +1526,18 @@ footer li {
 	#our-work-content { 
 		max-width: 320px;
 		margin: 2% 15%;
+	}
+
+	/*Standard page styling - max width 470px*/
+
+	.white-background { 
+		padding: 2% 10% 0 10%;
+	}
+	.dark-background {
+		padding: 2% 10% 2% 10%;
+	}
+	.white-background-caption {
+		padding: 7% 10% 3% 10%;
 	}
 }
 
