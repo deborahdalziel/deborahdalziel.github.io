@@ -444,6 +444,9 @@ nav li a:hover, nav li a:active {
 	text-decoration: underline;
 	color: #FFC900;
 }
+.close-menu {
+	display: none;
+}
 
 
 /*hero section (landing page)*/
@@ -457,7 +460,7 @@ nav li a:hover, nav li a:active {
     min-width: 100%;
     min-height: auto;
     background: no-repeat;
-    background-position: center;
+   	background-position: center;
     margin: 0;
 }
 
@@ -1127,9 +1130,6 @@ footer li {
 	.drop-down-menu:focus nav li  {
 		display: block;
 	}
-	.drop-down-menu:enabled nav li  {
-		display: block;
-	}
 	nav li a:link, nav li a:visited {
 	    color: #fff;
 	    font-size: 1.2em;
@@ -1141,6 +1141,22 @@ footer li {
 	nav li a:hover, nav li a:active {
 		text-decoration: underline;
 		color: #fff;
+	}
+	.close-menu {
+		color: #fff;
+		font-size: 1.2em;
+		font-weight: 400;
+		line-height: 1.4em;
+		padding: 0.4em 0;
+	}
+	.close-menu:hover, .close-menu:active {
+		text-decoration: underline;
+	}
+	.close-menu:focus .drop-down-menu {
+		display: none;
+	}
+	.close-menu:active .drop-down-menu {
+		display: none;
 	}
 
 	/*landing page our services section for horizontal tablets (max width 1050px)*/
