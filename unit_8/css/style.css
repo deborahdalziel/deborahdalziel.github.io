@@ -462,6 +462,8 @@ nav li a:hover, nav li a:active {
     background: no-repeat;
    	background-position: center;
     margin: 0;
+    display: block;
+    width: 100%;
 }
 
 .contents { 
