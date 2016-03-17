@@ -590,6 +590,7 @@ nav li a:hover, nav li a:active {
 
 .who-we-serve-item a {
 	color: #fff;
+	text-decoration: none;
 }
 
 .who-we-serve-item li:hover {
@@ -640,6 +641,8 @@ nav li a:hover, nav li a:active {
 :-ms-input-placeholder {color: #fff;}
 
 input[type=text] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	background-color: #0097AA;
 	width: 100%;
 	padding: 2%;
@@ -656,7 +659,8 @@ input[type=text]:hover, input[type=text]:focus {
 }
 
 textarea {
-	background-color: #0097AA;
+	-webkit-appearance: none;
+	-moz-appearance: none;background-color: #0097AA;
 	width: 100%;
 	padding: 2%;
 	margin-bottom: 1%;
@@ -673,7 +677,8 @@ textarea:hover, textarea:focus {
 }
 
 input[type=submit] {
-	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;width: 100%;
 	padding: 1%;
 	margin: 0;
 	background-color: #FFC900;
