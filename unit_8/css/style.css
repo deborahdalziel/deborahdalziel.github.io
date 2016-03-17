@@ -647,6 +647,7 @@ input[type=text] {
 	margin-bottom: 1%;
 	font-size: 1em;
 	font-weight: 100;
+	border-radius: 0px;
 }
 
 input[type=text]:hover, input[type=text]:focus {
@@ -663,6 +664,7 @@ textarea {
 	resize: none;
 	font-size: 1em;
 	font-weight: 100;
+	border-radius: 0px;
 }
 
 textarea:hover, textarea:focus {
@@ -679,6 +681,7 @@ input[type=submit] {
 	font-size: 1em;
 	font-weight: 400;
 	border: none;
+	border-radius: 0px;
 }
 
 input[type=submit]:hover, input[type=submit]:focus {
