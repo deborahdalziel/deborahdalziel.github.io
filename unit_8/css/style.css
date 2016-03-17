@@ -461,11 +461,6 @@ nav li a:hover, nav li a:active {
     min-height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
-    tbackground: no-repeat;
-   	tbackground-position: center;
-    tmargin: 0;
-    tdisplay: block;
-    twidth: 100%;
 }
 
 .contents { 
