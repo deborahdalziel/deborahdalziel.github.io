@@ -106,12 +106,15 @@ i {
 ul {
 	font-size: 1em;
 	list-style-type: circle;
-	list-style-position: inside;
 	text-align: left;
-	padding-left: 100px;
+	margin-left: 0;
+	padding-left: 1em;
 	line-height: 1.4em;
 }
 
+li {
+	margin-left: 2em;
+}
 a:link, a:visited {
 	font-size: 1em;
 	color: #081517;
@@ -1484,7 +1487,7 @@ footer li {
 	}
 	.our-work-main { 
 	    width: 100%;
-	    margin: 10% auto;
+	    margin: 6% auto;
 	    float: none;
 	}
 
