@@ -720,6 +720,7 @@ footer li {
 	float: left;
 	width: 16.666%;
     text-align: center;
+    margin: 0;
 }
 
 .sm-icons-footer ul {
@@ -782,7 +783,7 @@ footer li {
 	padding: 1% 1%;
 }
 
-/*Blog page styling*/
+/*News & Views page styling (top level)*/
 
 #blog-content { 
 	background-color: #fff;
@@ -852,6 +853,65 @@ footer li {
 	color: rgba(8,21,23,.4);
 	width: 100%;
 }
+
+/*News & Views page styling (story level)*/
+
+.news-views-content {
+	width: 65%;
+	max-width: 1000px;
+	margin: 2% 1% 2% 15%;
+	background-color: #fff;
+	text-align: left;
+	float: left;
+}
+
+.news-views-content img {
+	width: 100%;
+	max-width: 1000px;
+	height: auto;
+}
+
+.blog-heading {
+	font-size: 2.5em;
+	line-height: 1.2em;
+	padding-top: 0.6em;
+	padding-bottom: 0.4em;
+}
+
+.blog-info {
+	color: #FFC900;
+}
+
+.news-views-social {
+	display: block;
+	top: 380px;
+	right: 20%;
+	position: fixed;
+	transform: translateX(110%);
+	text-align: center;
+	padding: 5px;
+	background-color: #0097AA;
+	color: #fff;
+}
+
+.news-views-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: center;
+}
+
+.news-views-social img {
+	max-width: 24px;
+}
+
+.news-views-social li {
+    float: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 
 /*Our Work Page styling*/
 
