@@ -1065,6 +1065,9 @@ footer li {
 	#hero { 
 		margin-top: 50px;
 	}
+	#hero video #hero img {
+		width: 120%;
+	}
 	#lp-title {
 		font-size: 1em;
 		padding: 1% 2%;
