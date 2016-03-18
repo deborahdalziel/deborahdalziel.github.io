@@ -905,11 +905,9 @@ footer li {
 }
 
 .news-views-social li {
-    float: center;
-    margin: 0;
     padding: 5%;
     margin: 5%;
-    text-align: center;
+    position: center;
 }
 
 
