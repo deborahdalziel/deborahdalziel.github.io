@@ -889,14 +889,14 @@ footer li {
 	position: fixed;
 	transform: translateX(110%);
 	text-align: center;
-	padding: 0;
 	background-color: #fff;
 	color: #0097AA;
 	border: #0097AA solid 1px;
+	width: 40px;
 }
 
 .news-view-social p {
-	padding: 5%;
+	margin: 5% auto;
 }
 
 .news-views-social ul {
@@ -905,7 +905,6 @@ footer li {
 }
 
 .news-views-social li {
-    padding: 5%;
     margin: 5% auto;
     position: center;
 }
