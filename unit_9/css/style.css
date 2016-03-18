@@ -890,8 +890,9 @@ footer li {
 	transform: translateX(110%);
 	text-align: center;
 	padding: 5px;
-	background-color: #0097AA;
-	color: #fff;
+	background-color: #fff;
+	color: #0097AA;
+	border: #0097AA solid 1px;
 }
 
 .news-views-social ul {
@@ -899,10 +900,6 @@ footer li {
     margin: 0;
     padding: 0;
     float: center;
-}
-
-.news-views-social img {
-	max-width: 24px;
 }
 
 .news-views-social li {
