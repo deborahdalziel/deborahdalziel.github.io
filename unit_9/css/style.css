@@ -897,9 +897,8 @@ footer li {
 
 .news-views-social ul {
     list-style-type: none;
-    width: 50px;
     margin: 5px auto;
-    padding: 5px;
+    padding: 8px;
     float: center;
 }
 
