@@ -895,17 +895,19 @@ footer li {
 	border: #0097AA solid 1px;
 }
 
+.news-view-social p {
+	padding: 5%;
+}
+
 .news-views-social ul {
     list-style-type: none;
-    margin: 5px auto;
-    padding: 8px;
     float: center;
 }
 
 .news-views-social li {
     float: center;
     margin: 0;
-    padding: 0;
+    padding: 5%;
     text-align: center;
 }
 
