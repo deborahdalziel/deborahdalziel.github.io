@@ -906,7 +906,7 @@ footer li {
 
 .news-views-social li {
     padding: 5%;
-    margin: 5%;
+    margin: 5% auto;
     position: center;
 }
 
