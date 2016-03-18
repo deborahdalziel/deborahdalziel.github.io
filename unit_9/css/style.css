@@ -904,7 +904,7 @@ footer li {
 
 .news-views-social li {
     float: center;
-    margin: 0;
+    margin: 2px auto;
     padding: 0;
     text-align: center;
 }
