@@ -889,7 +889,7 @@ footer li {
 	position: fixed;
 	transform: translateX(110%);
 	text-align: center;
-	background-color: #fff;
+	background: none;
 	color: #0097AA;
 	border: #0097AA solid 1px;
 	width: 80px;
@@ -1584,6 +1584,42 @@ footer li {
 
 	li {
 		margin-left: 1em;
+	}
+
+	/*News & views page styling - story level - for smartphones (max width 600px)*/
+
+	.news-views-content {
+		width: 100%;
+		max-width: none;
+		margin: 2% auto;
+		padding: 10% 5%;
+	}
+
+	.blog-heading {
+		font-size: 2em;
+	}
+
+	.news-views-social {
+		position: relative;
+		width: 100%;
+	}
+
+	.news-view-social p {
+		display: none;
+	}
+
+	.news-views-social ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    float: center;
+	}
+
+	.news-views-social li {
+	    float: left;
+	    width: 25%;
+	    text-align: center;
+	    margin: 2% auto;
 	}
 }
 
