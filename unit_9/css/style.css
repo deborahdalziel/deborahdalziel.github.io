@@ -898,15 +898,13 @@ footer li {
 .news-views-social ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    width: 30px;
     float: center;
 }
 
 .news-views-social li {
     float: center;
     margin: 5px auto;
-    width: 25px;
-    height: 20px;
     text-align: center;
 }
 
