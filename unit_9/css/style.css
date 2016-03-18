@@ -889,7 +889,7 @@ footer li {
 	position: fixed;
 	transform: translateX(110%);
 	text-align: center;
-	padding: 10px;
+	padding: 0;
 	background-color: #fff;
 	color: #0097AA;
 	border: #0097AA solid 1px;
