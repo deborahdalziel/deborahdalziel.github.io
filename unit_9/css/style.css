@@ -892,7 +892,6 @@ footer li {
 	background-color: #fff;
 	color: #0097AA;
 	border: #0097AA solid 1px;
-	width: 40px;
 }
 
 .news-view-social p {
@@ -901,10 +900,14 @@ footer li {
 
 .news-views-social ul {
     list-style-type: none;
+    margin: 5%;
+    padding: 0;
     float: center;
 }
 
 .news-views-social li {
+    float: center;
+    text-align: center;
     margin: 5% auto;
 }
 
