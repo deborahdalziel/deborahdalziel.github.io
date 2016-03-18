@@ -889,7 +889,7 @@ footer li {
 	position: fixed;
 	transform: translateX(110%);
 	text-align: center;
-	padding: 5px;
+	padding: 10px;
 	background-color: #fff;
 	color: #0097AA;
 	border: #0097AA solid 1px;
@@ -904,7 +904,7 @@ footer li {
 
 .news-views-social li {
     float: center;
-    margin: 2px auto;
+    margin: 10px auto;
     padding: 0;
     text-align: center;
 }
