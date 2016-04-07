@@ -533,7 +533,7 @@ nav li a:hover, nav li a:active {
 	}
 	#hero-small img {
 		max-width: none;
-	   	height: 700px
+	   	height: 700px;
 	    margin-left: 50%;
 	    transform: translateX(-50%);
 	}
