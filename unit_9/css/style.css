@@ -203,6 +203,10 @@ a:hover, a:active {
     border-radius: 50px;
 }
 
+.scroll-center-div {
+	text-align: center;
+}
+
 
 /*view all link (find out more, view portfolio...)*/
 
@@ -468,6 +472,21 @@ nav li a:hover, nav li a:active {
     transform: translateX(-50%);
 }
 
+#hero-small {
+	display:none;
+}
+
+@media only screen and (max-width: 800px) {
+
+	#hero-large {
+		display: none;
+	}
+
+	#hero-small {
+		display: block;
+	}
+}
+
 .contents { 
 	position: absolute; 
 	position: center;
@@ -477,6 +496,7 @@ nav li a:hover, nav li a:active {
 	max-width: 700px; 
 	margin-left: -350px; 
 }
+
 #lp-title{
 	font-family: maven_proregular, "Century Gothic", sans-serif;
 	background-color: rgba(255,255,255,.5);
@@ -975,6 +995,27 @@ footer li {
 	color: #fff;
 }
 
+.white-background-left { 
+	padding: 2% 20% 0 20%;
+	background-color: #fff;
+	text-align: left;
+}
+
+.dark-background-left {
+	padding: 2% 20% 2% 20%;
+	background-color: #0097AA;
+	color: #fff;
+	text-align: left;
+}
+
+.dark-heading {
+	text-align: center;
+}
+
+.white-heading {
+	text-align: center;
+}
+
 .white-background-caption {
 	padding: 7% 20% 3% 20%;
 	background-color: #fff;
@@ -1033,6 +1074,7 @@ footer li {
 	width: 25%;
     text-align: center;
     margin-bottom: 25px;
+    margin-left: 0;
 }
 
 #contact-info img {
