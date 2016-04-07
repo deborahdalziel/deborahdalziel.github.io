@@ -489,11 +489,17 @@ nav li a:hover, nav li a:active {
 	}
 
 	#hero-small img {
-		max-width: 100%;
+		max-width: 120%;
 	   	height: auto;
 	    margin-left: 50%;
 	    transform: translateX(-50%);
 	}
+}
+
+@media only screen and (max-width: 800px) {
+	
+	#hero-small img {
+		max-width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
