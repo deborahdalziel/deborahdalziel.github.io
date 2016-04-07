@@ -1626,7 +1626,7 @@ footer li {
 	.our-work-main img {
 		max-width: 100%;
 	}
-	
+
 	.our-work-main { 
 	    width: 100%;
 	    margin: 6% auto;
@@ -1734,14 +1734,42 @@ footer li {
 	/*Standard page styling - max width 470px*/
 
 	.white-background { 
-		padding: 2% 10% 5% 10%;
+		padding: 2% 5% 5% 5%;
 	}
 	.dark-background {
-		padding: 2% 10% 5% 10%;
+		padding: 2% 5% 5% 5%;
 	}
 	.white-background-caption {
-		padding: 7% 10% 5% 10%;
+		padding: 7% 5% 5% 5%;
 	}
+	.white-background-left {		
+		padding: 2% 5% 5% 5%;	
+	}
+	.dark-background-left {		
+		padding: 2% 5% 5% 5%;	
+	}
+
+	/*Our Work Page styling - max width 470px*/
+
+	#our-work-content {
+		margin: 5%;
+	}
+
+	/*Smartphone font resizing*/
+
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2.5em;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
+	h4 {
+		font-size: 1.2em;
+	}
+	
 }
 
 
