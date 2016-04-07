@@ -566,8 +566,8 @@ nav li a:hover, nav li a:active {
 		max-width: 400px; 
 		margin-left: -200px; 
 	}
-	#lp-title{
-		font-size: 2em;
+	#lp-title {
+		font-size: 1.5em;
 		padding: 1% 2%;
 		margin-bottom: 2%;
 	}
