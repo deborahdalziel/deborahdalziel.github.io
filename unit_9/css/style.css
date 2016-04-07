@@ -149,7 +149,7 @@ a:hover, a:active {
 
 .scroll-down img {
 	max-width: 32px;
-	margin: 5% auto 2% auto;
+	margin: 10% auto 2% auto;
 }
 
 .scroll-down img:hover {
@@ -1006,24 +1006,24 @@ footer li {
 /*Standard page styling*/
 
 .white-background { 
-	padding: 2% 20% 0 20%;
+	padding: 5% 20% 3% 20%;
 	background-color: #fff;
 }
 
 .dark-background {
-	padding: 2% 20% 2% 20%;
+	padding: 5% 20% 3% 20%;
 	background-color: #0097AA;
 	color: #fff;
 }
 
 .white-background-left { 
-	padding: 5% 20% 0 20%;
+	padding: 5% 20% 3% 20%;
 	background-color: #fff;
 	text-align: left;
 }
 
 .dark-background-left {
-	padding: 5% 20% 2% 20%;
+	padding: 5% 20% 3% 20%;
 	background-color: #0097AA;
 	color: #fff;
 	text-align: left;
