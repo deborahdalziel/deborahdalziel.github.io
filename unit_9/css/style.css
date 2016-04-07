@@ -1017,13 +1017,13 @@ footer li {
 }
 
 .white-background-left { 
-	padding: 2% 20% 0 20%;
+	padding: 5% 20% 0 20%;
 	background-color: #fff;
 	text-align: left;
 }
 
 .dark-background-left {
-	padding: 2% 20% 2% 20%;
+	padding: 5% 20% 2% 20%;
 	background-color: #0097AA;
 	color: #fff;
 	text-align: left;
