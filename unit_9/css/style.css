@@ -567,7 +567,7 @@ nav li a:hover, nav li a:active {
 		margin-left: -200px; 
 	}
 	#lp-title {
-		font-size: 1.4em;
+		font-size: 1.2em;
 		padding: 1% 2%;
 		margin-bottom: 2%;
 	}
@@ -591,7 +591,7 @@ nav li a:hover, nav li a:active {
 	}
 	.contents { 
 		top: 20%; 
-		max-width: 2800px; 
+		max-width: 280px; 
 		margin-left: -140px; 
 	}
 }
