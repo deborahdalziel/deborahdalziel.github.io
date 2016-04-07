@@ -521,82 +521,6 @@ nav li a:hover, nav li a:active {
 	color: #081517;
 }
 
-/*hero section on for mobile devices*/
-
-@media only screen and (max-width: 1024px) {
-
-	#hero-large {
-		display: none;
-	}
-	#hero-small {
-		display: block;
-	}
-	#hero-small img {
-		max-width: none;
-	   	height: 700px;
-	    margin-left: 50%;
-	    transform: translateX(-50%);
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	
-	#hero-small img {
-		max-width: none;
-		height: 900px;
-		width: auto;
-	}
-
-	.contents { 
-		top: 30%; 
-		max-width: 600px; 
-		margin-left: -300px; 
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	
-	#hero-small img {
-		max-width: none;
-		height: 300px;
-		width: auto;
-	}
-	.contents { 
-		top: 20%; 
-		max-width: 400px; 
-		margin-left: -200px; 
-	}
-	#lp-title {
-		font-size: 0.8em;
-		padding: 1% 2%;
-		margin-bottom: 2%;
-	}
-	#lp-subhead {
-		font-size: 1.2em;
-		padding: 1% 2%;
-		margin-bottom: 2%;
-	}
-	#get-in-touch-button {
-		font-size: 1.2em;
-		padding: 1% 2%;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	
-	#hero-small img {
-		max-width: none;
-		height: 500px;
-		width: auto;
-	}
-	.contents { 
-		top: 20%; 
-		max-width: 280px; 
-		margin-left: -140px; 
-	}
-	#lp-title {
-		font-size: 1.2em;
-}
 
 /*landing page what we do section*/
 
@@ -1203,7 +1127,22 @@ footer li {
 
 @media only screen and (max-width: 1050px) {
 
-	/*Font size - tablets and smartphones*/
+	/*Hero section for tablets - horizontal*/
+
+	#hero-large {
+		display: none;
+	}
+	#hero-small {
+		display: block;
+	}
+	#hero-small img {
+		max-width: none;
+	   	height: 700px;
+	    margin-left: 50%;
+	    transform: translateX(-50%);
+	}
+
+/*Font size - tablets and smartphones*/
 
 	body {
 		font-size: 14px;
@@ -1429,6 +1368,20 @@ footer li {
 
 @media only screen and (max-width: 800px) {
 
+	/*hero section for vertical tablets*/
+
+	#hero-small img {
+		max-width: none;
+		height: 900px;
+		width: auto;
+	}
+
+	.contents { 
+		top: 30%; 
+		max-width: 600px; 
+		margin-left: -300px; 
+	}
+
 	/*landing page our services section for vertical tablets (max width 800px)*/
 
 	#what-we-do {
@@ -1485,6 +1438,33 @@ footer li {
 
 @media only screen and (max-width: 600px) {
 	
+	/*Hero section for smartphones*/
+
+	#hero-small img {
+		max-width: none;
+		height: 300px;
+		width: auto;
+	}
+	.contents { 
+		top: 10%; 
+		max-width: 400px; 
+		margin-left: -200px; 
+	}
+	#lp-title {
+		font-size: 0.8em;
+		padding: 1% 2%;
+		margin-bottom: 2%;
+	}
+	#lp-subhead {
+		font-size: 1.2em;
+		padding: 1% 2%;
+		margin-bottom: 2%;
+	}
+	#get-in-touch-button {
+		font-size: 1.2em;
+		padding: 1% 2%;
+	}
+
 	/*View all links for smartphones*/
 
 	.view-all-link {
@@ -1767,5 +1747,19 @@ footer li {
 	
 }
 
-
+@media only screen and (max-width: 400px) {
+	
+	#hero-small img {
+		max-width: none;
+		height: 500px;
+		width: auto;
+	}
+	.contents { 
+		top: 20%; 
+		max-width: 280px; 
+		margin-left: -140px; 
+	}
+	#lp-title {
+		font-size: 1.2em;
+}
 
