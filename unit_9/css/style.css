@@ -483,16 +483,23 @@ nav li a:hover, nav li a:active {
 	#hero-large {
 		display: none;
 	}
-
 	#hero-small {
 		display: block;
 	}
-
 	#hero-small img {
-		max-width: 100%;
-	   	height: auto;
+		max-width: none;
+	   	height: 800px
 	    margin-left: 50%;
 	    transform: translateX(-50%);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	
+	#hero-small img {
+		max-width: none;
+		height: 1000px;
+		width: auto;
 	}
 }
 
@@ -501,6 +508,15 @@ nav li a:hover, nav li a:active {
 	#hero-small img {
 		max-width: none;
 		height: 300px;
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	
+	#hero-small img {
+		max-width: none;
+		height: 600px;
 		width: auto;
 	}
 }
