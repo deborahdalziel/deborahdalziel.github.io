@@ -951,6 +951,9 @@ footer li {
 
 .our-work-main img {
 	max-width: 100%;
+	-moz-box-shadow: 0 0 10px #081517;
+	-webkit-box-shadow: 0 0 10px #081517;
+	box-shadow: 0px 0px 10px #081517;
 }
 
 .our-work-main:hover .our-work-baby { 
