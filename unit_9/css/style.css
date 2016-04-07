@@ -149,7 +149,7 @@ a:hover, a:active {
 
 .scroll-down img {
 	max-width: 32px;
-	margin: 10% auto 2% auto;
+	margin: 10% auto 5% auto;
 }
 
 .scroll-down img:hover {
@@ -163,7 +163,7 @@ a:hover, a:active {
 
 .scroll-down-white img {
 	max-width: 32px;
-	margin: 5% auto 2% auto;
+	margin: 10% auto 5% auto;
 }
 
 .scroll-down-white img:hover {
@@ -177,7 +177,7 @@ a:hover, a:active {
 
 .scroll-to-top img {
 	max-width: 32px;
-	margin: 3% auto 2% auto;
+	margin: 10% auto 5% auto;
 }
 
 .scroll-to-top img:hover {
@@ -191,7 +191,7 @@ a:hover, a:active {
 
 .scroll-to-top-yellow img {
 	max-width: 32px;
-	margin: 3% auto 2% auto;
+	margin: 10% auto 5% auto;
 }
 
 .scroll-to-top-yellow img:hover {
