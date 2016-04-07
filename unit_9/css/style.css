@@ -533,7 +533,7 @@ nav li a:hover, nav li a:active {
 	}
 	#hero-small img {
 		max-width: none;
-	   	height: 800px
+	   	height: 700px
 	    margin-left: 50%;
 	    transform: translateX(-50%);
 	}
@@ -543,7 +543,7 @@ nav li a:hover, nav li a:active {
 	
 	#hero-small img {
 		max-width: none;
-		height: 1000px;
+		height: 900px;
 		width: auto;
 	}
 
@@ -566,13 +566,27 @@ nav li a:hover, nav li a:active {
 		max-width: 400px; 
 		margin-left: -200px; 
 	}
+	#lp-title{
+		font-size: 2em;
+		padding: 1% 2%;
+		margin-bottom: 2%;
+	}
+	#lp-subhead {
+		font-size: 1.2em;
+		padding: 1% 2%;
+		margin-bottom: 2%;
+	}
+	#get-in-touch-button {
+		font-size: 1em;
+		padding: 1% 2%;
+	}
 }
 
 @media only screen and (max-width: 400px) {
 	
 	#hero-small img {
 		max-width: none;
-		height: 600px;
+		height: 500px;
 		width: auto;
 	}
 	.contents { 
