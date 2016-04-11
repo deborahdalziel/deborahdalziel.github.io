@@ -298,7 +298,7 @@ footer {
 
 /*Tablet styling*/
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
 
 	header img {
 		max-width: 175px;
@@ -353,7 +353,7 @@ footer {
 
 /*Smartphone styling*/
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 	h1 {
 		font-size: 3em;
@@ -438,7 +438,7 @@ footer {
 
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
 
 	h1 {
 		font-size: 2em;
