@@ -203,6 +203,20 @@ a:hover, a:active {
     border-radius: 50px;
 }
 
+.scroll-to-top-white img {
+	max-width: 32px;
+	margin: 10% auto 5% auto;
+}
+
+.scroll-to-top-white img:hover {
+	-moz-box-shadow: 0 0 5px #fff;
+	-webkit-box-shadow: 0 0 5px #fff;
+	box-shadow: 0px 0px 5px #fff;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
 .scroll-center-div {
 	text-align: center;
 }
@@ -976,6 +990,49 @@ footer li {
 
 /*Standard page styling*/
 
+.section-nav-serve {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-nav-do {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-nav-item {
+	display: block;
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	padding: 5px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border-radius: 75px;
+	background-color: #0097AA;
+}
+
+.section-nav-item p {
+	text-align: center;
+	margin-top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.section-nav-item:hover {
+	background-color: #081517;
+}
+
 .white-background { 
 	padding: 5% 20% 3% 20%;
 	background-color: #fff;
@@ -1432,6 +1489,29 @@ footer li {
 	-moz-box-shadow: 0 0 5px #FFC900;
 	-webkit-box-shadow: 0 0 5px #FFC900;
 	box-shadow: 0px 0px 5px #FFC900;
+	}	
+
+	/*standard page nav styling - max width 800px*/
+
+	.section-nav-serve {
+	    max-width: 390px;
+	    margin: 10% auto;
+	}
+
+	.section-nav-do {
+	    max-width: 520px;
+	    margin: 10% auto;
+	}
+
+	.section-nav-item {
+		width: 120px;
+		height: 120px;
+		margin: 5px;
+		padding: 5px;
+		-moz-border-radius: 60px;
+		-webkit-border-radius: 60px;
+		border-radius: 60px;
+	}
 }
 
 /*Design for smart phones*/
@@ -1688,6 +1768,12 @@ footer li {
 	.our-work-baby {
 		width: 100%;
 	}
+
+	/*standard page nav styling - max width 600px*/
+
+	.section-nav-do {
+	    max-width: 260px;
+	}
 }
 
 
@@ -1761,5 +1847,13 @@ footer li {
 	}
 	#lp-title {
 		font-size: 1.2em;
+	}
+
+		/*standard page nav styling - max width 800px*/
+
+	.section-nav-serve {
+	    max-width: 260px;
+	}
+
 }
 
