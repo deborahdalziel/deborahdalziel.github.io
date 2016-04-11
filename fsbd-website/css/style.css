@@ -122,6 +122,8 @@ header img {
 	float: left;
 	padding-top: 10px;
 	padding-left: 15px;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 nav ul {
