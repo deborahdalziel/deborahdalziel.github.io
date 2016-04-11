@@ -291,11 +291,6 @@ footer {
 
 /*Tablet styling*/
 
-@media screen and (max-width: 1024px) {
-
-
-}
-
 @media screen and (max-width: 800px) {
 
 	header img {
@@ -326,6 +321,8 @@ footer {
 	.service-item {
 		width: 50%;
 		margin-bottom: 5%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
 	#lenders-logos {
@@ -340,6 +337,10 @@ footer {
 
 	.contact-para {
 		width: 100%;
+	}
+	.contact-sub-para {
+		width: 50%;
+		float: left;
 	}
 }
 
@@ -494,6 +495,9 @@ footer {
 
 	#contact {
 		padding-top: 40px;
+	}
+	.contact-sub-para {
+		width: 100%;
 	}
 }
 
