@@ -1,0 +1,499 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*standard styling*/
+
+body {
+	text-align: center;
+	background: #E7E8E6;
+	color: #011642;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.4em;
+	padding: 0.4em 0;
+	margin: auto;
+}
+ 
+h1 {
+	font-family: 'Raleway', serif;
+	font-weight: 600;
+	font-size: 4em;
+	line-height: 1.2em;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'Raleway', serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.2em;
+	padding: 0.4em 0;
+}
+
+h3 {
+	font-family: 'Quattrocento', serif;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	padding: 1em 0;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	padding: 0.8em 0;
+}
+
+b {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+i {
+	font-style: italic;
+	font-weight: 100;
+}
+
+ul {
+	font-size: 1em;
+	list-style-type: circle;
+	text-align: left;
+	margin-left: 0;
+	padding-left: 1em;
+	line-height: 1.4em;
+}
+
+li {
+	margin-left: 2em;
+}
+
+a:link, a:visited {
+	font-size: 1em;
+	color: #011642;
+	line-height: 1.4em;
+	padding: 0.4em 0;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #011642;
+	font-weight: 700;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/*header section*/
+
+header { 
+	background: #fff;
+	padding: none;
+	margin: none;
+	top: 0;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+header img {
+	display: block;
+	max-width: 200px;
+	width: 30%;
+	max-height: auto;
+	float: left;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 70%;
+}
+
+nav li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 0;
+}
+
+#small-logo {
+	display: none;
+}
+
+nav li a:link, nav li a:visited {
+    display: block;
+    font-size: 1.2em;
+    padding: 30px 0 5px 0;
+    text-decoration: none;
+}
+
+nav li a:hover, nav li a:active {
+	color: #011642;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+
+/*hero section styling*/
+
+#hero {
+	background-color: #fff;
+	width: 100%;
+	position: relative;
+	padding-top: 70px;
+}
+
+
+#hero img {
+	max-width: 100%;
+	height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.contents {
+	position: absolute;
+	position: center;
+	top: 35%;
+	left: 50%;
+	width: 100%;
+	max-width: 700px; 
+	margin-left: -350px; 
+}
+
+/*about section styling*/
+
+#about {
+	background-color: #fff;
+	padding: 0 5%;
+	padding-top: 70px;
+}
+
+.about-intro {
+	padding: 0 10%;
+}
+
+.about-para {
+	display: block;
+	width: 50%;
+	float: left;
+	padding: 2% 5% 3% 5%;
+}
+
+/*Services section styling*/
+
+#services {
+	width: 100%;
+	background-color: #011642;
+	color: #fff;
+	padding-top: 70px;
+	padding-bottom: 5%;
+}
+
+#services-header {
+	padding: 0 5% 3% 5%;
+}
+
+.service-item {
+	display: block;
+	float: left;
+	width: 33.33%;
+	padding: 0 2%;
+}
+
+/*Clients section styling*/
+
+#clients {
+	background-color: #fff;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.owl-example {
+	margin-top: 5%;
+	padding: 0 5%;
+}
+
+
+/*Lenders section styling*/
+
+#lenders {
+	background-color: #E7E8E6;
+	padding-top: 70px;
+	padding-bottom: 3%;
+}
+
+#lenders-logos {
+	display: block;
+	width: 660px;
+	float: center;
+	margin: 0 auto;
+}
+
+.lender {
+	display: block;
+	margin: 15px;
+	padding: 15px;
+	background-color: #fff;
+	position: center;
+	float: left;
+	width: 190px;
+	border-radius: 5px;
+}
+
+
+/*Contact section styling*/
+
+#contact {
+	background-color: #fff;
+	padding-top: 70px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#contact-header {
+	padding-bottom: 2%;
+}
+
+.contact-para {
+	display: block;
+	width: 50%;
+	float: left;
+	margin: 0 auto;
+	padding-bottom: 5%;
+}
+
+/*Footer styling*/
+
+footer {
+	background-color: #E7E8E6;
+	padding: 1% 0;
+	margin-bottom: 0;
+}
+
+/*Tablet styling*/
+
+@media screen and (max-width: 1024px) {
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+	header img {
+		max-width: 175px;
+	}
+
+	nav li a:link, nav li a:visited {
+	    font-size: 1em;
+	}
+
+	#hero img {
+		max-width: none;
+		width: auto;
+		max-height: 100%;
+	}
+
+	.contents {
+		top: 35%;
+		max-width: 600px; 
+		margin-left: -300px;
+	} 
+
+	.about-para {
+		width: 100%;
+		margin-bottom: 10%;
+	}
+
+	.service-item {
+		width: 50%;
+		margin-bottom: 5%;
+	}
+
+	#lenders-logos {
+		width: 400px;
+	}
+	.lender {
+		margin: 10px;
+		padding: 10px;
+		width: 180px;
+		border-radius: 5px;
+	}
+
+	.contact-para {
+		width: 100%;
+	}
+}
+
+/*Smartphone styling*/
+
+@media screen and (max-width: 600px) {
+
+	h1 {
+		font-size: 3em;
+	}
+
+	header {
+		height: 50px;
+	}
+	header img {
+		max-width: 45px;
+		width: 10%;
+		padding-left: 5px;
+	}
+	nav ul {
+	    width: 90%;
+	}
+	#small-logo {
+		display: block;
+	}
+	#large-logo {
+		display: none;
+	}
+	nav li a:link, nav li a:visited {
+	    margin: 0;
+	    padding-top: 20px;
+	    padding-bottom: 5px;
+	}
+
+	#hero {
+		padding-top: 50px;
+	}
+	#hero img {
+		max-width: 100%;
+		width: none;
+		max-height: none;
+		height: auto;
+	}
+	.contents {
+		top: 35%;
+		max-width: 350px; 
+		margin-left: -175px; 
+	}
+
+	#about {
+		padding-top: 50px;
+	}
+	.about-intro {
+		margin-bottom: 10%;
+	}
+	.about-para img {
+		max-width: 80px;
+	}
+	#plan-image img {
+		max-width: 100%;
+	}
+
+	#services {
+		padding-top: 50px;
+	}
+
+	#services img {
+		max-width: 48px;
+	}
+
+	#clients {
+		padding-top: 50px;
+	}
+
+	#lenders {
+		padding-top: 50px;
+	}
+
+	#contact {
+		padding-top: 50px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	#contact iframe {
+		width: 100%;
+		max-width: 400px;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	h1 {
+		font-size: 2em;
+	}
+
+	header {
+		height: 40px;
+	}
+	header img {
+		max-width: 35px;
+	}
+	nav li a:link, nav li a:visited {
+	    padding-top: 15px;
+	    font-size: 0.8em;
+	}
+	
+	#hero {
+		padding-top: 40px;
+	}
+	#hero img {
+		max-width: none;
+		width: auto;
+		max-height: 100%;
+	}
+	.contents {
+		top: 35%;
+		max-width: 280px; 
+		margin-left: -140px; 
+	}
+
+	#about {
+		padding-top: 40px;
+	}
+
+	#services {
+		padding-top: 40px;
+	}
+	.service-item {
+		width: 100%;
+	}
+
+	#clients {
+		padding-top: 40px;
+	}
+
+	#lenders {
+		padding-top: 40px;
+	}
+	#lenders-logos {
+		width: 260px;
+	}
+	.lender {
+		margin: 5px;
+		padding: 5px;
+		width: 120px;
+		border-radius: 5px;
+	}
+	.lender img {
+		max-width: 110px;
+	}
+
+	#contact {
+		padding-top: 40px;
+	}
+}
+
