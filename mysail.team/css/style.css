@@ -1,0 +1,562 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	top: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+/*standard styling*/
+
+body {
+	text-align: center;
+	background: #fff;
+	color: #01102F;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.4em;
+	padding: 0.4em 0;
+	margin: auto;
+}
+ 
+h1 {
+	font-family: 'Francois One', sans-serif;
+	color: #fff;
+	font-size: 6em;
+	line-height: 1.8em;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 3.5em;
+	line-height: 1.2em;
+	padding: 0.4em 0;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2.5em;
+	line-height: 1.2em;
+	padding: .8em 0;
+}
+
+h4 {
+	font-family: 'Open Sans', sans-serif
+	font-weight: 300;
+	font-size: 1.8em;
+	line-height: 1.4em;
+	padding-top: .4em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	padding: 0.8em 0;
+}
+
+b {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+i {
+	font-style: italic;
+	font-weight: 400;
+}
+
+ul {
+	font-size: 1em;
+	list-style-type: circle;
+	text-align: left;
+	margin-left: 0;
+	padding-left: 1em;
+	line-height: 1.4em;
+}
+
+li {
+	margin-left: 2em;
+}
+
+a:link, a:visited {
+	font-size: 1em;
+	color: #01102F;
+	line-height: 1.4em;
+	padding: 0.4em 0;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #008B92;
+	font-weight: 400;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/*header section*/
+
+header { 
+	padding: none;
+	margin: none;
+	top: 0;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+#title {
+	display: block;
+	width: 30%;
+	float: left;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+header a:link, header a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+header a:hover, header a:active {
+	color: #01102F;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 30%;
+}
+
+nav li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+}
+
+nav li a:link, nav li a:visited {
+    display: block;
+    color: #fff;
+    font-size: 1.2em;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+nav li a:hover, nav li a:active {
+	color: #01102F;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+
+/*hero section styling*/
+
+#hero {
+	background-color: #fff;
+	width: 100%;
+	position: relative;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+
+#hero img {
+	max-width: 100%;
+	height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.contents {
+	position: absolute;
+	position: center;
+	top: 25%;
+	left: 50%;
+	width: 100%;
+	max-width: 700px; 
+	margin-left: -350px; 
+}
+
+#cover-yachts {
+	display: block;
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+}
+
+#cover-sailors {
+	display: block;
+	float: right;
+	width: 45%;
+	margin: 2.5%;
+}
+
+.cover-button {
+	border: #fff solid 5px;
+	background-color: rgba(255,255,255,.2);
+}
+
+.cover-button a:link, .cover-button a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.cover-button a:hover, .cover-button a:active {
+	color: #01102F;
+}
+
+.cover-content {
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+/*footer styling*/
+
+footer { 
+	background-color: rgba(255,255,255,0);
+	padding: 0;
+	margin: 0 0 5px 0;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+footer p {
+	color: #fff;
+}
+
+footer a:link, footer a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover, footer a:active {
+	color: #008B92;
+	font-weight: 400;
+}
+
+/*page banner image styling*/
+
+.top {
+	position: relative;
+	width: 100%;
+}
+
+.top img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.cta-top {
+	border: #fff solid 3px;
+	background-color: rgba(255,255,255,.2);
+	padding: 30px;
+	margin: 0 30%;
+}
+
+.cta-top h3 {
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.cta-top a:link, .cta-top a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.cta-top a:hover, .cta-top a:active {
+	color: #01102F;
+	text-decoration: none;
+}
+
+/*yacht & sailor page styling*/
+
+.intro {
+	background-color: #fff;
+	padding: 5% 10%;
+}
+
+.benefits-section {
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+.benefits-blue {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 2% 10%;
+	margin: 0;
+	background-color: #01102F;
+	color: #fff;
+	height: 400px;
+}
+
+.benefits-green {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 2% 10%;
+	margin: 0;
+	background-color: #008B92;
+	color: #fff;
+	height: 400px;
+}
+
+.benefits-white {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 2% 10%;
+	margin: 0;
+	background-color: #fff;
+	color: #01102F;
+	height: 400px;
+}
+
+#cta-yachts {
+	position: relative;
+	background-color: #01102F;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+}
+
+#cta-yachts a:link, #cta-yachts a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#cta-yachts a:hover, #cta-yachts a:active {
+	color: #008B92;
+	text-decoration: none;
+}
+
+#cta-yachts img {
+	max-width: 100%;
+	height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#cta-yachts-content {
+	position: absolute;
+	position: center;
+	top: 10%;
+	left: 50%;
+	width: 100%;
+	max-width: 800px; 
+	margin-left: -400px; 
+}
+
+.cta-box {
+	display: block;
+	float: left;
+	width: 46%;
+	margin: 0 2%;
+	padding: 2%;
+	height: 350px;
+	border: #fff solid 3px;
+	background-color: rgba(1,16,47,.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Smartphone styling*/
+
+@media only screen and (max-width: 600px) {
+
+	h1 {
+		font-size: 3em;
+	}
+
+	header {
+		height: 50px;
+	}
+	header img {
+		max-width: 45px;
+		width: 10%;
+		padding-left: 5px;
+	}
+	nav ul {
+	    width: 90%;
+	}
+	#small-logo {
+		display: block;
+	}
+	#large-logo {
+		display: none;
+	}
+	nav li a:link, nav li a:visited {
+	    margin: 0;
+	    padding-top: 20px;
+	    padding-bottom: 5px;
+	}
+
+	#hero {
+		padding-top: 50px;
+	}
+	#hero img {
+		max-width: 100%;
+		width: none;
+		max-height: none;
+		height: auto;
+	}
+	.contents {
+		top: 35%;
+		max-width: 350px; 
+		margin-left: -175px; 
+	}
+
+	#about {
+		padding-top: 50px;
+	}
+	.about-intro {
+		margin-bottom: 10%;
+	}
+	.about-para img {
+		max-width: 80px;
+	}
+	#plan-image img {
+		max-width: 100%;
+	}
+
+	#services {
+		padding-top: 50px;
+	}
+
+	#services img {
+		max-width: 48px;
+	}
+
+	#clients {
+		padding-top: 50px;
+	}
+
+	#lenders {
+		padding-top: 50px;
+	}
+
+	#contact {
+		padding-top: 50px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	#contact iframe {
+		width: 100%;
+		max-width: 400px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	h1 {
+		font-size: 2em;
+	}
+
+	header {
+		height: 40px;
+	}
+	header img {
+		max-width: 35px;
+	}
+	nav li a:link, nav li a:visited {
+	    padding-top: 15px;
+	    font-size: 0.8em;
+	}
+	
+	#hero {
+		padding-top: 40px;
+	}
+	#hero img {
+		max-width: none;
+		width: auto;
+		max-height: 100%;
+	}
+	.contents {
+		top: 35%;
+		max-width: 280px; 
+		margin-left: -140px; 
+	}
+
+	#about {
+		padding-top: 40px;
+	}
+
+	#services {
+		padding-top: 40px;
+	}
+	.service-item {
+		width: 100%;
+	}
+
+	#clients {
+		padding-top: 40px;
+	}
+
+	#lenders {
+		padding-top: 40px;
+	}
+	#lenders-logos {
+		width: 260px;
+	}
+	.lender {
+		margin: 5px;
+		padding: 5px;
+		width: 120px;
+		border-radius: 5px;
+	}
+	.lender img {
+		max-width: 110px;
+	}
+
+	#contact {
+		padding-top: 40px;
+	}
+	.contact-sub-para {
+		width: 100%;
+	}
+}
+
