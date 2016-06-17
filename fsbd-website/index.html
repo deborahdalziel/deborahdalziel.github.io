@@ -4,6 +4,8 @@
 
 	<title>Financial Solutions by Design | Your Home Loan Experts</title>
 	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -12,10 +14,26 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
 
+		<script>
+		@media all and (max-width: 800px) {
+			//when the html document is ready
+			$(document).ready(function(){
+	    		//when close menu button is clicked
+	    		$('nav li').click(function(){
+	        		//hide the menu links
+	        		$('nav li').css('display', 'none');
+	    		});
+	    		//when menu button is clicked
+	    		$('#menu-button').click(function(){
+	    			//open the menu links
+	    			$('nav li').css('display', 'inline');	
+	   			 });
+			});
+		}
+	</script>
+
 	<link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css'>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
@@ -27,9 +45,11 @@
 
 	<header>
 
-		<a href="#hero"><img id="large-logo" src="images/logo.png" alt="Financial Services by Design logo" title="Financial Services by Design logo"></a>
+		<div id="logo"><a href="#hero"><img src="images/logo.png" alt="Financial Services by Design logo" title="Financial Services by Design logo"></a></div>
 
-		<a href="#hero"><img id="small-logo" src="images/logo-icon.png" alt="blue circle with white bars representing a bar graph" title="FSBD logo icon only"></a>
+		<div class="drop-down-menu">
+
+		<div id="menu-button"><img src="images/menu.png"></div>
 
 		<nav>
 
@@ -41,9 +61,11 @@
 					<li><a href="#lenders">Lenders</a></li>
 					<li><a href="#contact">Contact</a></li>
 
-				</ul>
+			</ul>
 
-			</nav>
+		</nav>
+
+		</div>
 
 			<div class="clearfix"></div>
 
@@ -161,22 +183,24 @@
 			<div id="owl-example" class="owl-carousel">
 
 
-				<div><p>Scott has provided expert financial advice for my property portfolio for the past 6 years, ensuring I have the right product mix and saving me thousands in the process.</p><p>I have recommended Scott to friends and family numerous times to help with their property finance needs.</p>
+				<div><p>"Scott has provided expert financial advice for my property portfolio for the past 6 years, ensuring I have the right product mix and saving me thousands in the process.</p><p>I have recommended Scott to friends and family numerous times to help with their property finance needs."</p>
 				<p><i>Jonathon Walsh</i></p></div>
 
 
-				<div><p>Scott has assisted my partner and I for over three years now and during this time, Scott has always attended to our many demands, sometimes impossible, with a high level of professionalism, accuracy and always with a smile and good sense of humor.</p>
-				<p>Scott is easy to get along with, asks the right questions and always gets an answer to your questions, no matter how difficult they may seem at the time. He has given us peace of mind when it comes to effective tax planning for our multi-million dollar property and share portfolio investments.  We definitely recommend Scott at Financial Solutions by Design for your individual or company financial solutions.</p>
+				<div><p>"Scott has assisted my partner and I for over three years now and during this time, Scott has always attended to our many demands, sometimes impossible, with a high level of professionalism, accuracy and always with a smile and good sense of humor.</p>
+				<p>Scott is easy to get along with, asks the right questions and always gets an answer to your questions, no matter how difficult they may seem at the time. He has given us peace of mind when it comes to effective tax planning for our multi-million dollar property and share portfolio investments.  We definitely recommend Scott at Financial Solutions by Design for your individual or company financial solutions."</p>
 				<p><i>Chris Brooke &amp David Lochhead</i></p></div>
 
 
-				<div><p>Scott was the perfect person to help me through my re-mortgaging process. He was informative, educational, good humoured and always available throughout. Scott took me through all of the possible options and rates and advised me accordingly as to what would be the best fit for me. It wasn't a "one size fits all" approach, Scott took the time to get to know me and tailored his advice to suit me and my circumstances, something I very much appreciated.</p>
-				<p>Scott has stayed in touch with me since our first engagement and I will continue to return to him in the future. I was initially referred to Scott by a good friend of mine and I now have no hesitation in recommending him myself.</p>
+				<div><p>"Scott was the perfect person to help me through my re-mortgaging process. He was informative, educational, good humoured and always available throughout. Scott took me through all of the possible options and rates and advised me accordingly as to what would be the best fit for me. It wasn't a "one size fits all" approach, Scott took the time to get to know me and tailored his advice to suit me and my circumstances, something I very much appreciated.</p>
+				<p>Scott has stayed in touch with me since our first engagement and I will continue to return to him in the future. I was initially referred to Scott by a good friend of mine and I now have no hesitation in recommending him myself."</p>
 				<p><i>Neil Linz</i></p></div>
 
 
-				<div><p>Scott has helped us refinance our home loan twice. He has made the process easy and pain free, getting us a much better package than we previously had and proactively working to make sure we had the best rate, even after the loan was established. He was always available to answer questions and made even the paperwork easy! We would highly recommend Scott.</p>
+				<div><p>"Scott has helped us refinance our home loan twice. He has made the process easy and pain free, getting us a much better package than we previously had and proactively working to make sure we had the best rate, even after the loan was established. He was always available to answer questions and made even the paperwork easy! We would highly recommend Scott."</p>
 				<p><i>Kylie and Wade McFarlane</i></p></div>
+
+				<div><p>"I have been a client of Scotts for many years now. In all of the transactions (both large and small) where I have asked Scott for support, I have found him to be very attentive and  professional. Scott has been able to make complex situations easy for me, and has proactively guided me through the lending processes in a smooth and seamless way. I trust what Scott has to say, and would not hesitate to recommend his services."</p><p><i>Brad Roberts</i></p></div>
 
 			</div>
 

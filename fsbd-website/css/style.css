@@ -33,7 +33,7 @@ body {
  
 h1 {
 	font-family: 'Raleway', serif;
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 4em;
 	line-height: 1.2em;
 	padding: 0;
@@ -114,7 +114,7 @@ header {
 	z-index: 100;
 }
 
-header img {
+#logo img {
 	display: block;
 	max-width: 200px;
 	width: 30%;
@@ -141,7 +141,7 @@ nav li {
     margin: 0;
 }
 
-#small-logo {
+#menu-button {
 	display: none;
 }
 
@@ -164,14 +164,14 @@ nav li a:hover, nav li a:active {
 #hero {
 	background-color: #fff;
 	width: 100%;
+	max-height: 100%;
 	position: relative;
 	padding-top: 70px;
 }
 
-
 #hero img {
-	max-width: 100%;
-	height: auto;
+	min-width: 100%;	
+	min-height: 450px;
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -302,19 +302,76 @@ footer {
 
 @media only screen and (max-width: 800px) {
 
-	header img {
-		max-width: 175px;
-	}
+	
+	/*Navigation menu-mobile devices*/
 
+	#logo {
+		display: block;
+		width: 80%;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	#logo img {
+		width: 100%;
+	}
+	#menu-button {
+		display: block;
+		width: 20%;
+		float: right;
+		margin: 0;
+		padding: 0;
+	}
+	#menu-button img {
+		width: 32px;
+		height: auto;
+		float: right;
+		padding: 0;
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+	nav ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    float: none;
+	    width: 100%;
+	    position: relative;
+	    z-index: 1;
+	    padding: 0;
+	}
+	nav li {
+	    display: none;
+	    text-align: center;
+	    width: 100%;
+	    background-color: rgba(1,22,66,.9);
+	    border-bottom: #fff solid 1px;
+	}
+	.drop-down-menu:hover nav li {
+		display: block;
+	}
+	.drop-down-menu:active nav li {
+		display: block;
+	}
+	.drop-down-menu:focus nav li {
+		display: block;
+	}
 	nav li a:link, nav li a:visited {
+	    color: #fff;
 	    font-size: 1em;
+	    font-weight: 600;
+	    padding: 0 auto;
+	    margin: 0 auto;
+	    text-decoration: none;
+	}
+	nav li a:hover, nav li a:active {
+		
+		background-color: #fff;
+		text-decoration: underline;
+		color: #011642;
 	}
 
-	#hero img {
-		max-width: none;
-		width: auto;
-		max-height: 100%;
-	}
+	/*tablet styling*/
 
 	.contents {
 		top: 35%;
@@ -326,7 +383,6 @@ footer {
 		width: 100%;
 		margin-bottom: 10%;
 	}
-
 	.service-item {
 		width: 50%;
 		margin-bottom: 5%;
@@ -358,41 +414,9 @@ footer {
 @media only screen and (max-width: 600px) {
 
 	h1 {
-		font-size: 3em;
+		font-size: 3.5em;
 	}
 
-	header {
-		height: 50px;
-	}
-	header img {
-		max-width: 45px;
-		width: 10%;
-		padding-left: 5px;
-	}
-	nav ul {
-	    width: 90%;
-	}
-	#small-logo {
-		display: block;
-	}
-	#large-logo {
-		display: none;
-	}
-	nav li a:link, nav li a:visited {
-	    margin: 0;
-	    padding-top: 20px;
-	    padding-bottom: 5px;
-	}
-
-	#hero {
-		padding-top: 50px;
-	}
-	#hero img {
-		max-width: 100%;
-		width: none;
-		max-height: none;
-		height: auto;
-	}
 	.contents {
 		top: 35%;
 		max-width: 350px; 
@@ -400,7 +424,7 @@ footer {
 	}
 
 	#about {
-		padding-top: 50px;
+		padding-top: 70px;
 	}
 	.about-intro {
 		margin-bottom: 10%;
@@ -413,7 +437,7 @@ footer {
 	}
 
 	#services {
-		padding-top: 50px;
+		padding-top: 70px;
 	}
 
 	#services img {
@@ -421,15 +445,15 @@ footer {
 	}
 
 	#clients {
-		padding-top: 50px;
+		padding-top: 70px;
 	}
 
 	#lenders {
-		padding-top: 50px;
+		padding-top: 70px;
 	}
 
 	#contact {
-		padding-top: 50px;
+		padding-top: 70px;
 		padding-left: 5%;
 		padding-right: 5%;
 	}
@@ -443,27 +467,30 @@ footer {
 @media only screen and (max-width: 400px) {
 
 	h1 {
-		font-size: 2em;
+		font-size: 3em;
 	}
 
 	header {
-		height: 40px;
+		height: 50px;
 	}
-	header img {
-		max-width: 35px;
+	#logo img {
+		max-width: 150px;
+		padding-top: 5px;
+		padding-left: 10px;
 	}
+	#menu-button img {
+		max-width: 24px;
+		margin-top: 15px;
+		margin-right: 15px;
+	}
+
 	nav li a:link, nav li a:visited {
 	    padding-top: 15px;
 	    font-size: 0.8em;
 	}
 	
 	#hero {
-		padding-top: 40px;
-	}
-	#hero img {
-		max-width: none;
-		width: auto;
-		max-height: 100%;
+		padding-top: 50px;
 	}
 	.contents {
 		top: 35%;
@@ -472,22 +499,22 @@ footer {
 	}
 
 	#about {
-		padding-top: 40px;
+		padding-top: 50px;
 	}
 
 	#services {
-		padding-top: 40px;
+		padding-top: 50px;
 	}
 	.service-item {
 		width: 100%;
 	}
 
 	#clients {
-		padding-top: 40px;
+		padding-top: 50px;
 	}
 
 	#lenders {
-		padding-top: 40px;
+		padding-top: 50px;
 	}
 	#lenders-logos {
 		width: 260px;
@@ -503,7 +530,7 @@ footer {
 	}
 
 	#contact {
-		padding-top: 40px;
+		padding-top: 50px;
 	}
 	.contact-sub-para {
 		width: 100%;
