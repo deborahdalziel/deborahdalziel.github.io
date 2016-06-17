@@ -15,8 +15,8 @@
 	<script src="js/owl.carousel.js"></script>
 
 		<script>
-		@media all and (max-width: 800px) {
-			//when the html document is ready
+		if ( $(window).width() <= 800) {      
+  			//when the html document is ready
 			$(document).ready(function(){
 	    		//when close menu button is clicked
 	    		$('nav li').click(function(){
@@ -29,6 +29,9 @@
 	    			$('nav li').css('display', 'inline');	
 	   			 });
 			});
+		} 
+		else {
+  		(;) 
 		}
 	</script>
 
