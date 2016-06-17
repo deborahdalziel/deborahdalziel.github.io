@@ -14,24 +14,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
 
-		<script>
-		//if ( $(window).width() <= 800){  
+	<script>
 		if($(window).width()<=800) {   
   			//when the html document is ready
 			$(document).ready(function(){
 	    		//when close menu button is clicked
 	    		$('nav li').click(function(){
+	    			//toggle menu open and closed
+	    			$('nav li',this).toggle();
 	        		//hide the menu links
-	        		$('nav li').css('display', 'none');
-	    		});
+	        		//$('nav li').css('display', 'none');
+	    		})
+	    		//;
 	    		//when menu button is clicked
-	    		$('#menu-button').click(function(){
+	    		//$('#menu-button').click(function(){
 	    			//open the menu links
-	    			$('nav li').css('display', 'inline');	
-	   			 });
+	    			//$('nav li').css('display', 'inline');	
+	   			 //});
 			});
 		}
-		//else {(;)}
 	</script>
 
 	<link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
