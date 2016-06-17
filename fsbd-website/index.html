@@ -17,21 +17,40 @@
 	<script>
 		if($(window).width()<=800) {   
   			//when the html document is ready
-			$(document).ready(function(){
+			//$(document).ready(function(){
 	    		//when close menu button is clicked
-	    		$('nav li').click(function(){
+	    		//$('nav li').click(function(){
 	    			//toggle menu open and closed
-	    			$('nav li',this).toggle();
 	        		//hide the menu links
 	        		//$('nav li').css('display', 'none');
-	    		})
-	    		//;
+	    		//});
 	    		//when menu button is clicked
 	    		//$('#menu-button').click(function(){
 	    			//open the menu links
 	    			//$('nav li').css('display', 'inline');	
 	   			 //});
-			});
+	   		/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+   			 document.getElementByClassName(".drop-down-menu nav ul").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+  			if (!event.target.matches('#menu-button')) {
+
+    		var dropdowns = document.getElementsByClassName("nav ul");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+      		var openDropdown = dropdowns[i];
+      		if (openDropdown.classList.contains('show')) {
+        		openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+
+			//});
 		}
 	</script>
 
