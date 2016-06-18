@@ -211,7 +211,8 @@ nav li a:hover, nav li a:active {
 #scott {
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	background-color: #011642;
 }
 
@@ -219,7 +220,8 @@ nav li a:hover, nav li a:active {
 	display: block;
 	width: 30%;
 	float: left;
-	padding: 5% 2.5% 5% 5%;
+	padding-left: 5%;
+	padding-right: 2.5%;
 	margin: 0;
 	vertical-align: middle;
 	line-height: 300px;
@@ -238,7 +240,8 @@ nav li a:hover, nav li a:active {
 	display: block;
 	width: 70%;
 	float: left;
-	padding: 5% 5% 5% 2.5%;
+	padding-right: 2.5%;
+	padding-left: 5%;
 	margin: 0;
 	color: #E7E8E6;
 }
@@ -368,26 +371,9 @@ footer {
 
 /*small and horizontal tablet menu*/	
 	
-	header {
-		height: 75px;
-	}
-	#logo img {
-		max-width: 150px;
-		width: 100%;
-		float: center;
-		padding: 5px;
-		margin: 0;
-		margin-left: 50%;
-		transform: translateX(-50%);
-		}
-	nav ul {
-	    float: center;
-	    width: 100%;
-		}
 	nav li a:link, nav li a:visited {
-		padding: 0;
-		margin: 0;
 		font-size: 1em;
+		padding-top: 40px;
 	}
 
 	/*tablet styling*/
@@ -397,13 +383,12 @@ footer {
 		max-width: 600px; 
 		margin-left: -300px;
 	} 
-	#home {
-		padding-top: 75px;
-	}
 	#about {
 		padding-left: 15%;
 		padding-right: 15%;
-		padding-top: 75px;
+	}
+	#scott {
+		padding: 10% 0;
 	}
 	#scott-photo {
 		max-width: 150px;
@@ -411,16 +396,13 @@ footer {
 	.scott-image-para {
 		width: 100%;
 		float: center;
-		padding: 5% 10% 1.5% 10%;
+		padding: 0 15%;
 		line-height: 0px;
 	}
 	.scott-para {
 		width: 100%;
 		float: center;
-		padding: 1.5% 10% 5% 10%;
-	}
-	#services {
-		padding-top: 75px;
+		padding: 0 15%;
 	}
 	#services-header {
 		padding-left: 10%;
@@ -435,21 +417,12 @@ footer {
 	.service-item img {
 		max-width: 56px;
 	}
-	#clients {
-		padding-top: 75px;
-	}
-	#lenders {
-		padding-top: 75px;
-	}
 	#lenders-header {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
 	#lenders-logos {
 		width: 600px;
-	}
-	#contact {
-		padding-top: 75px;
 	}
 	.contact-para {
 		width: 100%;
@@ -462,7 +435,7 @@ footer {
 
 /*Smartphone styling*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 740px) {
 
 	/*Navigation menu-mobile devices*/
 
@@ -517,7 +490,6 @@ footer {
 	    width: 100%;
 	    background-color: rgba(1,22,66,.9);
 	    border-bottom: #fff solid 1px;
-	    padding: 15px;
 	}
 	.drop-down-menu:hover nav li {
 		display: block;
@@ -532,7 +504,7 @@ footer {
 	    color: #fff;
 	    font-size: 1em;
 	    font-weight: 600;
-	    padding: 15 auto 0 auto;
+	    padding: 15px auto 15px auto;
 	    margin: 0 auto;
 	    text-decoration: none;
 	}
@@ -595,7 +567,7 @@ footer {
 		max-height: 60px;
 	}
 	#contact {
-		margin-top: 75px;
+		padding-top: 75px;
 	}
 	.contact-para {
 		width: 100%;
