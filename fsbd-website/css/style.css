@@ -163,7 +163,7 @@ nav li a:hover, nav li a:active {
 
 /*hero section styling*/
 
-#hero {
+#home {
 	background-color: #fff;
 	width: 100%;
 	max-height: 100%;
@@ -171,7 +171,7 @@ nav li a:hover, nav li a:active {
 	padding-top: 70px;
 }
 
-#hero img {
+#home img {
 	min-width: 100%;	
 	min-height: 450px;
     margin-left: 50%;
@@ -397,6 +397,9 @@ footer {
 		max-width: 600px; 
 		margin-left: -300px;
 	} 
+	#home {
+		padding-top: 75px;
+	}
 	#about {
 		padding-left: 15%;
 		padding-right: 15%;
@@ -417,7 +420,7 @@ footer {
 		padding: 1.5% 10% 5% 10%;
 	}
 	#services {
-		margin-top: 75px;
+		padding-top: 75px;
 	}
 	#services-header {
 		padding-left: 10%;
@@ -433,10 +436,10 @@ footer {
 		max-width: 56px;
 	}
 	#clients {
-		margin-top: 75px;
+		padding-top: 75px;
 	}
 	#lenders {
-		margin-top: 75px;
+		padding-top: 75px;
 	}
 	#lenders-header {
 		padding-left: 10%;
@@ -446,7 +449,7 @@ footer {
 		width: 600px;
 	}
 	#contact {
-		margin-top: 75px;
+		padding-top: 75px;
 	}
 	.contact-para {
 		width: 100%;
@@ -545,7 +548,7 @@ footer {
 	h1 {
 		font-size: 3.5em;
 	}
-	#hero {
+	#home {
 		padding-top: 50px;
 	}
 	.contents {
