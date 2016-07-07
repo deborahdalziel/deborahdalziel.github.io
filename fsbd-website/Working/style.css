@@ -1,0 +1,627 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+/*standard styling*/
+
+body {
+	text-align: center;
+	background: #E7E8E6;
+	color: #011642;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.4em;
+	padding: 0.4em 0;
+	margin: auto;
+}
+ 
+h1 {
+	font-family: 'Raleway', serif;
+	font-weight: 600;
+	font-size: 4em;
+	line-height: 1.2em;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'Raleway', serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.2em;
+	padding: 0.4em 0;
+}
+
+h3 {
+	font-family: 'Quattrocento', serif;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	padding: 1em 0;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	padding: 0.8em 0;
+}
+
+b {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+i {
+	font-style: italic;
+	font-weight: 100;
+}
+
+ul {
+	font-size: 1em;
+	list-style-type: circle;
+	text-align: left;
+	margin-left: 0;
+	padding-left: 1em;
+	line-height: 1.4em;
+}
+
+li {
+	margin-left: 2em;
+}
+
+a:link, a:visited {
+	font-size: 1em;
+	color: #011642;
+	line-height: 1.4em;
+	padding: 0.4em 0;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #011642;
+	font-weight: 700;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/*header section*/
+
+header { 
+	background: #fff;
+	padding: none;
+	margin: none;
+	top: 0;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+#logo img {
+	display: block;
+	max-width: 200px;
+	width: 30%;
+	max-height: auto;
+	float: left;
+	padding-top: 10px;
+	padding-left: 15px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 70%;
+}
+
+nav li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-button {
+	display: none;
+}
+
+nav li a:link, nav li a:visited {
+    display: block;
+    font-size: 1.2em;
+    padding: 30px 0 5px 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+nav li a:hover, nav li a:active {
+	color: #011642;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+
+/*hero section styling*/
+
+#home {
+	background-color: #fff;
+	width: 100%;
+	max-height: 100%;
+	position: relative;
+	padding-top: 70px;
+}
+
+#home img {
+	min-width: 100%;	
+	min-height: 450px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.contents {
+	position: absolute;
+	position: center;
+	top: 35%;
+	left: 50%;
+	width: 100%;
+	max-width: 700px; 
+	margin-left: -350px; 
+}
+
+/*about section styling*/
+
+#about {
+	background-color: #fff;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-top: 70px;
+	padding-bottom: 5%;
+}
+
+#award-image {
+	max-width: 300px;
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 5px;
+	box-shadow: 5px 5px 5px #999;
+	-webkit-box-shadow: 5px 5px 5px #999;
+	-moz-box-shadow: 5px 5px 5px #999;
+}
+
+#scott {
+	width: 100%;
+	margin: 0;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #011642;
+}
+
+.scott-image-para {
+	display: block;
+	width: 30%;
+	float: left;
+	padding-left: 5%;
+	padding-right: 2.5%;
+	margin: 0;
+	vertical-align: middle;
+	line-height: 300px;
+}
+
+#scott-photo {
+	width: 100%;
+	max-width: 250px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	vertical-align: middle;
+}
+
+.scott-para {
+	display: block;
+	width: 70%;
+	float: left;
+	padding-right: 2.5%;
+	padding-left: 5%;
+	margin: 0;
+	color: #E7E8E6;
+}
+
+.scott-para a:link, .scott-para a:visited {
+	color: #E7E8E6;
+}
+
+.scott-para a:hover, .scott-para a:active {
+	color: #E7E8E6;
+}
+
+/*Services section styling*/
+
+#services {
+	width: 100%;
+	background-color: #E7E8E6;
+	color: #011642;
+	padding-top: 70px;
+	padding-bottom: 5%;
+}
+
+#services-header {
+	padding: 0 15% 3% 15%;
+}
+
+.service-item {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 1% 2%;
+}
+
+.service-item img {
+	max-height: 64px;
+}
+
+/*Clients section styling*/
+
+#clients {
+	background-color: #fff;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.owl-example {
+	margin-top: 5%;
+	padding: 0 5%;
+}
+
+
+/*Lenders section styling*/
+
+#lenders {
+	background-color: #011642;
+	color: #fff;
+	padding-top: 70px;
+	padding-bottom: 3%;
+}
+
+#lenders-header {
+	padding: 0 15% 1% 15%;
+}
+
+#lenders-logos {
+	display: block;
+	width: 750px;
+	float: center;
+	margin: 0 auto;
+}
+
+.lender {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	background-color: #fff;
+	float: left;
+	width: 130px;
+	height: 80px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.lender img {
+	max-width: 110px;
+	max-height: 60px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+/*Contact section styling*/
+
+#contact {
+	background-color: #fff;
+	padding-top: 70px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#contact-header {
+	padding-bottom: 2%;
+}
+
+.contact-para {
+	display: block;
+	width: 50%;
+	float: left;
+	margin: 0 auto;
+	padding-bottom: 5%;
+}
+
+/*Footer styling*/
+
+footer {
+	background-color: #E7E8E6;
+	padding: 1% 0;
+	margin-bottom: 0;
+}
+
+/*Tablet styling*/
+
+@media only screen and (max-width: 800px) {
+
+/*small and horizontal tablet menu*/	
+	
+	nav li a:link, nav li a:visited {
+		font-size: 1em;
+		padding-top: 40px;
+	}
+
+	/*tablet styling*/
+
+	.contents {
+		top: 35%;
+		max-width: 600px; 
+		margin-left: -300px;
+	} 
+	#about {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	#scott {
+		padding: 10% 0;
+	}
+	#scott-photo {
+		max-width: 150px;
+	}
+	.scott-image-para {
+		width: 100%;
+		float: center;
+		padding: 0 15%;
+		line-height: 0px;
+	}
+	.scott-para {
+		width: 100%;
+		float: center;
+		padding: 0 15%;
+	}
+	#services-header {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.service-item {
+		width: 50%;
+		margin-bottom: 5%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.service-item img {
+		max-width: 56px;
+	}
+	#lenders-header {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	#lenders-logos {
+		width: 600px;
+	}
+	.contact-para {
+		width: 100%;
+	}
+	.contact-sub-para {
+		width: 50%;
+		float: left;
+	}
+}
+
+/*Smartphone styling*/
+
+@media only screen and (max-width: 740px) {
+
+	/*Navigation menu-mobile devices*/
+
+	header {
+		height: 50px;
+	}
+	#logo {
+		display: block;
+		width: 80%;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	#logo img {
+		max-width: 150px;
+		padding-top: 5px;
+		padding-left: 10px;
+		width: 100%;
+		float: left;
+		padding: 5px;
+		margin-left: 0;
+		transform: translateX(0);
+	}
+	#menu-button {
+		display: block;
+		width: 20%;
+		float: right;
+		margin: 0;
+		padding: 0;
+	}
+	#menu-button img {
+		width: 24px;
+		height: auto;
+		float: right;
+		padding: 0;
+		margin-top: 15px;
+		margin-right: 15px;
+	}
+	nav ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    float: none;
+	    width: 100%;
+	    position: relative;
+	    z-index: 1;
+	    padding: 0;
+	}
+	nav li {
+	    display: none;
+	    text-align: center;
+	    width: 100%;
+	    background-color: rgba(1,22,66,.9);
+	    border-bottom: #fff solid 1px;
+	}
+	.drop-down-menu:hover nav li {
+		display: block;
+	}
+	.drop-down-menu:active nav li {
+		display: block;
+	}
+	.drop-down-menu:focus nav li {
+		display: block;
+	}
+	nav li a:link, nav li a:visited {
+	    color: #fff;
+	    font-size: 1em;
+	    font-weight: 600;
+	    padding: 15px auto 15px auto;
+	    margin: 0 auto;
+	    text-decoration: none;
+	}
+	nav li a:hover, nav li a:active {
+		
+		background-color: #fff;
+		text-decoration: underline;
+		color: #011642;
+	}
+
+	/*lSmartphone general styling*/
+
+	h1 {
+		font-size: 3.5em;
+	}
+	#home {
+		padding-top: 50px;
+	}
+	.contents {
+		top: 35%;
+		max-width: 350px; 
+		margin-left: -175px; 
+	}
+	#about {
+		padding-top: 50px;
+	}
+	#plan-image {
+		max-width: 250px;
+	}
+	.about-para img {
+		max-width: 80px;
+	}
+	#plan-image img {
+		max-width: 100%;
+	}
+	#services {
+		padding-top: 50px;
+	}
+	.service-item {
+		width: 100%;
+	}
+	#clients {
+		padding-top: 50px;
+	}
+	#lenders {
+		padding-top: 50px;
+	}
+	#lenders-logos {
+		width: 390px;
+	}
+	.lender {
+		margin: 10px;
+		padding: 5px;
+		width: 110px;
+		height: 70px;
+		border-radius: 5px;
+	}
+	.lender img {
+		max-width: 100px;
+		max-height: 60px;
+	}
+	#contact {
+		padding-top: 75px;
+	}
+	.contact-para {
+		width: 100%;
+	}
+	.contact-sub-para {
+		width: 50%;
+		float: left;
+	}
+	#contact {
+		padding-top: 50px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	#contact iframe {
+		width: 100%;
+		max-width: 400px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	/*Small phone styling*/
+
+	h1 {
+		font-size: 3em;
+	}
+	.contents {
+		top: 35%;
+		max-width: 280px; 
+		margin-left: -140px; 
+	}
+	#scott-photo {
+		max-width: 100px;
+	}
+	.service-item img {
+		max-width: 48px;
+	}
+	#lenders-logos {
+		width: 270px;
+	}
+	.lender {
+		margin: 5px;
+		padding: 5px;
+		width: 80px;
+		height: 60px;
+		border-radius: 5px;
+	}
+	.lender img {
+		max-width: 70px;
+		max-height: 50px;
+	}
+	.contact-sub-para {
+		width: 100%;
+	}
+}
+
