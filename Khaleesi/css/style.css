@@ -40,7 +40,7 @@ body {
 h1 {
 	font-family: 'GetVoIP Grotesque', sans-serif;
 	font-weight: 100;
-	font-size: 4em;
+	font-size: 5em;
 	line-height: 1.2em;
 	padding: 0;
 	margin: 0;
@@ -55,10 +55,10 @@ h2 {
 }
 
 h3 {
-	font-family: 'GetVoIP Grotesque', sans-serif;
+	font-family: Verdana, sans-serif;
 	font-size: 1.5em;
-	line-height: 1.2em;
-	padding: 1em 0;
+	line-height: 1.5em;
+	padding: 2em 0 1em 0;
 }
 
 h4 {
@@ -66,7 +66,7 @@ h4 {
 	font-weight: 100;
 	font-size: 1.2em;
 	line-height: 1.4em;
-	padding: 0.4em 0;
+	padding: 1em 0 0.4em 0;
 }
 
 p {
@@ -166,18 +166,6 @@ nav li a:hover, nav li a:active {
 	margin-bottom: 1%;
 	margin-right: 2%;
 	z-index: 100;
-	color: #fff;
-}
-
-.top a:link, a:visited {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.top a:hover, a:active {
-	color: #fff;
-	font-weight: 700;
-	text-decoration: none;
 }
 
 #home {
@@ -244,29 +232,58 @@ nav li a:hover, nav li a:active {
 }
 
 #program {
-	height: 400px;
+	height: 600px;
 	background-color: #22334E;
 	width: 100%;
+	position: relative;
+	padding: 5% 15%;
 }
 
-#program-content {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	padding: 0 15%;
+.upcoming {
+	display: block;
+	width: 29.33%;
+	float: left;
+	padding: 1%;
+	margin: 0 2%;
+	border: 1px solid #fff;
 }
 
 #team {
-	height: 400px;
+	position: relative;
 	background-color: #172234;
 	width: 100%;
+	height: 900px;
 }
 
 #team-content {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	padding: 0 15%;
+	padding: 5% 15% 0 15%;
+}
+
+#team-members {
+	padding: 0 5% 5% 5%;
+}
+
+.member {
+	width: 25%;
+	float: left;
+	padding: 1%;
+}
+
+.member-photo {
+	width: 40%;
+	float: left;
+}
+
+.member-photo img {
+	border-radius: 50%;
+	max-width: 80px;
+}
+
+.member-des {
+	width: 60%;
+	float: left;
+	text-align: left;
+	padding-left: 1%;
 }
 
 #background2 {
@@ -335,13 +352,21 @@ nav li a:hover, nav li a:active {
 	height: 400px;
 	background-color: #172234;
 	width: 100%;
+	padding: 5% 15%;
 }
 
-#contact-content {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	padding: 0 15%;
+#contact-div-left {
+	width: 50%;
+	float: left;
+	text-align: right;
+	padding: 2% 5%;
+}
+
+#contact-div-right {
+	width: 50%;
+	float: right;
+	text-align: left;
+	padding: 2% 5%;
 }
 
 
@@ -352,9 +377,13 @@ footer {
 	margin: 0;
 }
 
-footer a:link, a:visited, a:hover, a:active {
+footer a:link, a:visited {
 	color: #071935;
 } 
+
+footer a:hover, a:active {
+	color: #071935;
+}
 
 
 
