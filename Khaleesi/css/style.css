@@ -64,7 +64,7 @@ h3 {
 h4 {
 	font-family: Verdana, sans-serif;
 	font-weight: 100;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	line-height: 1.4em;
 	padding: 0.4em 0;
 }
@@ -146,16 +146,38 @@ nav li {
 
 nav li a:link, nav li a:visited {
     display: block;
-    font-size: 1.2em;
+    font-size: 1em;
     padding-top: 15px;
     margin: 0;
     text-decoration: none;
+    color: #fff;
 }
 
 nav li a:hover, nav li a:active {
 	color: #fff;
 	font-weight: 700;
 	text-decoration: underline;
+}
+
+.top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-bottom: 1%;
+	margin-right: 2%;
+	z-index: 100;
+	color: #fff;
+}
+
+.top a:link, a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.top a:hover, a:active {
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 #home {
@@ -176,21 +198,21 @@ nav li a:hover, nav li a:active {
 	padding-right: 15%;
 }
 
-#section1 {
-	height: 400px;
+#intro {
+	height: 300px;
 	background-color: #071935;
 	width: 100%;
 }
 
-#heading1 {
+#intro-content {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	padding: 0 15%;
+	padding: 0 20%;
 }
 
-#section2 {
-	background-image: url(../images/section2.jpg);
+#background1 {
+	background-image: url(../images/background1.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -199,50 +221,56 @@ nav li a:hover, nav li a:active {
 	height: 400px;
 }
 
-#background2 {
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(7,25,53,.6);
-	height: 400px;
+.triangle2-top-right {
+	float: right;
+	height: 0;
+    width: 0;
+    border-left: 1600px solid transparent;
+    border-top: 100px solid #071935;
 }
 
-#heading2 {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	padding: 0 15%;
+.spacer-div {
+	height: 200px;
+	width: 100%;
+	float: right;
 }
 
-#section2B {
+.triangle2-bottom-right {
+	float: right;
+	height: 0;
+    width: 0;
+    border-left: 1600px solid transparent;
+    border-bottom: 100px solid #22334E;
+}
+
+#program {
 	height: 400px;
 	background-color: #22334E;
 	width: 100%;
 }
 
-#heading2B {
+#program-content {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	padding: 0 15%;
 }
 
-#section3 {
+#team {
 	height: 400px;
 	background-color: #172234;
 	width: 100%;
 }
 
-#heading3 {
+#team-content {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	padding: 0 15%;
 }
 
-#section4 {
-	background-image: url(../images/section4.jpg);
+#background2 {
+	background-image: url(../images/background2.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -251,28 +279,70 @@ nav li a:hover, nav li a:active {
 	height: 400px;
 }
 
-#heading4 {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	padding: 0 15%;
+#triangle2-top-left {
+	float: left;
+	height: 0;
+    width: 0;
+    border-right: 1600px solid transparent;
+    border-top: 100px solid #172234;
 }
 
-#section5 {
+#triangle2-bottom-left {
+	float: right;
+	height: 0;
+    width: 0;
+    border-right: 1600px solid transparent;
+    border-bottom: 100px solid #071935;
+}
+
+#updates {
 	height: 400px;
 	background-color: #071935;
 	width: 100%;
 }
 
-#heading5 {
+#updates-content {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	padding: 0 15%;
 }
 
+#background3 {
+	background-image: url(../images/background3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+}
 
+#results {
+	height: 400px;
+	background-color: #22334E;
+	width: 100%;
+}
 
+#results-content {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 15%;
+}
+
+#contact {
+	height: 400px;
+	background-color: #172234;
+	width: 100%;
+}
+
+#contact-content {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 15%;
+}
 
 
 footer {
