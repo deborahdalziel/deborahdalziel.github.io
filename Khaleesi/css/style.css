@@ -282,7 +282,12 @@ nav li a:hover, nav li a:active {
 
 .member-photo img {
 	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	max-width: 80px;
+	box-shadow: 0 0 8px rgb(12,17,26), 0 0 12px rgba(12,17,26,.6);
+	-webkit-box-shadow: 0 0 8px rgb(12,17,26), 0 0 12px rgba(12,17,26,.6);
+	-moz-box-shadow: 0 0 8px rgb(12,17,26), 0 0 12px rgba(12,17,26,.6);
 }
 
 .member-des {
