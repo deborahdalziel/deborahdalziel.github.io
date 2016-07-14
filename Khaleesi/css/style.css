@@ -168,27 +168,37 @@ nav li a:hover, nav li a:active {
 	z-index: 100;
 }
 
-#home {
-	background-image: url(../images/cover.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: top center;
-	background-size: cover;
+#homebox {
 	height: 700px;
 	width: 100%;
 	background-color: #071935;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#home-cover img {
+	min-width: 100%;
+	min-height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 #homediv {
-	position: relative;
+	position: absolute;
+	position: center;
 	top: 50%;
 	transform: translateY(-50%);
-	padding-left: 15%;
-	padding-right: 15%;
+	left: 50%;
+	width: 100%;
+	max-width: 1000px;
+	margin-left: -500px;
 }
 
 #intro {
-	height: 300px;
+	padding-top: 50px;
+	height: 100vh;
 	background-color: #071935;
 	width: 100%;
 }
@@ -206,6 +216,9 @@ nav li a:hover, nav li a:active {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	width: 100%;
 	height: 400px;
 }
@@ -285,9 +298,9 @@ nav li a:hover, nav li a:active {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	max-width: 80px;
-	box-shadow: 0 0 8px rgb(12,17,26), 0 0 12px rgba(12,17,26,.6);
-	-webkit-box-shadow: 0 0 8px rgb(12,17,26), 0 0 12px rgba(12,17,26,.6);
-	-moz-box-shadow: 0 0 8px rgb(12,17,26), 0 0 12px rgba(12,17,26,.6);
+	box-shadow: 0 0 5px rgb(12,17,26), 0 0 8px rgba(12,17,26,.6);
+	-webkit-box-shadow: 0 0 5px rgb(12,17,26), 0 0 8px rgba(12,17,26,.6);
+	-moz-box-shadow: 0 0 5px rgb(12,17,26), 0 0 8px rgba(12,17,26,.6);
 }
 
 .member-des {
@@ -297,12 +310,19 @@ nav li a:hover, nav li a:active {
 	padding-left: 1%;
 }
 
+#team-photo {
+	display: none;
+}
+
 #background2 {
 	background-image: url(../images/background2.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	width: 100%;
 	height: 400px;
 }
@@ -340,8 +360,11 @@ nav li a:hover, nav li a:active {
 	background-image: url(../images/background3.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: top center;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	width: 100%;
 	height: 400px;
 }
@@ -360,10 +383,10 @@ nav li a:hover, nav li a:active {
 }
 
 #contact {
-	height: 400px;
+	height: 500px;
 	background-color: #172234;
 	width: 100%;
-	padding: 5% 15%;
+	padding: 10% 15%;
 }
 
 #contact-div-left {
@@ -411,6 +434,30 @@ footer a:hover, a:active {
 	#background3 {
 		background-image: none;
 		display: none;
+	}
+
+	#intro {
+		height: 300px;
+	}
+
+	#intro-content {
+		padding: 5% 10%;
+	}
+
+	#intro-content p {
+		font-size: 0.8em;
+	}
+
+
+	#team-photo {
+		display: block;
+		min-width: 100%;
+		max-height: 400px;
+		overflow: hidden;
+	}
+
+	#team-photo img {
+		min-width: 100%;
 	}
 
 }
