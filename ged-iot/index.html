@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Internet of Things | A Complete IoT Solution from Genesys Electronics Design</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		if($(window).width()<=900) {   
+  			//when the html document is ready
+			$(document).ready(function(){
+				$('.drop-down-menu nav li').hide();
+	    		//when close menu button is clicked
+	    		$('.drop-down-menu nav li').click(function(){
+	        		//hide the menu links
+	        		$('.drop-down-menu nav li').slideUp(500);	
+	    		});
+	    		//when menu button is clicked
+	    		$('#menu-button').click(function(){
+	    			//open the menu links
+	    			$('.close-menu').css('display', 'inline');
+	    			$('.drop-down-menu nav li').slideDown(500);	
+	   			 });
+	    	});
+		}
+
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    if (this.hash !== "") {
+		      event.preventDefault();
+
+		      var hash = this.hash;
+
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    } 
+		  });
+
+			// IoT chaos diagram pop-up open and close functions
+			$("#medical1").click(function() {
+				$("#medical1-popup").css('display','block');
+			});
+			$("#medical2").click(function() {
+				$("#medical2-popup").css('display','inline');
+			});
+			$("#car1").click(function() {
+				$("#car1-popup").css('display','inline');
+			});
+			$("#car2").click(function() {
+				$("#car2-popup").css('display','inline');
+			});
+			$("#surveillance1").click(function() {
+				$("#surveillance1-popup").css('display','inline');
+			});
+			$("#surveillance2").click(function() {
+				$("#surveillance2-popup").css('display','inline');
+			});
+			$("#telco1").click(function() {
+				$("#telco1-popup").css('display','inline');
+			});
+			$("#office-building1").click(function() {
+				$("#office-building1-popup").css('display','inline');
+			});
+			$("#office-building2").click(function() {
+				$("#office-building2-popup").css('display','inline');
+			});
+			$("#syslog1").click(function() {
+				$("#syslog1-popup").css('display','inline');
+			});
+			$("#syslog2").click(function() {
+				$("#syslog2-popup").css('display','inline');
+			});
+			$("#office-desk1").click(function() {
+				$("#office-desk1-popup").css('display','inline');
+			});
+			$("#office-desk2").click(function() {
+				$("#office-desk2-popup").css('display','inline');
+			});
+			$("#office-desk3").click(function() {
+				$("#office-desk3-popup").css('display','inline');
+			});
+			$(".close-popup").click(function() {
+				$("#medical1-popup").css('display','none');
+				$("#medical2-popup").css('display','none');
+				$("#car1-popup").css('display','none');
+				$("#car2-popup").css('display','none');
+				$("#surveillance1-popup").css('display','none');
+				$("#surveillance2-popup").css('display','none');
+				$("#telco1-popup").css('display','none');
+				$("#office-building1-popup").css('display','none');
+				$("#office-building2-popup").css('display','none');
+				$("#syslog1-popup").css('display','none');
+				$("#syslog2-popup").css('display','none');
+				$("#office-desk1-popup").css('display','none');
+				$("#office-desk2-popup").css('display','none');
+				$("#office-desk3-popup").css('display','none');
+			});
+		});
+
+		// change menu bar when user scrolls down
+		$(window).scroll(function() {
+		if ($(this).scrollTop() > 1){  
+		    $('header').addClass("sticky");
+		  }
+		  else{
+		    $('header').removeClass("sticky");
+		  }
+		});
+	</script>
+
+
+	<link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<div class="top">
+
+		<a href="#home"><img src="images/up-arrow.png" alt="scroll up"></a>
+
+	</div>
+
+
+<main>
+
+	<div id="wrapper">
+
+	<header>
+
+		<a href="#home"><img src="images/ged-iot-logo.png"></a>
+
+		<div class="drop-down-menu">
+
+		<div id="menu-button"><img src="images/menu.png"></div>
+
+		<nav>
+
+			<ul>
+
+					<li><a href="#why-genesys">Why Genesys?</a></li>
+					<li><a href="#platforms">Our Platforms</a></li>
+					<li><a href="#capabilities">Our Capabilities</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li id="close-menu">X</li>
+
+			</ul>
+
+		</nav>
+
+		</div>
+
+			<div class="clearfix"></div>
+
+		</header>
+
+
+		<section id="home">
+
+				<div id="home-content">
+
+					<h1>Have an idea for a great IoT project? The experts at Genesys can help make it a success.</h1>
+
+					<div class="scroll-image"><a href="#why-genesys"><img src="images/down-arrow.png"></a></div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+			<div class="clearfix"></div>
+
+
+		<section id="why-genesys"> 
+
+
+			<div id="why-genesys-statement">
+
+				<h5>We know that a successful IoT project is multifaceted and complex. From the device to the network to the data analysis and distribution - and everything in between - getting it right requires knowledge of the entire process.</h5> 
+
+				<h5>That's why we have spent years developing end-to-end capabilities across the entire IoT ecosystem and tackling the toughest challenges of how to connect everything.</h5>
+
+			<div class="scroll-image"><a href="#why-genesys-statistics"><img src="images/down-arrow.png"></a></div>
+
+		</div>
+
+		</section>
+
+
+			<div class="clearfix"></div>
+
+
+		<section id="why-genesys-statistics"> 
+
+			<h2>Why Choose Genesys?</h2>
+
+				<div id="stats-img-main">
+
+					<img src="images/statistics.png">
+			
+				</div>
+
+				<div id="stats-img-mobile">
+
+					<img src="images/statistics-mobile.png">
+
+				</div>
+
+				<div class="clearfix"></div>
+
+			<div class="scroll-image"><a href="#platforms"><img src="images/down-arrow-blue.png"></a></div>
+
+		</section>
+
+
+			<div class="clearfix"></div>
+
+
+		<section id="platforms">
+
+
+			<div id="platform-content">
+
+				<h2>The Power of Platforms</h2>
+
+				<p>To optimise time-to market and quality, Genesys has invested in a platform approach to hardware, software and firmware development.</p>
+
+				<p>We are continually developing and testing new products, which contribute to the suite of Genesys platforms. Through this approach we ensure rigorous testing and maturity of our offerings, without the heavy price tag.</p>
+
+			</div>
+
+				<div class="clearfix"></div>
+
+			<div id="platform-items">
+
+					<div class="platform-item">
+						<h4>Genesys Modular Stack</h4>
+						<p>Cost-effective baseboards and modules that work together for streamlined development, rapid deployment and upgradeability.</p>
+					</div>
+
+					<div class="platform-item">
+						<h4>Embedded C</h4>
+						<p>Our embedded C platform is suited to the lowest end, low power micro controllers.</p>
+					</div>
+
+					<div class="platform-item">
+						<h4>RTOS-P</h4>
+						<p>Cross-platform real-time operating system for mid-range embedded systems.</p>
+					</div>
+
+					<div class="platform-item">
+						<h4>Embedded Linux</h4>
+						<p>Cross-platform high performance embedded system.</p>
+					</div>
+
+					<div class="platform-item">
+						<h4>Cloud</h4>
+						<p>Purpose built cloud server platform for hosting device management and data collection services.</p>
+					</div>
+
+					<div class="platform-item">
+						<h4>Web Console</h4>
+						<p>Web based device portal for management, configurations, commissioning, control and debugging.</p>
+					</div>
+
+					<div class="platform-item">
+						<h4>IoT Supervisor</h4>
+						<p>Simple yet powerful monitoring of deployed devices.</p>
+					</div>
+					
+					<div class="platform-item">
+						<h4>IoT Manager</h4>
+						<p>Comprehensive management of IoT system deployment and maintenance.</p>
+					</div>	
+
+			</div>
+
+				<div class="clearfix"></div>
+
+			<div class="scroll-image"><a href="#capabilities"><img src="images/down-arrow.png"></a></div>
+
+		</section>
+
+
+			<div class="clearfix"></div>
+
+
+		<section id="capabilities"> 
+
+			<div id="capabilities-content">
+
+				<h2>End-to-end Capabilities</h2>
+
+				<p>From the device to the Cloud, Genesys can help you navigate the complexities of the IoT ecosystem.</p>
+
+			</div>
+
+				<div class="clearfix"></div>
+
+			<div id="capabilities-items">
+
+				<div id="capabilities-things">
+					<h4>Things</h4>
+					<p>We put the 'things' in IoT, including sensors, actuators, user interfaces, local storage, modules and platforms.</p>
+				</div>
+				<div class="capabilities-circle"><div id="circle-things"></div><br><div id="line-things"><hr width="1" size="20" color="#992cd3"></div></div>
+				<div class="capabilities-empty"></div>
+
+				<div class="capabilities-empty"></div>
+				<div class="capabilities-circle"><div id="circle-local-network"></div><br><div id="line-local-network"><hr width="1" size="20" color="#8106d0"></div></div>
+				<div id="capabilities-local-network">
+					<h4>Local Network</h4>
+					<p>With a variety of WLAN, LAN, WPAN, PAN and Protocol Stacks, we'll get your things connected.</p>
+				</div>
+
+				<div id="capabilities-network-interfaces">
+					<h4>Network Interfaces</h4>
+					<p>All the network equipment you need including controllers, gateways, routers and bridges.</p>
+				</div>
+				<div class="capabilities-circle"><div id="circle-network-interfaces"></div><br><div id="line-network-interfaces"><hr width="1" size="20" color="#6e1eb8"></div></div>
+				<div class="capabilities-empty"></div>
+
+				<div class="capabilities-empty"></div>
+				<div class="capabilities-circle"><div id="circle-network"></div><br><div id="line-network"><hr width="1" size="20" color="#5206d0"></div></div>					
+				<div id="capabilities-network">
+					<h4>Network</h4>
+					<p>WAN, LPWAN and Network Equipment to connect your IoT solution to the Cloud.</p>
+				</div>
+
+				<div id="capabilities-cloud">
+					<h4>Cloud</h4>
+					<p>Leverage our Cloud systems or get support to Build your own, including Servers, Databases, Management Systems, Security and Infrastructure.</p>
+				</div>
+				<div class="capabilities-circle"><div id="circle-cloud"></div><br><div id="line-cloud"><hr width="1" size="20" color="#3106d0"></div></div>
+				<div class="capabilities-empty"></div>
+
+				<div class="capabilities-empty"></div>
+				<div class="capabilities-circle"><div id="circle-user-interfaces"></div><br><div id="line-user-interfaces"><hr width="1" size="20" color="#063ad0"></div></div>
+				<div id="capabilities-user-interfaces">
+					<h4>User Interfaces</h4>
+					<p>Web Servers, Mobile Devices, Platforms, Security and a variety of other technologies that provide a simple and secure view of your IoT solution.</p>
+				</div>
+
+		</div>
+
+			<div class="clearfix"></div>
+
+				<div class="scroll-image"><a href="#projects"><img src="images/down-arrow-blue.png"></a></div>
+
+			<div class="clearfix"></div>
+		
+		</section>
+
+
+			<div class="clearfix"></div>
+
+
+		<section id="projects"> 
+
+			<h2>IoT in Action</h2>
+
+			<p>At Genesys we're passionate about helping our clients organise the IoT chaos. Explore the projects below to see some examples of the work we've done. If you would like to learn more about any of these projects you can request a demo using the form below.</p> 
+
+			<div id="chaos-diagram">
+
+				<div id="cloud-large">
+
+					<img src="images/cloud-large.svg">
+
+				</div>
+
+				<div id="medical">
+
+					<img src="images/medical.svg">
+
+					<button id="medical1">Cardiac Output <br>Monitor</button>
+
+					<div id="medical1-popup">
+						<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Cardiac Output Monitor</h5>
+							<p>An iPad controlled device that measures cardiac output with ECG and BP.</p>
+						</div>
+					</div>
+
+					<button id="medical2">Knee Angle <br>Sensor</button>
+
+					<div id="medical2-popup">
+						<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Knee Angle Sensor</h5>
+							<p>Battery powered, wireless knee angle meter for rehabilitation.</p>
+						</div>
+					</div>
+
+					</p>
+
+				</div>
+
+				<div id="car">
+
+					<img src="images/car.svg">
+
+					<button id="car1">Smart Device <br>Enabled Exhaust</button>
+
+					<div id="car1-popup">
+						<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Smart Device Enabled Exhaust</h5>
+							<p>Controls the volume of and exhaust with a smart device. Configure volume profiles with RPM and GPS position.</p>
+						</div>
+					</div>
+
+					<button id="car2">Smart Device <br>LED Signage</button>
+
+					<div id="car2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Smart Device LED Signage</h5>
+							<p>Smart device enabled signage built for the purpose of real-estate auctions.</p>
+						</div>
+					</div>
+				
+				</div>
+
+				<div id="surveillance">
+
+					<img src="images/surveillance.svg">
+
+					<button id="surveillance1">IoT Surveillance <br>Camera</button>
+
+					<div id="surveillance1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>IoT Surveillance Camera</h5>
+							<p>3G, 4G, WiFi accesspont or client enabled IoT surveillance camera with a polished web-based user-interface for configuration, control and event management.</p>
+						</div>
+					</div>
+
+					<button id="surveillance2">IoT DC <br>Power Supply</button>
+
+					<div id="surveillance2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>IoT DC Power Supply</h5>
+							<p>IoT enabled high power DC/DC power supply primarily for offsite services. Real-time system monitoring and control.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="office-building-mobile">
+
+					<img src="images/office-building.svg">
+
+					<button id="office-building1">IoT Building <br>Management System</button>
+
+					<div id="office-building1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>IoT Building Management System</h5>
+							<p>Incredibly configurable BMS control and energy optimiser built on the Genesys Linux and Wob Console platforms.</p>
+						</div>
+					</div>
+
+					<button id="office-building2">Elevator Monitor <br>and Control</button>
+
+					<div id="office-building2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Elevator Monitor and Control</h5>
+							<p>IoT elevator monitoring system built on the Genesys MIG platform.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="office-desk-mobile2">
+
+					<img src="images/office-desk.svg">
+
+					<button id="office-desk1">Smart Office <br>Network Processor</button>
+
+					<div id="office-desk1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Smart Office Network Processor</h5>
+							<p>A live, deployed 6LoWPAN network able to monitor and control more than 100 sensor nodes in a meshed network. This is a demonstration of the Genesys MIG platform.</p>
+						</div>
+					</div>
+
+					<button id="office-desk2">6LoWPAN PIR <br>Sensor</button>
+
+					<div id="office-desk2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>6LoWPAN PIR Sensor</h5>
+							<p>A MIG platform 6LoWPAN sensor node monitoring room occupancy with a PIR sensor.</p>
+						</div>
+					</div>
+
+					<button id="office-desk3">6LoWPAN <br>Environment Sensor</button>
+
+					<div id="office-desk3-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>6LoWPAN Environment Sensor</h5>
+							<p>A MIG platform 6LoWPAN sensor node monitoring ambient temperature.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="syslog-mobile">
+
+					<img src="images/syslog.svg">
+
+					<button id="syslog1">IoT Supervisor <br>(ITS)</button>
+
+					<div id="syslog1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>IoT Supervisor (ITS)</h5>
+							<p>The IoT supervisor servers retrieve heartbeat messages from thousands of 'things,' monitors their activity and alerts administrators to faults.</p>
+						</div>
+					</div>
+
+					<button id="syslog2">Kiwi Syslog <br>Server</button>
+
+					<div id="syslog2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Kiwi Syslog</h5>
+							<p>The hosted syslog server powered by Kiwi Syslog provides an endpoint for IoT log messages as well as an ITS transportation option.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="telco">
+
+					<img src="images/telco.svg">
+
+					<button id="telco1">Narrow Band <br>IoT Tracker</button>
+
+					<div id="telco1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Narrow Band IoT Tracker</h5>
+							<p>Ultra low-power GPS, narrow band tracker. Support NB-IoT and/or Sigfox.</p>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div id="cloud-small">
+
+					<img src="images/cloud-small.svg">
+
+				</div>
+
+				<div id="office-building">
+
+					<img src="images/office-building.svg">
+
+					<button id="office-building1">IoT Building <br>Management System</button>
+
+					<div id="office-building1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>IoT Building Management System</h5>
+							<p>Incredibly configurable BMS control and energy optimiser built on the Genesys Linux and Wob Console platforms.</p>
+						</div>
+					</div>
+
+					<button id="office-building2">Elevator Monitor <br>and Control</button>
+
+					<div id="office-building2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Elevator Monitor and Control</h5>
+							<p>IoT elevator monitoring system built on the Genesys MIG platform.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="office-desk-mobile1">
+
+					<img src="images/office-desk.svg">
+
+					<button id="office-desk1">Smart Office <br>Network Processor</button>
+
+					<div id="office-desk1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Smart Office Network Processor</h5>
+							<p>A live, deployed 6LoWPAN network able to monitor and control more than 100 sensor nodes in a meshed network. This is a demonstration of the Genesys MIG platform.</p>
+						</div>
+					</div>
+
+					<button id="office-desk2">6LoWPAN PIR <br>Sensor</button>
+
+					<div id="office-desk2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>6LoWPAN PIR Sensor</h5>
+							<p>A MIG platform 6LoWPAN sensor node monitoring room occupancy with a PIR sensor.</p>
+						</div>
+					</div>
+
+					<button id="office-desk3">6LoWPAN <br>Environment Sensor</button>
+
+					<div id="office-desk3-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>6LoWPAN Environment Sensor</h5>
+							<p>A MIG platform 6LoWPAN sensor node monitoring ambient temperature.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="syslog">
+
+					<img src="images/syslog.svg">
+
+					<button id="syslog1">IoT Supervisor <br>(ITS)</button>
+
+					<div id="syslog1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>IoT Supervisor (ITS)</h5>
+							<p>The IoT supervisor servers retrieve heartbeat messages from thousands of 'things,' monitors their activity and alerts administrators to faults.</p>
+						</div>
+					</div>
+
+					<button id="syslog2">Kiwi Syslog <br>Server</button>
+
+					<div id="syslog2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Kiwi Syslog</h5>
+							<p>The hosted syslog server powered by Kiwi Syslog provides an endpoint for IoT log messages as well as an ITS transportation option.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="office-desk">
+
+					<img src="images/office-desk.svg">
+
+					<button id="office-desk1">Smart Office <br>Network Processor</button>
+
+					<div id="office-desk1-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>Smart Office Network Processor</h5>
+							<p>A live, deployed 6LoWPAN network able to monitor and control more than 100 sensor nodes in a meshed network. This is a demonstration of the Genesys MIG platform.</p>
+						</div>
+					</div>
+
+					<button id="office-desk2">6LoWPAN PIR <br>Sensor</button>
+
+					<div id="office-desk2-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>6LoWPAN PIR Sensor</h5>
+							<p>A MIG platform 6LoWPAN sensor node monitoring room occupancy with a PIR sensor.</p>
+						</div>
+					</div>
+
+					<button id="office-desk3">6LoWPAN Environment <br>Sensor</button>
+
+					<div id="office-desk3-popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+						<div class="popup-content">
+							<h5>6LoWPAN Environment Sensor</h5>
+							<p>A MIG platform 6LoWPAN sensor node monitoring ambient temperature.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="clearfix"></div>
+
+				<div class="scroll-image"><a href="#contact"><img src="images/down-arrow.png"></a></div>
+
+		</section>
+
+
+			<div class="clearfix"></div>
+
+
+		<section id="contact">
+
+ 			<h2>Get in Touch</h2>
+
+		  		<form name="contactform" method="post" action="php/send_form_email.php"> 
+		 	 		<div class="get-in-touch-form">
+		  				<input name="full_name" type="text" placeholder="Enter full name*">
+		  				<input name="company_name" type="text" placeholder="Enter company name"> 
+		  				<input name="email" type="text" placeholder="Enter email address*"> 
+		  				<input name="telephone" type="text" placeholder="Enter phone number">
+		  				<textarea name="comments" rows="6" placeholder="How can we help?"></textarea>
+		  				<input type="submit" value="Submit"> 
+		  			</div>
+				</form>
+
+			<div class="clearfix"></div>
+
+	 	</section>
+
+
+			<div class="clearfix"></div>
+
+		
+		<footer>
+
+			<p>Contact: 5/33 Ryde Rd, Pymble NSW 2073, +61 2 9496 8900, <a href="mailto:enquiries@genesysdesign.com.au?subject=IoT solution enquiry from website">enquiries@genesysdesign.com.au</a></p>
+
+			<p>&copy; 2016 <a href=http://www.genesysdesign.com.au target="_blank">Gensys Electronics Design Pty Ltd</a>. Website by <a href=http://www.unboundmarketing.com.au target="_blank">Unbound Marketing</a>.</p>	
+
+	 	</footer>
+
+	 </div>
+
+
+ 	</main>
+
+</body>
+
+</html>
