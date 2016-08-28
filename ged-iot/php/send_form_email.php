@@ -9,7 +9,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "debbie_dalziel@yahoo.ca";
+    $email_to = "enquiries@genesysdesign.com.au";
 
     $email_to = "deborah@unboundmarketing.com.au";
  
