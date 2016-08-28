@@ -256,6 +256,10 @@ nav li a:hover, nav li a:active {
 	height: 100vh;
 }
 
+#home-image {
+	display: none;
+}
+
 #home-content {
 	position: absolute;
 	position: center;
@@ -1414,6 +1418,22 @@ footer a:hover, a:active {
 
 	#close-menu li:hover, #close-menu li:active {
 		text-decoration: underline;
+	}
+
+	#home {
+		background-image: none;
+	}
+
+	#home-image {
+		display: block;
+	}
+
+	#home-image img {
+		margin-left: 50%;
+		transform: translateX(-50%);
+		width: auto;
+		height: 100vh;
+		overflow: hidden;
 	}
 
 	#home-content {
