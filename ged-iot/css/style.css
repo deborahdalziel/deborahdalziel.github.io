@@ -271,7 +271,7 @@ nav li a:hover, nav li a:active {
 }
 
 #why-genesys {
-	min-height: 100vh;
+	height: 100vh;
 	background-color: #06c5e0;
 	width: 100%;
 }
