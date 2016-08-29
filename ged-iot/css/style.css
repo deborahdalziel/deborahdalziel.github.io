@@ -1431,8 +1431,7 @@ footer a:hover, a:active {
 
 	#home-image img {
 		width: auto;
-		min-width: 100%;
-		min-height: 100vh;
+		height: 100vh;
 		overflow: hidden;
 	}
 
@@ -1655,7 +1654,6 @@ footer a:hover, a:active {
 	}
 	
 	#home-content {
-		top: 20%;
 		max-width: 400px;
 		margin-left: -200px;
 	}
