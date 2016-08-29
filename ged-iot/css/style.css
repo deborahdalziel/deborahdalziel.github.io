@@ -271,7 +271,7 @@ nav li a:hover, nav li a:active {
 }
 
 #why-genesys {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #06c5e0;
 	width: 100%;
 }
@@ -1076,7 +1076,7 @@ button:hover {
 	color: #fff;
 	margin: 0;
 	padding: 0 0 5% 0;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 #contact h2 {
@@ -1431,7 +1431,8 @@ footer a:hover, a:active {
 
 	#home-image img {
 		width: auto;
-		height: 100vh;
+		min-width: 100%;
+		min-height: 100vh;
 		overflow: hidden;
 	}
 
@@ -1654,6 +1655,7 @@ footer a:hover, a:active {
 	}
 	
 	#home-content {
+		top: 20%;
 		max-width: 400px;
 		margin-left: -200px;
 	}
