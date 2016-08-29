@@ -884,13 +884,13 @@ button:hover {
 	height: auto;
 }
 
-#office-building1 {
+.office-building1 {
 	position: absolute;
 	top: 20px;
 	right: 90px;
 }
 
-#office-building1-popup {
+.office-building1-popup {
 	display: none;
 	position: absolute;
 	z-index: 100;
@@ -907,13 +907,13 @@ button:hover {
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
-#office-building2 {
+.office-building2 {
 	position: absolute;
 	bottom: 60px;
 	right: 30px;
 }
 
-#office-building2-popup {
+.office-building2-popup {
 	display: none;
 	position: absolute;
 	z-index: 100;
@@ -943,13 +943,13 @@ button:hover {
 	height: auto;
 }
 
-#syslog1 {
+.syslog1 {
 	position: absolute;
 	top: 80px;
 	left: 70px;
 }
 
-#syslog1-popup {
+.syslog1-popup {
 	display: none;
 	position: absolute;
 	z-index: 100;
@@ -966,13 +966,13 @@ button:hover {
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
-#syslog2 {
+.syslog2 {
 	position: absolute;
 	bottom: 30px;
 	left: 70px;
 }
 
-#syslog2-popup {
+.syslog2-popup {
 	display: none;
 	position: absolute;
 	z-index: 100;
@@ -1002,13 +1002,13 @@ button:hover {
 	height: auto;
 }
 
-#office-desk1 {
+.office-desk1 {
 	position: absolute;
 	top: 35px;
 	left: 70px;
 }
 
-#office-desk1-popup {
+.office-desk1-popup {
 	display: none;
 	position: absolute;
 	z-index: 100;
@@ -1025,13 +1025,13 @@ button:hover {
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
-#office-desk2 {
+.office-desk2 {
 	position: absolute;
 	right: 80px;
 	bottom: 30px;
 }
 
-#office-desk2-popup {
+.office-desk2-popup {
 	display: none;
 	position: absolute;
 	z-index: 100;
@@ -1048,13 +1048,13 @@ button:hover {
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
-#office-desk3 {
+.office-desk3 {
 	position: absolute;
 	bottom: 30px;
 	left: 30px;
 }
 
-#office-desk3-popup {
+.office-desk3-popup {
 	display: none;
 	position: absolute;
 	z-index: 100;
@@ -1322,12 +1322,12 @@ footer a:hover, a:active {
 		height: 187.5px;
 	}
 
-	#office-building1 {
+	.office-building1 {
 		top: 5px;
 		right: 80px;
 	}
 
-	#office-building2 {
+	.office-building2 {
 		bottom: 40px;
 		right: 20px;
 	}
@@ -1337,12 +1337,12 @@ footer a:hover, a:active {
 		height: 187.5px;
 	}
 
-	#syslog1 {
+	.syslog1 {
 		top: 60px;
 		left: 50px;
 	}
 
-	#syslog2 {
+	.syslog2 {
 		bottom: 20px;
 		left: 50px;
 	}
@@ -1352,19 +1352,37 @@ footer a:hover, a:active {
 		height: 187.5px;
 	}
 
-	#office-desk1 {
+	.office-desk1 {
 		top: 30px;
 		left: 50px;
 	}
 
-	#office-desk2 {
+	.office-desk2 {
 		right: 55px;
 		bottom: 20px;
 	}
 
-	#office-desk3 {
+	.office-desk3 {
 		bottom: 20px;
 		left: 5px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#home {
+		background-image: none;
+	}
+
+	#home-image {
+		display: block;
+		overflow: hidden;
+	}
+
+	#home-image img {
+		width: auto;
+		height: 100vh;
+		overflow: hidden;
 	}
 }
 
@@ -1418,21 +1436,6 @@ footer a:hover, a:active {
 
 	#close-menu li:hover, #close-menu li:active {
 		text-decoration: underline;
-	}
-
-	#home {
-		background-image: none;
-	}
-
-	#home-image {
-		display: block;
-		overflow: hidden;
-	}
-
-	#home-image img {
-		width: auto;
-		height: 100vh;
-		overflow: hidden;
 	}
 
 	#home-content {
@@ -1602,39 +1605,44 @@ footer a:hover, a:active {
 		right: 50px;
 	}
 
-	#office-building1 {
+	.office-building1 {
 		top: 10px;
 		right: 60px;
 	}
 
-	#office-building2 {
+	.office-building2 {
 		bottom: 40px;
 		right: 10px;
 	}
 
-	#syslog1 {
+	.syslog1 {
 		top: 10px;
 		left: 100px;
 	}
 
-	#syslog2 {
+	.syslog2 {
 		bottom: 50px;
 		left: 40px;
 	}
 
-	#office-desk1 {
+	.office-desk1 {
 		top: 20px;
 		left: 50px;
 	}
 
-	#office-desk2 {
+	.office-desk2 {
 		right: 55px;
 		bottom: 25px;
 	}
 
-	#office-desk3 {
+	.office-desk3 {
 		bottom: 25px;
 		left: 5px;
+	}
+
+	.get-in-touch-form {
+		width: 70%;
+		margin-top: 20px;
 	}
 
 }
@@ -1873,12 +1881,12 @@ footer a:hover, a:active {
 		right: 40px;
 	}
 
-	#office-building1 {
+	.office-building1 {
 		top: 0px;
 		right: 20px;
 	}
 
-	#office-building2 {
+	.office-building2 {
 		bottom: 40px;
 		right: 0px;
 	}
@@ -1888,34 +1896,29 @@ footer a:hover, a:active {
 		right: 70px;
 	}
 
-	#syslog1 {
+	.syslog1 {
 		top: 5px;
 		left: 60px;
 	}
 
-	#syslog2 {
+	.syslog2 {
 		bottom: 30px;
 		left: 20px;
 	}
 
-	#office-desk1 {
+	.office-desk1 {
 		top: 10px;
 		left: 10px;
 	}
 
-	#office-desk2 {
+	.office-desk2 {
 		right: 0px;
 		bottom: 10px;
 	}
 
-	#office-desk3 {
+	.office-desk3 {
 		bottom: 10px;
 		left: 0px;
-	}
-
-	.get-in-touch-form {
-		width: 70%;
-		margin-top: 20px;
 	}
 
 	footer {
@@ -2018,7 +2021,7 @@ footer a:hover, a:active {
 		left: 70px;
 	}
 
-	#office-building1 {
+	.office-building1 {
 		top: 5px;
 		right: 20px;
 	}
@@ -2040,27 +2043,27 @@ footer a:hover, a:active {
 		height: 156px;
 	}
 
-	#syslog1 {
+	.syslog1 {
 		top: 30px;
 		left: 30px;
 	}
 
-	#syslog2 {
+	.syslog2 {
 		bottom: 20px;
 		left: 10px;
 	}
 
-	#office-desk1 {
+	.office-desk1 {
 		top: 10px;
 		left: 10px;
 	}
 
-	#office-desk2 {
+	.office-desk2 {
 		right: 0px;
 		bottom: 10px;
 	}
 
-	#office-desk3 {
+	.office-desk3 {
 		bottom: 10px;
 		left: 0px;
 	}
