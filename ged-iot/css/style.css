@@ -1229,21 +1229,6 @@ footer a:hover, a:active {
 	    font-size: 1em;
 	}
 
-	#home {
-		background-image: none;
-	}
-
-	#home-image {
-		display: block;
-		overflow: hidden;
-	}
-
-	#home-image img {
-		width: auto;
-		height: 100vh;
-		overflow: hidden;
-	}
-
 	#home-content {
 		top: 200px;
 		max-width: 800px;
@@ -1383,8 +1368,23 @@ footer a:hover, a:active {
 	}
 }
 
-@media only screen and (max-width: 900px) {
-	
+@media only screen and (max-width: 1025px) {
+
+	#home {
+		background-image: none;
+	}
+
+	#home-image {
+		display: block;
+		overflow: hidden;
+	}
+
+	#home-image img {
+		width: auto;
+		height: 100vh;
+		overflow: hidden;
+	}
+
 	#menu-button {
 		display: block;
 	}
@@ -1434,7 +1434,10 @@ footer a:hover, a:active {
 	#close-menu li:hover, #close-menu li:active {
 		text-decoration: underline;
 	}
+}
 
+@media only screen and (max-width: 900px) {
+	
 	#home-content {
 		max-width: 600px;
 		margin-left: -300px;
