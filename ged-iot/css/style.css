@@ -776,10 +776,6 @@ footer a:hover, a:active {
 		margin-left: -400px;
 	}
 
-	#why-genesys-statement h2 {
-		padding-top: 100px;
-	}
-
 	#platforms h2 {
 		padding-top: 100px;
 	}
@@ -934,7 +930,7 @@ footer a:hover, a:active {
 	    width: 100%;
 	    background-color: rgba(32,37,42,.95);
 	    margin: 0;
-	    padding: 2% 0;
+	    padding: 15px 0;
 	}
 
 	nav li a:link, nav li a:visited {
@@ -953,6 +949,10 @@ footer a:hover, a:active {
 
 	#close-menu li:hover, #close-menu li:active {
 		text-decoration: underline;
+	}
+
+	#projects {
+		background-image: none;
 	}
 
 	#chaos-diagram {
@@ -1073,8 +1073,7 @@ footer a:hover, a:active {
 	}
 
 	#why-genesys-statement {
-		padding-left: 10%;
-		padding-right: 10%;
+		padding: 15%;
 	}
 
 	#why-genesys-statistics {
@@ -1148,11 +1147,19 @@ footer a:hover, a:active {
 	}
 
 	#button-started {
-		margin: 50px 10px 10px 10px;
+		margin: 0;
+		margin-top: 40px;
+		height: 40px;
 	}
 
 	#button-more {
-		margin: 10px;
+		margin: 0;
+		margin-top: 20px;
+		height: 40px;
+	}
+
+	#why-genesys-statement {
+		padding: 20% 10%;
 	}
 
 	.statistic {
@@ -1237,6 +1244,10 @@ footer a:hover, a:active {
 		max-width: 280px;
 		margin-left: -140px;
 	}
+
+	#why-genesys-statement {
+		padding: 30% 5% 15% 5%;
+	}
 	
 	#why-genesys-statistics h2 {
 		font-size: 3em;
@@ -1251,6 +1262,18 @@ footer a:hover, a:active {
 		float: left;
 		padding: 2%;
 		height: auto;
+	}
+
+	#chaos-diagram {
+		padding: 2%;
+	}
+
+	#chaos-diagram button {
+		max-width: 100px;
+	}
+
+	#chaos-diagram button img {
+		max-width: 60px;
 	}
 
 	.popup {
