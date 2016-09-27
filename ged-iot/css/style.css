@@ -104,8 +104,8 @@ h4 {
 h5 {
 	font-family: 'DINPro-Light' 'Arial' 'sans-serif';
 	font-weight: 100;
-	font-size: 1.8em;
-	line-height: 1.2em;
+	font-size: 1.4em;
+	line-height: 1.4em;
 	padding: 0.4em 0;
 }
 
@@ -140,12 +140,14 @@ li {
 a:link, a:visited {
 	text-decoration: underline;
 	padding: 0.4em 0;
+	color: #fff;
 }
 
 a:hover, a:active {
 	text-decoration: underline;
 	font-weight: 700;
 	padding: 0.4em 0;
+	color: #fff;
 }
 
 button {
@@ -153,9 +155,6 @@ button {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 	border: none;
 	outline: none;
 	color: #fff;
@@ -182,19 +181,19 @@ button:hover {
 
 header { 
 	background-color: rgba(255,255,255,0);
-	padding: none;
-	margin: none;
+	position: absolute;
+	padding: 0;
+	margin: 0;
 	top: 0;
 	height: 100px;
 	width: 100%;
-	position: fixed;
 	z-index: 100;
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 }
 
 header.sticky {
-	background-color: rgba(32,37,42,.5);
+	background-color: rgba(36,41,46,.5);
 	padding: none;
 	margin: none;
 	top: 0;
@@ -253,15 +252,6 @@ nav li a:hover, nav li a:active {
 	padding: 5% 0 0 0;
 }
 
-.top {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	margin-bottom: 1%;
-	margin-right: 2%;
-	z-index: 100;
-}
-
 #home {
 	top: 0;
 	background-image: url(../images/cover.jpg);
@@ -318,50 +308,49 @@ nav li a:hover, nav li a:active {
 }
 
 #why-genesys {
-	height: 100vh;
-	background-color: #099DD6;
+	background-color: #fff;
 	width: 100%;
+	margin: 0;
+}
+
+#why-genesys-statement h2 {
+	padding-top: 120px;
 }
 
 #why-genesys-statement {
-	position: relative;
-	top: 55%;
-	transform: translateY(-50%);
-	padding-left: 15%;
-	padding-right: 15%;
+	background-color: #099DD6;
+	padding: 0 15% 10% 15%;
 }
 
 #why-genesys-statistics {
-	background-color: #fff;
-	width: 100%;
-	min-height: 100vh;
 	margin: 0;
-	padding: 0 10% 5% 10%;
+	padding: 2% 10%;
 }
 
-#why-genesys-statistics h2 {
-	color: #063ad0;
-	padding-top: 100px;
+.statistic {
+	display: block;
+	float: left;
+	width: 25%;
+	color: #063AD0;
+	padding: 5%;
 }
 
-#stats-img-main img {
-	width: 100%;
-	height: auto;
-}
-
-#stats-img-mobile {
-	display: none;
+.statistic h2 {
+	font-family: 'DINPro-Bold' 'Arial' 'sans-serif';
+	font-size: 4em;
+	line-height: 1em;
+	padding: 0;
 }
 
 #platforms {
 	min-height: 100vh;
 	margin: 0;
 	padding: 0 0 5% 0;
-	background-color: #202529
+	background-color: #24292E;
 }
 
 #platforms h2 {
-	padding-top: 100px;
+	padding-top: 120px;
 }
 
 #platform-content {
@@ -387,7 +376,7 @@ nav li a:hover, nav li a:active {
 }
 
 #capabilities h2 {
-	padding-top: 100px;
+	padding-top: 120px;
 }
 
 #capabilities-content {
@@ -456,15 +445,28 @@ nav li a:hover, nav li a:active {
 	padding: 0;
 }
 
+t#projects {
+	background-color: #0A9DD6;
+}
+
 #projects {
-	background-color: #099DD6;
+	top: 0;
+	background-image: url(../images/chaos-diagram-background.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-color: #e1e1e1;
+	width: 100%;
 	min-height: 100vh;
-	margin: 0;
-	padding: 0 0 5% 0;
+	color: #202529;
+	padding-bottom: 10%;
 }
 
 #projects h2 {
-	padding-top: 100px;
+	padding-top: 120px;
 }
 
 #projects p {
@@ -473,8 +475,8 @@ nav li a:hover, nav li a:active {
 }
 
 #chaos-diagram {
-	margin-top: 2%;
 	width: 1200px;
+	padding: 40px 100px;
 	margin-left: 50%;
 	transform: translateX(-50%);
 }
@@ -486,503 +488,154 @@ nav li a:hover, nav li a:active {
 	padding: 5px;
 }
 
-button {
-	background-color: #6e1eb8;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	width: 120px;
-	height: 50px;
+#chaos-diagram button {
+	background-color: rgba(255,255,255,0);
 	border: none;
 	outline: none;
-	color: #fff;
+	padding: 0 1% 1% 1%;
+	max-width: 150px;
+	color: #202529;
 	font-family: 'DINPro-Regular' 'Arial' 'sans-serif';
+	font-size: 1em;
 }
 
-button:hover {
-	background-color: #fff;
-	color: #6e1eb8;
+#chaos-diagram button:hover {
+	background-color: rgba(32,37,42,.2);
 }
 
-.close-popup {
-	margin-top: 15px;
+#chaos-diagram button img {
+	max-width: 100px;
+	height: auto;
+}
+
+.close-popup p {
+	margin-top: 10px;
 	width: 30px;
 	height: 30px;
-	background-color: #fff;
-	color: #202529;
+	color: #fff;
+	text-align: center;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 	font-size: 1.2em;
 }
 
-.close-popup:hover {
-	color: #06c5e0;
+.popup {
+	display: none;
+	position: absolute;
+	z-index: 100;
+	width: 600px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #0A9DD6;
+	color: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
 .popup-content {
-	margin: 10%;
+	margin: 5% 10% 10% 10%;
 }
 
-#office-building-mobile {
-	display: none;
-}
-
-#office-desk-mobile1 {
-	display: none;
-}
-
-#office-desk-mobile2 {
-	display: none;
-}
-
-#syslog-mobile {
-	display: none;
-}
-
-#cloud-large {
-	display: none;
-}
-
-#medical {
-	width: 400px;
-	height: 250px;
-	display: block;
-	float: left;
-	position: relative;
-}
-
-#medical img {
-	width: 100%;
-	height: auto;
-}
-
-#medical1 {
+#cardiac {
 	position: absolute;
-	top: 60px;
-	right: 90px;
+	top: 20px;
+	left: 10px;
 }
 
-#medical1-popup {
-	display: none;
+#knee {
 	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	top: 100px;
+	left: 175px;
 }
 
-#medical2 {
+#exhaust {
 	position: absolute;
-	bottom: 10px;
-	left: 95px;
+	top: 215px;
+	left: 10px;
 }
 
-#medical2-popup {
-	display: none;
+#signage {
 	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-}
-
-#car {
-	width: 400px;
-	height: 250px;
-	display: block;
-	float: left;
-	position: relative;
-}
-
-#car img {
-	width: 100%;
-	height: auto;
-}
-
-#car1 {
-	position: absolute;
-	bottom: 40px;
-	right: 40px;
-}
-
-#car1-popup {
-	display: none;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-}
-
-#car2 {
-	position: absolute;
-	top: 40px;
-	left: 130px;
-}
-
-#car2-popup {
-	display: none;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	top: 315px;
+	left: 175px;
 }
 
 #surveillance {
-	width: 400px;
-	height: 250px;
-	display: block;
-	float: left;
-	position: relative;
-}
-
-#surveillance img {
-	width: 100%;
-	height: auto;
-}
-
-#surveillance1 {
 	position: absolute;
-	bottom: 40px;
-	left: 70px;
+	top: 475px;
+	left: 10px;
 }
 
-#surveillance1-popup {
-	display: none;
+#power {
 	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	top: 540px;
+	left: 175px;
 }
 
-#surveillance2 {
+#buildingmngt {
 	position: absolute;
-	top: 40px;
-	right: 100px;
+	top: 395px;
+	left: 290px;
 }
 
-#surveillance2-popup {
-	display: none;
+#elevator{
 	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	top: 540px;
+	left: 425px;
 }
 
-#telco {
-	width: 400px;
-	height: 500px;
-	display: block;
-	float: left;
-	position: relative;
-}
-
-#telco img {
-	width: 100%;
-	height: auto;
-}
-
-#telco1 {
+#its {
 	position: absolute;
-	bottom: 80px;
-	right: 160px;
-}
-
-#telco1-popup {
-	display: none;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-}
-
-#cloud-small {
-	width: 400px;
-	height: 250px;
-	display: block;
-	float: left;
-}
-
-#cloud-small img {
-	width: 100%;
-	height: auto;
-}
-
-#office-building {
-	width: 400px;
-	height: 250px;
-	display: block;
-	float: left;
-	position: relative;
-}
-
-#office-building img {
-	width: 100%;
-	height: auto;
-}
-
-.office-building1 {
-	position: absolute;
-	top: 20px;
-	right: 90px;
-}
-
-.office-building1-popup {
-	display: none;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-}
-
-.office-building2 {
-	position: absolute;
-	bottom: 60px;
-	right: 30px;
-}
-
-.office-building2-popup {
-	display: none;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	top: 15px;
+	left: 340px;
 }
 
 #syslog {
-	width: 400px;
-	height: 250px;
-	display: block;
-	float: left;
-	position: relative;
-}
-
-#syslog img {
-	width: 100%;
-	height: auto;
-}
-
-.syslog1 {
 	position: absolute;
-	top: 80px;
-	left: 70px;
+	top: 15px;
+	right: 490px;
 }
 
-.syslog1-popup {
-	display: none;
+#smartoffice {
 	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	top: 395px;
+	left: 525px;
 }
 
-.syslog2 {
+#pirsensor {
 	position: absolute;
-	bottom: 30px;
-	left: 70px;
+	top: 540px;
+	left: 660px;
 }
 
-.syslog2-popup {
-	display: none;
+#tempsensor {
 	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	top: 395px;
+	left: 780px;
 }
 
-#office-desk {
-	width: 400px;
-	height: 250px;
-	display: block;
-	float: left;
-	position: relative;
-}
-
-#office-desk img {
-	width: 100%;
-	height: auto;
-}
-
-.office-desk1 {
+#narrowband {
 	position: absolute;
-	top: 35px;
-	left: 70px;
+	top: 540px;
+	right: 120px;
 }
 
-.office-desk1-popup {
-	display: none;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-}
-
-.office-desk2 {
-	position: absolute;
-	right: 80px;
-	bottom: 30px;
-}
-
-.office-desk2-popup {
-	display: none;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-}
-
-.office-desk3 {
-	position: absolute;
-	bottom: 30px;
-	left: 30px;
-}
-
-.office-desk3-popup {
-	display: none;
-	position: absolute;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	background-color: #fff;
-	color: #202529;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-}
 
 #contact { 
-	background-color: #063AD0;
+	background-color: #0A9DD6;
 	color: #fff;
 	margin: 0;
-	padding: 0 0 5% 0;
-	min-height: 100vh;
+	padding: 0 0 10% 0;
 }
 
 #contact h2 {
-	padding-top: 100px;
+	padding-top: 120px;
 }
 
 .get-in-touch-form {
@@ -1014,9 +667,6 @@ input[type=text] {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
 input[type=text]:hover, input[type=text]:focus {
@@ -1038,9 +688,6 @@ textarea {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
 textarea:hover, textarea:focus {
@@ -1051,21 +698,18 @@ textarea:hover, textarea:focus {
 input[type=submit] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	width: 100%;
+	width: 50%;
+	margin-left: 25%;
 	padding: 1%;
-	margin: 0;
 	background-color: #0A9DD6;
+	border: solid 1px #fff;
 	color: #fff;
 	font-size: 1.2em;
 	font-family: 'DINPro-Light' 'Arial' 'sans-serif';
-	border: none;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
-	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
 input[type=submit]:hover, input[type=submit]:focus {
@@ -1074,7 +718,7 @@ input[type=submit]:hover, input[type=submit]:focus {
 }
 
 footer {
-	background-color: #202529;
+	background-color: #24292E;
 	color: #fff;
 	padding: 1% 0;
 	margin: 0;
@@ -1136,8 +780,12 @@ footer a:hover, a:active {
 		margin-left: -400px;
 	}
 
-	#why-genesys-statistics {
-		padding: 0 5% 5% 5%;
+	#why-genesys-statement h2 {
+		padding-top: 100px;
+	}
+
+	#platforms h2 {
+		padding-top: 100px;
 	}
 
 	#platform-content {
@@ -1148,124 +796,99 @@ footer a:hover, a:active {
 		margin: 0 5%;
 	}
 
+	#capabilities h2 {
+		padding-top: 100px;
+	}
+
+	#projects h2 {
+		padding-top: 100px;
+	}
+
 	#chaos-diagram {
-		margin-top: 2%;
-		width: 900px;
+		width: 1000px;
+		padding: 40px 100px;
 	}
 
-	button {
-		width: 100px;
-		height: 45px;
+	#chaos-diagram button {
+		max-width: 120px;
 	}
 
-	#medical {
-		width: 300px;
-		height: 187.5px;
+	#chaos-diagram button img {
+		max-width: 80px;
 	}
 
-	#medical1 {
-		top: 40px;
-		right: 60px;
-	}
-
-	#medical2 {
-		bottom: 5px;
-		left: 50px;
-	}
-
-	#car {
-		width: 300px;
-		height: 187.5px;
-	}
-
-	#car1 {
-		bottom: 25px;
-		right: 30px;
-	}
-
-	#car2 {
+	#cardiac {
 		top: 25px;
-		left: 95px;
+		left: 15px;
+	}
+
+	#knee {
+		top: 90px;
+		left: 140px;
+	}
+
+	#exhaust {
+		top: 190px;
+		left: 15px;
+	}
+
+	#signage {
+		top: 270px;
+		left: 140px;
 	}
 
 	#surveillance {
-		width: 300px;
-		height: 187.5px;
+		top: 400px;
+		left: 15px;
 	}
 
-	#surveillance1 {
-		bottom: 30px;
-		left: 50px;
+	#power {
+		top: 480px;
+		left: 140px;
 	}
 
-	#surveillance2 {
-		top: 30px;
-		right: 80px;
+	#buildingmngt {
+		top: 340px;
+		left: 260px;
 	}
 
-	#telco {
-		width: 300px;
-		height: 375px;
+	#elevator{
+		top: 480px;
+		left: 300px;
 	}
 
-	#telco1 {
-		bottom: 60px;
-		right: 105px;
-	}
-
-	#cloud-small {
-		width: 300px;
-		height: 187.5px;
-	}
-
-	#office-building {
-		width: 300px;
-		height: 187.5px;
-	}
-
-	.office-building1 {
-		top: 5px;
-		right: 80px;
-	}
-
-	.office-building2 {
-		bottom: 40px;
-		right: 20px;
+	#its {
+		top: 25px;
+		left: 295px;
 	}
 
 	#syslog {
-		width: 300px;
-		height: 187.5px;
+		top: 25px;
+		right: 410px;
 	}
 
-	.syslog1 {
-		top: 60px;
-		left: 50px;
+	#smartoffice {
+		top: 340px;
+		left: 450px;
 	}
 
-	.syslog2 {
-		bottom: 20px;
-		left: 50px;
+	#pirsensor {
+		top: 480px;
+		left: 565px;
 	}
 
-	#office-desk {
-		width: 300px;
-		height: 187.5px;
+	#tempsensor {
+		top: 340px;
+		left: 650px;
 	}
 
-	.office-desk1 {
-		top: 30px;
-		left: 50px;
+	#narrowband {
+		top: 480px;
+		right: 110px;
 	}
 
-	.office-desk2 {
-		right: 55px;
-		bottom: 20px;
-	}
-
-	.office-desk3 {
-		bottom: 20px;
-		left: 5px;
+	#contact h2 {
+		padding-top: 100px;
 	}
 }
 
@@ -1335,6 +958,115 @@ footer a:hover, a:active {
 	#close-menu li:hover, #close-menu li:active {
 		text-decoration: underline;
 	}
+
+	#chaos-diagram {
+		width: 100%;
+		padding: 2% 10%;
+		margin-left: 0;
+		transform: translateX(0);
+	}
+
+	#chaos-image {
+		display: none;
+	}
+	
+	#cardiac {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#knee {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#exhaust {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#signage {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#surveillance {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#power {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#buildingmngt {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#elevator{
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#its {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#syslog {
+		position: static;
+		top: none;
+		right: none;
+		margin: 15px;
+	}
+
+	#smartoffice {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#pirsensor {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#tempsensor {
+		position: static;
+		top: none;
+		left: none;
+		margin: 15px;
+	}
+
+	#narrowband {
+		position: static;
+		top: none;
+		right: none;
+		margin: 15px;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -1344,30 +1076,22 @@ footer a:hover, a:active {
 		margin-left: -300px;
 	}
 
+	#why-genesys-statement {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
 	#why-genesys-statistics {
-		padding: 0 10% 5% 10%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
-	#why-genesys-statistics h2 {
-		padding-bottom: 20px;
+	.statistic h2 {
+		font-size: 3.5em;
 	}
 
-	#stats-img-main {
-		display: none;
-	}
-
-	#stats-img-mobile {
-		display: block;
-		padding: 0;
-		margin: 0;
-	}
-
-	#stats-img-mobile img {
-		width: 100%;
-		max-width: 600px;
-		height: auto;
-		padding: 0;
-		margin: 0;
+	.statistics h5 {
+		font-size: 1.2em;
 	}
 
 	.platform-item {
@@ -1405,126 +1129,6 @@ footer a:hover, a:active {
 		padding: 0;
 	}
 
-	#chaos-diagram {
-		margin-top: 2%;
-		width: 600px;
-	}
-
-	#office-building {
-		display: none;
-	}
-
-	#office-desk {
-		display: none;
-	}
-
-	#cloud-small {
-		display: none;
-	}
-
-	#office-building-mobile {
-		width: 300px;
-		height: 187.5px;
-		display: block;
-		float: left;
-		position: relative;
-	}
-
-	#office-building-mobile img {
-		width: 100%;
-		height: auto;
-	}
-
-	#office-desk-mobile1 {
-		width: 300px;
-		height: 187.5px;
-		display: block;
-		float: left;
-		position: relative;
-	}
-
-	#office-desk-mobile img {
-		width: 100%;
-		height: auto;
-	}
-
-	#cloud-large {
-		width: 600px;
-		height: 185.7px;
-		display: block;
-		float: left;
-	}
-
-	#cloud-large img {
-		width: 100%;
-		height: auto;
-	}
-
-	#medical1 {
-		top: 40px;
-		right: 55px;
-	}
-
-	#medical2 {
-		bottom: 5px;
-		left: 60px;
-	}
-
-	#car1 {
-		bottom: 25px;
-		right: 10px;
-	}
-
-	#car2 {
-		top: 20px;
-		left: 80px;
-	}
-
-	#surveillance1 {
-		bottom: 5px;
-		left: 20px;
-	}
-
-	#surveillance2 {
-		top: 30px;
-		right: 50px;
-	}
-
-	.office-building1 {
-		top: 10px;
-		right: 60px;
-	}
-
-	.office-building2 {
-		bottom: 40px;
-		right: 10px;
-	}
-
-	.syslog1 {
-		top: 10px;
-		left: 100px;
-	}
-
-	.syslog2 {
-		bottom: 50px;
-		left: 40px;
-	}
-
-	.office-desk1 {
-		top: 20px;
-		left: 50px;
-	}
-
-	.office-desk2 {
-		right: 55px;
-		bottom: 25px;
-	}
-
-	.office-desk3 {
-		bottom: 25px;
-		left: 5px;
-	}
-
 	.get-in-touch-form {
 		width: 70%;
 		margin-top: 20px;
@@ -1542,17 +1146,21 @@ footer a:hover, a:active {
 		font-size: 1.5em;
 	}
 
-	.top {
-		display: none;
-	}
-	
 	#home-content {
 		max-width: 400px;
 		margin-left: -200px;
 	}
 
-	#why-genesys-statistics {
-		padding: 0 10% 5% 10%;
+	#button-started {
+		margin: 50px 10px 10px 10px;
+	}
+
+	#button-more {
+		margin: 10px;
+	}
+
+	.statistic {
+		width: 50%;
 	}
 
 	#platform-content {
@@ -1605,131 +1213,11 @@ footer a:hover, a:active {
 	}
 
 	#chaos-diagram {
-		margin-top: 2%;
+		padding: 2% 5%;
+	}
+
+	.popup {
 		width: 400px;
-	}
-
-	button {
-		background-color: rgba(225,225,225,.6);
-		width: auto;
-		height: auto;
-		padding: 2%;
-		color: #202529;
-	}
-
-	button:hover {
-		background-color: #fff;
-		color: #202529;
-	}
-
-	#cloud-large {
-		width: 400px;
-		height: 125px;
-	}
-
-	#medical {
-		width: 200px;
-		height: 125px;
-	}
-
-	#car {
-		width: 200px;
-		height: 125px;
-	}
-
-	#surveillance {
-		width: 200px;
-		height: 125px;
-	}
-
-	#office-building-mobile {
-		width: 200px;
-		height: 125px;
-	}
-
-	#office-desk-mobile1 {
-		width: 200px;
-		height: 125px;
-	}
-
-	#syslog {
-		width: 200px;
-		height: 125px;
-	}
-
-	#telco {
-		width: 200px;
-		height: 250px;
-	}
-
-	#medical1 {
-		top: 20px;
-		right: 20px;
-	}
-
-	#medical2 {
-		bottom: 5px;
-		left: 60px;
-	}
-
-	#car1 {
-		bottom: 15px;
-		right: 0px;
-	}
-
-	#car2 {
-		top: 10px;
-		left: 50px;
-	}
-
-	#surveillance1 {
-		bottom: 10px;
-		left: 10px;
-	}
-
-	#surveillance2 {
-		top: 20px;
-		right: 40px;
-	}
-
-	.office-building1 {
-		top: 0px;
-		right: 20px;
-	}
-
-	.office-building2 {
-		bottom: 40px;
-		right: 0px;
-	}
-
-	#telco1 {
-		bottom: 30px;
-		right: 70px;
-	}
-
-	.syslog1 {
-		top: 5px;
-		left: 60px;
-	}
-
-	.syslog2 {
-		bottom: 30px;
-		left: 20px;
-	}
-
-	.office-desk1 {
-		top: 10px;
-		left: 10px;
-	}
-
-	.office-desk2 {
-		right: 0px;
-		bottom: 10px;
-	}
-
-	.office-desk3 {
-		bottom: 10px;
-		left: 0px;
 	}
 
 	footer {
@@ -1754,8 +1242,12 @@ footer a:hover, a:active {
 		margin-left: -140px;
 	}
 	
-	#why-genesys-statistics {
-		padding: 0 2% 2% 2%;
+	#why-genesys-statistics h2 {
+		font-size: 3em;
+	}
+
+	#why-genesys-statistics h5 {
+		font-size: 1em;
 	}
 
 	.platform-item {
@@ -1765,118 +1257,8 @@ footer a:hover, a:active {
 		height: auto;
 	}
 
-	#chaos-diagram {
-		margin-top: 2%;
-		width: 250px;
-	}
-
-	button {
-		padding: 2% 4%;
-	}
-
-	#cloud-large {
-		width: 250px;
-		height: 85px;
-	}
-
-	#medical {
-		width: 250px;
-		height: 156px;
-	}
-
-	#car {
-		width: 250px;
-		height: 156px;
-	}
-
-	#surveillance {
-		width: 250px;
-		height: 156px;
-	}
-
-	#office-building-mobile {
-		width: 250px;
-		height: 156px;
-	}
-
-	#office-desk-mobile1 {
-		display: none;
-	}
-
-	#office-desk-mobile2 {
-		display: block;
-		float: left;
-		position: relative;
-		width: 250px;
-		height: 156px;
-	}
-
-	#syslog {
-		width: 250px;
-		height: 156px;
-	}
-
-	#telco {
-		width: 250px;
-		height: 280px;
-		overflow: hidden;
-	}
-
-	#medical1 {
-		top: 30px;
-		right: 40px;
-	}
-
-	#car2 {
-		top: 15px;
-		left: 70px;
-	}
-
-	.office-building1 {
-		top: 5px;
-		right: 20px;
-	}
-
-	#telco1 {
-		bottom: 20px;
-		right: 85px;
-	}
-
-	#syslog {
-		display: none;
-	}
-
-	#syslog-mobile {
-		display: block;
-		float: left;
-		position: relative;
-		width: 250px;
-		height: 156px;
-	}
-
-	.syslog1 {
-		top: 30px;
-		left: 30px;
-	}
-
-	.syslog2 {
-		bottom: 20px;
-		left: 10px;
-	}
-
-	.office-desk1 {
-		top: 10px;
-		left: 10px;
-	}
-
-	.office-desk2 {
-		right: 0px;
-		bottom: 10px;
-	}
-
-	.office-desk3 {
-		bottom: 10px;
-		left: 0px;
+	.popup {
+		width: 280px;
 	}
 
 	.get-in-touch-form {
