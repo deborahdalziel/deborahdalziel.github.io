@@ -339,7 +339,6 @@ nav li a:hover, nav li a:active {
 }
 
 #platforms {
-	min-height: 100vh;
 	margin: 0;
 	padding: 0 0 5% 0;
 	background-color: #24292E;
@@ -365,7 +364,6 @@ nav li a:hover, nav li a:active {
 }
 
 #capabilities {
-	min-height: 100vh;
 	background-color: #fff;
 	margin: 0;
 	padding: 0 0 5% 0;
