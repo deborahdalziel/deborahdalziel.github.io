@@ -105,7 +105,7 @@ h5 {
 	font-family: 'DINPro-Light' 'Arial' 'sans-serif';
 	font-weight: 100;
 	font-size: 1.4em;
-	line-height: 1.4em;
+	line-height: 1.2em;
 	padding: 0.4em 0;
 }
 
@@ -313,13 +313,9 @@ nav li a:hover, nav li a:active {
 	margin: 0;
 }
 
-#why-genesys-statement h2 {
-	padding-top: 120px;
-}
-
 #why-genesys-statement {
 	background-color: #099DD6;
-	padding: 0 15% 10% 15%;
+	padding: 10% 25%;
 }
 
 #why-genesys-statistics {
