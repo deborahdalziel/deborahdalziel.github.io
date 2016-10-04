@@ -315,7 +315,7 @@ nav li a:hover, nav li a:active {
 
 #why-genesys-statement {
 	background-color: #099DD6;
-	padding: 10% 25%;
+	padding: 10% 15%;
 }
 
 #why-genesys-statistics {
@@ -373,74 +373,68 @@ nav li a:hover, nav li a:active {
 	padding-top: 120px;
 }
 
-#capabilities-content {
-	color: #063ad0;
+#capabilities-intro {
+	color: #0A9DD6;
 	margin: 0 15% 2% 15%;
 }
 
 #capabilities-items {
-	margin: 0 10%;
+	width: 1200px;
+	margin: auto;
 }
 
-.capabilities-left {
+.capabilities-content {
 	display: block;
-	width: 45%;
+	width: 300px;
+	height: 200px;
 	float: left;
-	color: #063ad0;
-	height: 80px;
-	text-align: right;
-	padding-right: 2%;
-}
-
-.capabilities-right {
-	display: block;
-	width: 45%;
-	float: left;
-	color: #063ad0;
-	height: 80px;
-	text-align: left;
-	padding-left: 2%;
-}
-
-.circle {
-	height: 30px;
-	width: 30px;
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-o-border-radius: 15px;
-	background-color: #fff;
-	border: 2px solid #063ad0;
-	margin-top: 2px;
-	margin-left: 50%;
-	transform: translateX(-50%);
-}
-
-.line hr {
-	padding: 0;
-	line-height: 0;
-	margin-left: 50%;
-	transform: translateX(-50%);
-}
-
-.capabilities-empty {
-	display: block;
-	float: left;
-	width: 45%;
-	height: 80px;
-}
-
-.capabilities-circle {
-	display: block;
-	float: left;
-	width: 10%;
-	height: 80px;
-	margin: 0;
-	padding: 0;
-}
-
-t#projects {
 	background-color: #0A9DD6;
+	color: #fff;
+	text-align: center;
+	padding: 1%;
+	margin: 0;
+}
+
+.capabilities-content-grey {
+	display: block;
+	width: 300px;
+	height: 200px;
+	float: left;
+	background-color: #696969;
+	color: #fff;
+	text-align: center;
+	padding: 1%;
+	margin: 0;
+}
+
+.capabilities-content:hover {
+	background-color: #696969;
+}
+
+.capabilities-content-grey:hover {
+	background-color: #0A9DD6;
+}
+
+#add-mobile {
+	display: none;
+}
+
+#add-mobile2 {
+	display: none;
+}
+
+.capabilities-image {
+	display: block;
+	width: 300px;
+	height: 200px;
+	float: left;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.capabilities-image img {
+	max-width: 300px;
 }
 
 #projects {
@@ -790,6 +784,26 @@ footer a:hover, a:active {
 		padding-top: 100px;
 	}
 
+	#capabilities-items {
+		width: 1000px;
+	}
+
+	.capabilities-content {
+		width: 250px;
+	}
+
+	.capabilities-content-grey {
+		width: 250px;
+	}
+
+	.capabilities-image {
+		width: 250px;
+	}
+
+	.capabilities-image img {
+		max-width: 250px;
+	}
+
 	#projects h2 {
 		padding-top: 100px;
 	}
@@ -949,6 +963,30 @@ footer a:hover, a:active {
 		text-decoration: underline;
 	}
 
+	#capabilities-intro {
+		margin: 0 10% 2% 10%;
+	}
+
+	#capabilities-items {
+		width: 800px;
+	}
+
+	.capabilities-content {
+		width: 200px;
+	}
+
+	.capabilities-content-grey {
+		width: 200px;
+	}
+
+	.capabilities-image {
+		width: 200px;
+	}
+
+	.capabilities-image img {
+		max-width: 200px;
+	}
+
 	#projects {
 		background-image: none;
 	}
@@ -1095,31 +1133,25 @@ footer a:hover, a:active {
 	}
 
 	#capabilities-items {
-		margin: 0 2%;
+		width: 600px;
 	}
 
-	.capabilities-left {
-		height: 100px;
+	#remove-mobile {
+		display: none;
 	}
 
-	.capabilities-right {
-		height: 100px;
-	}
-
-	.capabilities-empty {
+	#add-mobile {
 		display: block;
 		float: left;
-		width: 45%;
-		height: 100px;
-	}
-
-	.capabilities-circle {
-		display: block;
-		float: left;
-		width: 10%;
-		height: 100px;
+		width: 200px;
+		height: 200px;
 		margin: 0;
 		padding: 0;
+		overflow: hidden;
+	}
+
+	#add-mobile img {
+		max-width: 200px;
 	}
 
 	.get-in-touch-form {
@@ -1180,37 +1212,31 @@ footer a:hover, a:active {
 	}
 
 	#capabilities-items {
-		margin: 0 5%;
+		width: 400px;
 	}
 
-	.capabilities-left {
-		width: 100%;
-		height: auto;
-		text-align: center;
-		padding: 0;
-	}
-
-	.capabilities-right {
-		width: 100%;
-		height: auto;
-		text-align: center;
-		padding: 0;
-	}
-
-	.circle {
+	#remove {
 		display: none;
 	}
 
-	.line hr {
+	#add-mobile {
 		display: none;
 	}
 
-	.capabilities-empty {
+	#remove-mobile2 {
 		display: none;
 	}
 
-	.capabilities-circle {
-		display: none;
+	#add-mobile2 {
+		display: block;
+		width: 200px;
+		height: 200px;
+		float: left;
+		overflow: hidden;
+	}
+
+	#add-mobile2 img {
+		max-width: 200px;
 	}
 
 	#chaos-diagram {
@@ -1260,6 +1286,45 @@ footer a:hover, a:active {
 		float: left;
 		padding: 2%;
 		height: auto;
+	}
+
+	#capabilities-items {
+		width: 280px;
+	}
+
+	.capabilities-content {
+		width: 280px;
+		height: 180px;
+		padding: 2%;
+	}
+
+	.capabilities-content-grey {
+		width: 280px;
+		height: 180px;
+		padding: 2%;
+	}
+
+	.capabilities-image {
+		width: 280px;
+		height: 180px;
+	}
+
+	.capabilities-image img {
+		max-width: 280px;
+	}
+
+	#add-mobile {
+		display: block;
+		width: 280px;
+		height: 180px;
+	}
+
+	#add-mobile img {
+		max-width: 280px;
+	}
+
+	#add-mobile2 {
+		display: none;
 	}
 
 	#chaos-diagram {
