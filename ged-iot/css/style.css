@@ -1213,6 +1213,7 @@ footer a:hover, a:active {
 		top: 0;
 		left: 0;
 		margin: 10px;
+		height: 100vh;
 	}
 
 	#chaos-diagram {
@@ -1305,10 +1306,6 @@ footer a:hover, a:active {
 
 	#chaos-diagram button img {
 		max-width: 60px;
-	}
-
-	.popup {
-		width: 280px;
 	}
 
 	.get-in-touch-form {
