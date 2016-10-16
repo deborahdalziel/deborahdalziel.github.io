@@ -1209,14 +1209,6 @@ footer a:hover, a:active {
 		transform: translateX(-15%);
 	}
 
-	.popup {
-		top: 0;
-		left: 0;
-		transform: translateX(0);
-		margin: 10px;
-		height: 100vh;
-	}
-
 	#chaos-diagram {
 		padding: 2% 5%;
 	}
