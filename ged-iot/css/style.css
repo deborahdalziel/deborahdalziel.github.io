@@ -515,10 +515,11 @@ nav li a:hover, nav li a:active {
 
 .popup {
 	display: none;
-	left: 50%;
-	transform: translateX(-50%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	z-index: 100;
-	width: 600px;
 	background-color: #0A9DD6;
 	color: #fff;
 	border-radius: 5px;
