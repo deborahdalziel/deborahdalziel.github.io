@@ -49,46 +49,46 @@
 
 			// IoT chaos diagram pop-up open and close functions
 			$("#cardiac").click(function() {
-				$("#cardiac-popup").css({'display':'block','position':'fixed','top':'0'});
+				$("#cardiac-popup").css('display','block');
 			});
 			$("#knee").click(function() {
-				$("#knee-popup").css({'display':'block','position':'absolute','top':'0'});
+				$("#knee-popup").css('display','block');
 			});
 			$("#exhaust").click(function() {
-				$("#exhaust-popup").css({'display':'block','position':'absolute','top':'0'});
+				$("#exhaust-popup").css('display','block');
 			});
 			$("#signage").click(function() {
-				$("#signage-popup").css({'display':'block','position':'absolute','bottom':'0'});
+				$("#signage-popup").css('display','block');
 			});
 			$("#surveillance").click(function() {
-				$("#surveillance-popup").css({'display':'block','position':'absolute','bottom':'0'});
+				$("#surveillance-popup").css('display','block');
 			});
 			$("#power").click(function() {
-				$("#power-popup").css({'display':'block','position':'absolute','bottom':'0'});
+				$("#power-popup").css('display','block');
 			});
 			$("#narrowband").click(function() {
-				$("#narrowband-popup").css({'display':'block','position':'absolute','bottom':'0'});
+				$("#narrowband-popup").css('display','block');
 			});
 			$("#buildingmngt").click(function() {
-				$("#buildingmngt-popup").css({'display':'block','position':'absolute','bottom':'0'});
+				$("#buildingmngt-popup").css('display','block');
 			});
 			$("#elevator").click(function() {
-				$("#elevator-popup").css({'display':'block','position':'absolute','bottom':'0'});
+				$("#elevator-popup").css('display','block');
 			});
 			$("#its").click(function() {
-				$("#its-popup").css({'display':'block','position':'absolute','top':'0'});
+				$("#its-popup").css('display','block');
 			});
 			$("#syslog").click(function() {
-				$("#syslog-popup").css({'display':'block','position':'fixed','transform':'translate(-50%, -50%)'});
+				$("#syslog-popup").css('display','block');
 			});
 			$("#smartoffice").click(function() {
-				$("#smartoffice-popup").css({'display':'block','position':'absolute','transform':'translate(-50%, -50%)'});
+				$("#smartoffice-popup").css('display','block');
 			});
 			$("#pirsensor").click(function() {
-				$("#pirsensor-popup").css({'display':'block','position':'absolute','transform':'translate(-50%, -50%)'});
+				$("#pirsensor-popup").css('display','block');
 			});
 			$("#tempsensor").click(function() {
-				$("#tempsensor-popup").css({'display':'block'});
+				$("#tempsensor-popup").css('display','block');
 			});
 			$(".close-popup").click(function() {
 				$("#cardiac-popup").css('display','none');
@@ -375,21 +375,13 @@
 
 			<p>At Genesys we're passionate about helping our clients organise the IoT chaos. Explore the projects below to see some examples of the work we've done. If you would like to learn more about any of these projects you can request a demo using the form below.</p> 
 
-			<div id="chaos-diagram">
-
-			<img id="chaos-image" src="images/diagram3.svg">
-
-					<button id="cardiac"><img src="images/cardiac.png">Patient Vital Sign Monitor</button>
-
-					<div id="cardiac-popup" class="popup">
-						<button class="close-popup"><p><b>X</b></p></button>
-						<div class="popup-content">
-							<h5>Patient Vital Sign Monitor</h5>
-							<p>An iPad controlled device that measures patient vital signs such as pulse and blood pressure.</p>
-						</div>
+				<div id="cardiac-popup" class="popup">
+					<button class="close-popup"><p><b>X</b></p></button>
+					<div class="popup-content">
+						<h5>Patient Vital Sign Monitor</h5>
+						<p>An iPad controlled device that measures patient vital signs such as pulse and blood pressure.</p>
 					</div>
-
-					<button id="knee"><img src="images/knee.png"><br>Knee Angle Sensor</button>
+				</div>
 
 					<div id="knee-popup" class="popup">
 						<button class="close-popup"><p><b>X</b></p></button>
@@ -399,8 +391,6 @@
 						</div>
 					</div>
 
-					<button id="exhaust"><img src="images/exhaust.png"><br>Smart Device Enabled Exhaust</button>
-
 					<div id="exhaust-popup" class="popup">
 						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
@@ -409,87 +399,69 @@
 						</div>
 					</div>
 
-					<button id="signage"><img src="images/signage.png"><br>Smart Device LED Signage</button>
-
 					<div id="signage-popup" class="popup">
-					<button class="close-popup"><p><b>X</b></p></button>
+						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
 							<h5>Smart Device LED Signage</h5>
 							<p>Smart device enabled signage built for the purpose of real-estate auctions.</p>
 						</div>
 					</div>
-				
-					<button id="surveillance"><img src="images/surveillance.png"><br>IoT Surveillance Camera</button>
 
 					<div id="surveillance-popup" class="popup">
-					<button class="close-popup"><p><b>X</b></p></button>
+						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
 							<h5>IoT Surveillance Camera</h5>
 							<p>3G, 4G, WiFi accesspont or client enabled IoT surveillance camera with a polished web-based user-interface for configuration, control and event management.</p>
 						</div>
 					</div>
 
-					<button id="power"><img src="images/power.png"><br>IoT DC Power Supply</button>
-
 					<div id="power-popup" class="popup">
-					<button class="close-popup"><p><b>X</b></p></button>
+						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
 							<h5>IoT DC Power Supply</h5>
 							<p>IoT enabled high power DC/DC power supply primarily for offsite services. Real-time system monitoring and control.</p>
 						</div>
 					</div>
 
-					<button id="buildingmngt"><img src="images/buildingmngt.png"><br>IoT Building Management System</button>
-
 					<div id="buildingmngt-popup" class="popup">
-					<button class="close-popup"><p><b>X</b></p></button>
+						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
 							<h5>IoT Building Management System</h5>
 							<p>Incredibly configurable BMS control and energy optimiser built on the Genesys Linux and Wob Console platforms.</p>
 						</div>
 					</div>
 
-					<button id="elevator"><img src="images/elevator.png"><br>Elevator Monitor and Control</button>
-
 					<div id="elevator-popup" class="popup">
-					<button class="close-popup"><p><b>X</b></p></button>
+						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
 							<h5>Elevator Monitor and Control</h5>
 							<p>IoT elevator monitoring system built on the Genesys MIG platform.</p>
 						</div>
 					</div>
 
-				<button id="smartoffice"><img src="images/smartoffice.png"><br>Smart Office Network Processor</button>
-
 					<div id="smartoffice-popup" class="popup">
-					<button class="close-popup"><p><b>X</b></p></button>
+						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
 							<h5>Smart Office Network Processor</h5>
 							<p>A live, deployed 6LoWPAN network able to monitor and control more than 100 sensor nodes in a meshed network. This is a demonstration of the Genesys MIG platform.</p>
 						</div>
 					</div>
 
-					<button id="pirsensor"><img src="images/pirsensor.png"><br>6LoWPAN PIR Sensor</button>
-
 					<div id="pirsensor-popup" class="popup">
-					<button class="close-popup"><p><b>X</b></p></button>
+						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
 							<h5>6LoWPAN PIR Sensor</h5>
-							<p>A MIG platform 6LoWPAN sensor node monitoring room occupancy with a PIR sensor.</p>
+							<p>A Genesys IoT platform 6LoWPAN sensor node monitoring room occupancy with a PIR sensor.</p>
 						</div>
 					</div>
-
-					<button id="tempsensor"><img src="images/tempsensor.png"><br>6LoWPAN Environment Sensor</button>
 
 					<div id="tempsensor-popup" class="popup">
-					<button class="close-popup"><p><b>X</b></p></button>
+						<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
 							<h5>6LoWPAN Environment Sensor</h5>
-							<p>A MIG platform 6LoWPAN sensor node monitoring ambient temperature.</p>
+							<p>A Genesys IoT platform 6LoWPAN sensor node monitoring ambient temperature.</p>
 						</div>
 					</div>
-
-					<button id="narrowband"><img src="images/narrowband.png"><br>Narrow Band IoT Tracker</button>
 
 					<div id="narrowband-popup"  class="popup">
 					<button class="close-popup"><p><b>X</b></p></button>
@@ -499,8 +471,6 @@
 						</div>
 					</div>
 
-					<button id="its"><img src="images/its.png"><br>IoT Supervisor (ITS)</button>
-
 					<div id="its-popup" class="popup">
 					<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
@@ -509,8 +479,6 @@
 						</div>
 					</div>
 
-					<button id="syslog"><img src="images/syslog.png"><br>Kiwi Syslog Server</button>
-
 					<div id="syslog-popup" class="popup">
 					<button class="close-popup"><p><b>X</b></p></button>
 						<div class="popup-content">
@@ -518,6 +486,38 @@
 							<p>The hosted syslog server powered by Kiwi Syslog provides an endpoint for IoT log messages as well as an ITS transportation option.</p>
 						</div>
 					</div>
+			
+			<div id="chaos-diagram">
+
+			<img id="chaos-image" src="images/diagram3.svg">
+
+					<button id="cardiac"><img src="images/cardiac.png">Patient Vital Sign Monitor</button>
+
+					<button id="knee"><img src="images/knee.png"><br>Knee Angle Sensor</button>
+
+					<button id="exhaust"><img src="images/exhaust.png"><br>Smart Device Enabled Exhaust</button>
+
+					<button id="signage"><img src="images/signage.png"><br>Smart Device LED Signage</button>
+				
+					<button id="surveillance"><img src="images/surveillance.png"><br>IoT Surveillance Camera</button>
+
+					<button id="power"><img src="images/power.png"><br>IoT DC Power Supply</button>
+
+					<button id="buildingmngt"><img src="images/buildingmngt.png"><br>IoT Building Management System</button>
+
+					<button id="elevator"><img src="images/elevator.png"><br>Elevator Monitor and Control</button>
+
+					<button id="smartoffice"><img src="images/smartoffice.png"><br>Smart Office Network Processor</button>
+
+					<button id="pirsensor"><img src="images/pirsensor.png"><br>6LoWPAN PIR Sensor</button>
+
+					<button id="tempsensor"><img src="images/tempsensor.png"><br>6LoWPAN Environment Sensor</button>
+
+					<button id="narrowband"><img src="images/narrowband.png"><br>Narrow Band IoT Tracker</button>
+
+					<button id="its"><img src="images/its.png"><br>IoT Supervisor (ITS)</button>
+
+					<button id="syslog"><img src="images/syslog.png"><br>Kiwi Syslog Server</button>
 
 			</div>
 
