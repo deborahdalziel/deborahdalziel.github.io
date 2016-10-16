@@ -516,7 +516,7 @@ nav li a:hover, nav li a:active {
 .popup {
 	display: none;
 	position: fixed;
-	top: 140px;
+	top: 160px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 100;
@@ -800,7 +800,7 @@ footer a:hover, a:active {
 	}
 
 	.popup {
-		top: 120px;
+		top: 140px;
 	}
 
 	#chaos-diagram {
@@ -1107,6 +1107,10 @@ footer a:hover, a:active {
 		width: 600px;
 	}
 
+	.popup {
+		top: 120px;
+	}
+
 	.get-in-touch-form {
 		width: 70%;
 		margin-top: 20px;
@@ -1205,12 +1209,14 @@ footer a:hover, a:active {
 		transform: translateX(-15%);
 	}
 
-	#chaos-diagram {
-		padding: 2% 5%;
+	.popup {
+		top: 0;
+		left: 0;
+		margin: 10px;
 	}
 
-	.popup {
-		width: 400px;
+	#chaos-diagram {
+		padding: 2% 5%;
 	}
 
 	footer {
