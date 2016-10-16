@@ -49,46 +49,46 @@
 
 			// IoT chaos diagram pop-up open and close functions
 			$("#cardiac").click(function() {
-				$("#cardiac-popup").css('display','block');
+				$("#cardiac-popup").css({'display':'block','position':'absolute','top':'0'});
 			});
 			$("#knee").click(function() {
-				$("#knee-popup").css('display','inline');
+				$("#knee-popup").css({'display':'block','position':'absolute','top':'0'});
 			});
 			$("#exhaust").click(function() {
-				$("#exhaust-popup").css('display','inline');
+				$("#exhaust-popup").css({'display':'block','position':'absolute','top':'0'});
 			});
 			$("#signage").click(function() {
-				$("#signage-popup").css('display','inline');
+				$("#signage-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#surveillance").click(function() {
-				$("#surveillance-popup").css('display','inline');
+				$("#surveillance-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#power").click(function() {
-				$("#power-popup").css('display','inline');
+				$("#power-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#narrowband").click(function() {
-				$("#narrowband-popup").css('display','inline');
+				$("#narrowband-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#buildingmngt").click(function() {
-				$("#buildingmngt-popup").css('display','inline');
+				$("#buildingmngt-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#elevator").click(function() {
-				$("#elevator-popup").css('display','inline');
+				$("#elevator-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#its").click(function() {
-				$("#its-popup").css('display','inline');
+				$("#its-popup").css({'display':'block','position':'absolute','top':'0'});
 			});
 			$("#syslog").click(function() {
-				$("#syslog-popup").css('display','inline');
+				$("#syslog-popup").css({'display':'block','position':'absolute','top':'0'});
 			});
 			$("#smartoffice").click(function() {
-				$("#smartoffice-popup").css('display','inline');
+				$("#smartoffice-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#pirsensor").click(function() {
-				$("#pirsensor-popup").css('display','inline');
+				$("#pirsensor-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#tempsensor").click(function() {
-				$("#tempsensor-popup").css('display','inline');
+				$("#tempsensor-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$(".close-popup").click(function() {
 				$("#cardiac-popup").css('display','none');
@@ -234,13 +234,13 @@
 			<div id="platform-items">
 
 					<div class="platform-item">
-						<h4>Architectural Data Model</h4>
-						<p>Text from Jon to go here... .</p>
+						<h4>Platform Data Model</h4>
+						<p>Commonise all IoT entities such as 'things', data, configuration and function into a single ubiquitous 'machine language'.</p>
 					</div>
 
 					<div class="platform-item">
-						<h4>Architectural Communications Model</h4>
-						<p>Text from Jon to go here... .</p>
+						<h4>Platform Communications Model</h4>
+						<p>Enables navigation and bridging of the many communications channels deployed in a commercial IoT system.</p>
 					</div>
 
 					<div class="platform-item">
@@ -324,8 +324,8 @@
 				</div>
 
 				<div class="capabilities-content">
-					<h4>Network Interfaces</h4>
-					<p>All the network equipment you need including controllers, gateways, routers and bridges.</p>
+					<h4>Interoperability</h4>
+					<p>Productivity-based IoT is enabled by the interoperability of disparate 'things' and sub-systems using our data and communications models.</p>
 				</div>
 
 				<div class="capabilities-image-large">
@@ -357,11 +357,6 @@
 				<div class="capabilities-content-grey">
 					<h4>User Interfaces</h4>
 					<p>Web Servers, Mobile Devices, Platforms, Security and a variety of other technologies that provide a simple and secure view of your IoT solution.</p>
-				</div>
-
-				<div class="capabilities-content">
-					<h4>Interoperability</h4>
-					<p>Text from Jon to go here... .</p>
 				</div>
 
 		</div>
@@ -538,13 +533,15 @@
 
  			<h2>Get in Touch</h2>
 
+ 			<p>Let us know how we can help you - complete the form below and we'll be in touch very soon. Fields marked with an * are required.</p>
+
 		  		<form name="contactform" method="post" action="php/send_form_email.php"> 
 		 	 		<div class="get-in-touch-form">
 		  				<input name="full_name" type="text" placeholder="Enter full name*">
 		  				<input name="company_name" type="text" placeholder="Enter company name"> 
 		  				<input name="email" type="text" placeholder="Enter email address*"> 
 		  				<input name="telephone" type="text" placeholder="Enter phone number">
-		  				<textarea name="comments" rows="6" placeholder="How can we help?"></textarea>
+		  				<textarea name="comments" rows="6" placeholder="How can we help?*"></textarea>
 		  				<input type="submit" value="SUBMIT"> 
 		  			</div>
 				</form>

@@ -9,10 +9,8 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "enquiries@genesysdesign.com.au";
+    $email_to = "enquiries@genesysdesign.com.au", "deborah@unboundmarketing.com.au";
 
-    $email_to = "deborah@unboundmarketing.com.au";
- 
     $email_subject = "Genesys IoT web enquiry";
  
      
@@ -57,7 +55,7 @@ if(isset($_POST['email'])) {
  
     $full_name = $_POST['full_name']; // required
  
-    $company_name = $_POST['company_name']; // required
+    $company_name = $_POST['company_name']; // not required
  
     $email_from = $_POST['email']; // required
  
@@ -81,13 +79,13 @@ if(isset($_POST['email'])) {
  
   if(!preg_match($string_exp,$full_name)) {
  
-    $error_message .= 'The Name you entered does not appear to be valid.<br />';
+    $error_message .= 'Please enter your full name.<br />';
  
   }
  
   if(strlen($comments) < 2) {
  
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    $error_message .= 'Please enter a message to let us know how we can help you.<br />';
  
   }
  
