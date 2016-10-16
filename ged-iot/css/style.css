@@ -516,7 +516,7 @@ nav li a:hover, nav li a:active {
 .popup {
 	display: none;
 	position: fixed;
-	top: 10%;
+	top: 140px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 100;
@@ -797,6 +797,10 @@ footer a:hover, a:active {
 
 	#projects h2 {
 		padding-top: 100px;
+	}
+
+	.popup {
+		top: 120px;
 	}
 
 	#chaos-diagram {
