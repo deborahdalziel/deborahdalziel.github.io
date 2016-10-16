@@ -1210,7 +1210,9 @@ footer a:hover, a:active {
 	}
 
 	.popup {
-		width: 100%;
+		width: 90%;
+		margin: none;
+		padding: none;
 	}
 
 	#chaos-diagram {
