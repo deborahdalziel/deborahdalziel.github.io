@@ -49,7 +49,7 @@
 
 			// IoT chaos diagram pop-up open and close functions
 			$("#cardiac").click(function() {
-				$("#cardiac-popup").css({'display':'block','position':'absolute','top':'0'});
+				$("#cardiac-popup").css({'display':'block','position':'fixed','top':'0'});
 			});
 			$("#knee").click(function() {
 				$("#knee-popup").css({'display':'block','position':'absolute','top':'0'});
@@ -88,7 +88,7 @@
 				$("#pirsensor-popup").css({'display':'block','position':'absolute','bottom':'0'});
 			});
 			$("#tempsensor").click(function() {
-				$("#tempsensor-popup").css({'display':'block','position':'absolute','bottom':'0'});
+				$("#tempsensor-popup").css({'display':'block','position':'absolute'});
 			});
 			$(".close-popup").click(function() {
 				$("#cardiac-popup").css('display','none');
