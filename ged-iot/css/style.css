@@ -522,7 +522,9 @@ nav li a:hover, nav li a:active {
 	position: fixed;
 	top: 160px;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translate3d(-50%,0,0);
+	-webkit-transform: translate3d(-50%,0,0);
+	-moz-transform: translate3d(-50%,0,0);
 	z-index: 100;
 	max-width: 600px;
 	background-color: #0A9DD6;
