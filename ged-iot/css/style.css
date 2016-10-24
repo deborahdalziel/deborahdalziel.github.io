@@ -311,26 +311,21 @@ nav li a:hover, nav li a:active {
 }
 
 #why-genesys {
-	background-color: #f8f8f8;
+	background-color: #0A9DD6;
 	width: 100%;
 	margin: 0;
-}
-
-#why-genesys-statement {
-	background-color: #0A9DD6;
-	padding: 10% 15%;
-}
-
-#why-genesys-statistics {
-	margin: 0;
 	padding: 2% 10%;
+}
+
+#why-genesys-h2 {
+	padding-top: 120px;
 }
 
 .statistic {
 	display: block;
 	float: left;
 	width: 25%;
-	color: #063AD0;
+	color: #fff;
 	padding: 5%;
 }
 
@@ -501,20 +496,17 @@ nav li a:hover, nav li a:active {
 	height: auto;
 }
 
-.close-popup p {
+#projects-popups button {
+	background-color: #0A9DD6;	
 	margin-top: 10px;
 	width: 30px;
 	height: 30px;
-	color: #fff;
-	text-align: center;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	font-size: 1.2em;
 }
 
-.close-popup p:hover {
-	font-weight: 700;
+#projects-popups button p {
+	color: #fff;
+	text-align: center;
+	font-size: 1.2em;
 }
 
 .popup {
@@ -522,9 +514,9 @@ nav li a:hover, nav li a:active {
 	position: fixed;
 	top: 160px;
 	left: 50%;
-	transform: translate3d(-50%,0,0);
-	-webkit-transform: translate3d(-50%,0,0);
-	-moz-transform: translate3d(-50%,0,0);
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
 	z-index: 100;
 	max-width: 600px;
 	background-color: #0A9DD6;
@@ -536,16 +528,6 @@ nav li a:hover, nav li a:active {
 	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
-	filter: blur(0);
-	-webkit-filter: blur(0);
-}
-
-.close-popup button {
-	background-color: #0A9DD6!important;
-}
-
-.close-popup button:hover {
-	background-color: #0A9DD6!important;
 }
 
 .popup-content {
@@ -788,6 +770,10 @@ footer a:hover, a:active {
 	#home-content {
 		max-width: 800px;
 		margin-left: -400px;
+	}
+
+	#why-genesys-h2 {
+		padding-top: 100px;
 	}
 
 	#platforms h2 {
