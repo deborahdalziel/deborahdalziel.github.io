@@ -513,6 +513,10 @@ nav li a:hover, nav li a:active {
 	font-size: 1.2em;
 }
 
+.close-popup p:hover {
+	font-weight: 700;
+}
+
 .popup {
 	display: none;
 	position: fixed;
@@ -532,7 +536,7 @@ nav li a:hover, nav li a:active {
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
-.close-popup {
+.close-popup button {
 	background-color: #0A9DD6;
 }
 
@@ -1227,6 +1231,14 @@ footer a:hover, a:active {
 	#thank-you-content {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+
+	#thank-you-content h2 {
+		font-size: 2em;
+	}
+
+	#thank-you-content p {
+		font-size: 1em;
 	}
 
 }
