@@ -530,6 +530,10 @@ nav li a:hover, nav li a:active {
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
+.popup p {
+	font-size: 1.2em;
+}
+
 .popup-content {
 	margin: 5% 10% 10% 10%;
 }
