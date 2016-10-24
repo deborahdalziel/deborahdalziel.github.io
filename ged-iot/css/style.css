@@ -1224,6 +1224,11 @@ footer a:hover, a:active {
 		padding-right: 5%;
 	}
 
+	#thank-you-content {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
 }
 
 @media only screen and (max-width: 400px) {
