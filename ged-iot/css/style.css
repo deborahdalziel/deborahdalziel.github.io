@@ -536,13 +536,15 @@ nav li a:hover, nav li a:active {
 	-webkit-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 	-moz-box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
+	filter: blur(0);
+	-webkit-filter: blur(0);
 }
 
-.close-popup {
+.close-popup button {
 	background-color: #0A9DD6;
 }
 
-.close-popup:hover {
+.close-popup button:hover {
 	background-color: #0A9DD6;
 }
 
