@@ -20,36 +20,36 @@
 
 @font-face {
     font-family: 'DINPro-Bold';
-    src: url(../fonts/DINPro-Bold.otf);
-    src: url(../fonts/DINPro-Bold.ttf);
-    src: url(../fonts/DINPro-Bold.woff);
+    src: url(../fonts/DINPro-Bold.otf) format('opentype');
+    src: url(../fonts/DINPro-Bold.ttf) format('truetype');
+    src: url(../fonts/DINPro-Bold.woff) format('woff'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DINPro-Regular';
-    src: url(../fonts/DINPro-Regular.otf);
-    src: url(../fonts/DINPro-Regular.ttf);
-    src: url(../fonts/DINPro-Regular.woff);
+    src: url(../fonts/DINPro-Regular.otf) format('opentype');
+    src: url(../fonts/DINPro-Regular.ttf) format('truetype');
+    src: url(../fonts/DINPro-Regular.woff) format('woff'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DINPro-Medium';
-    src: url(../fonts/DINPro-Medium.otf);
-    src: url(../fonts/DINPro-Medium.ttf);
-    src: url(../fonts/DINPro-Medium.woff);
+    src: url(../fonts/DINPro-Medium.otf) format('opentype');
+    src: url(../fonts/DINPro-Medium.ttf) format('truetype');
+    src: url(../fonts/DINPro-Medium.woff) format('woff'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DINPro-Light';
-    src: url(../fonts/DINPro-Light.otf);
-    src: url(../fonts/DINPro-Light.ttf);
-    src: url(../fonts/DINPro-Light.woff);
+    src: url(../fonts/DINPro-Light.otf) format('opentype');
+    src: url(../fonts/DINPro-Light.ttf) format('truetype');
+    src: url(../fonts/DINPro-Light.woff) format('woff'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -160,7 +160,7 @@ button {
 	border: none;
 	outline: none;
 	color: #fff;
-	font-family: 'DINPro-Light' 'Arial' 'sans-serif';
+	font-family: DINPro-Light, Arial, sans-serif;
 }
 
 button:hover {
@@ -311,31 +311,26 @@ nav li a:hover, nav li a:active {
 }
 
 #why-genesys {
-	background-color: #f8f8f8;
+	background-color: #0A9DD6;
 	width: 100%;
 	margin: 0;
-}
-
-#why-genesys-statement {
-	background-color: #0A9DD6;
-	padding: 10% 15%;
-}
-
-#why-genesys-statistics {
-	margin: 0;
 	padding: 2% 10%;
+}
+
+#why-genesys-h2 {
+	padding-top: 120px;
 }
 
 .statistic {
 	display: block;
 	float: left;
 	width: 25%;
-	color: #063AD0;
+	color: #fff;
 	padding: 5%;
 }
 
 .statistic h2 {
-	font-family: 'DINPro-Bold' 'Arial' 'sans-serif';
+	font-family: DINPro-Bold, Arial, sans-serif;
 	font-size: 4em;
 	line-height: 1em;
 	padding: 0;
@@ -477,7 +472,7 @@ nav li a:hover, nav li a:active {
 #chaos-diagram p {
 	font-size: 1em;
 	line-height: 1.2em;
-	font-family: 'DINPro-Light' 'Arial' 'sans-serif';
+	font-family: DINPro-Light, Arial, sans-serif;
 	padding: 5px;
 }
 
@@ -488,7 +483,7 @@ nav li a:hover, nav li a:active {
 	padding: 0 1% 1% 1%;
 	max-width: 150px;
 	color: #202529;
-	font-family: 'DINPro-Regular' 'Arial' 'sans-serif';
+	font-family: DINPro-Regular, Arial, sans-serif;
 	font-size: 1em;
 }
 
@@ -501,27 +496,30 @@ nav li a:hover, nav li a:active {
 	height: auto;
 }
 
-.close-popup p {
+#projects-popups button {
+	background-color: rgba(32,37,42,0);	
 	margin-top: 10px;
 	width: 30px;
 	height: 30px;
+}
+
+#projects-popups button p {
 	color: #fff;
 	text-align: center;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
 	font-size: 1.2em;
 }
 
 .popup {
 	display: none;
 	position: fixed;
-	top: 160px;
-	left: 50%;
-	transform: translateX(-50%);
 	z-index: 100;
-	max-width: 600px;
-	background-color: #0A9DD6;
+	top: 160px;
+	left: 25%;
+	width: 50%;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	background-color: rgba(32,37,42,.95);
 	color: #fff;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -532,12 +530,17 @@ nav li a:hover, nav li a:active {
 	box-shadow: 5px 5px 8px 0px rgba(32,37,41,0.5);
 }
 
-.close-popup {
-	background-color: #0A9DD6;
-}
-
 .popup-content {
 	margin: 5% 10% 10% 10%;
+}
+
+.popup-content p {
+	font-size: 1.2em;
+}
+
+.popup-content h5 {
+	font-size: 1.6em;
+	font-weight: 700;
 }
 
 #cardiac {
@@ -703,7 +706,7 @@ input[type=submit] {
 	border: solid 1px #fff;
 	color: #fff;
 	font-size: 1.2em;
-	font-family: 'DINPro-Light' 'Arial' 'sans-serif';
+	font-family: DINPro-Light, Arial, sans-serif;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -755,7 +758,7 @@ footer a:hover, a:active {
 }
 
 #thank-you p {
-	font-family: 'DINPro-Regular' 'Arial' 'sans-serif';
+	font-family: DINPro-Regular, Arial, sans-serif;
 	font-size: 1.2em;
 }
 
@@ -776,6 +779,10 @@ footer a:hover, a:active {
 	#home-content {
 		max-width: 800px;
 		margin-left: -400px;
+	}
+
+	#why-genesys-h2 {
+		padding-top: 100px;
 	}
 
 	#platforms h2 {
@@ -1109,6 +1116,16 @@ footer a:hover, a:active {
 
 	.popup {
 		top: 100px;
+		left: 10%;
+		width: 80%;
+	}
+
+	.popup-content p {
+		font-size: 1em;
+	}
+
+	.popup-content h5 {
+		font-size: 1.4em;
 	}
 
 	.get-in-touch-form {
@@ -1211,6 +1228,7 @@ footer a:hover, a:active {
 
 	.popup {
 		width: 90%;
+		left: 5%;
 		margin: none;
 		padding: none;
 	}
@@ -1222,6 +1240,19 @@ footer a:hover, a:active {
 	footer {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+
+	#thank-you-content {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	#thank-you-content h2 {
+		font-size: 2em;
+	}
+
+	#thank-you-content p {
+		font-size: 1em;
 	}
 
 }
